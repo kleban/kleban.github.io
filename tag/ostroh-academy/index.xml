@@ -112,6 +112,7 @@ graph TD;
   C++--&gt;C#;
 &lt;/div&gt;
 &lt;center&gt;Рис. 1.1. Розвиток мов програмування `C/C++/Java/C#`&lt;/center&gt;
+&lt;br&gt;
 &lt;p&gt;&lt;code&gt;С#&lt;/code&gt; безпосередньо пов&amp;rsquo;язаний із &lt;code&gt;С&lt;/code&gt;, &lt;code&gt;C++&lt;/code&gt; і &lt;code&gt;Java&lt;/code&gt;. І це не випадково. Ці три мови - найпопулярніші і найулюбленіші мови програмування в світі. Більш того, майже всі професійні програмісти сьогодні знають &lt;code&gt;С&lt;/code&gt; і &lt;code&gt;C++&lt;/code&gt;, і більшість знає &lt;code&gt;Java&lt;/code&gt;. Оскільки &lt;code&gt;С#&lt;/code&gt; побудований на міцному, зрозумілому фундаменті, то перехід від цих &amp;ldquo;фундаментальних&amp;rdquo; мов до &amp;ldquo;надбудови&amp;rdquo; відбувається без особливих зусиль з боку програмістів. Оскільки Андерс Хейлсберг не збирався винаходити нову мову, він зосередився на введенні удосконалень.&lt;/p&gt;
 &lt;p&gt;Прамовою &lt;code&gt;С#&lt;/code&gt; є мова &lt;code&gt;С&lt;/code&gt;. Від С мова С# успадкувала синтаксис, багато ключових слів і оператори. Крім того, &lt;code&gt;С#&lt;/code&gt; побудований на покращеній об&amp;rsquo;єктній моделі, визначеній в &lt;code&gt;C++&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;С#&lt;/code&gt; і &lt;code&gt;Java&lt;/code&gt; зв&amp;rsquo;язані між собою дещо складніше. Як згадувалося вищим, Java також є нащадком С і C++. У неї теж загальний з нею синтаксис і схожа об&amp;rsquo;єктна модель. Подібно &lt;code&gt;Java&lt;/code&gt; &lt;code&gt;C#&lt;/code&gt; призначений для створення переносимого коду. Проте &lt;code&gt;С#&lt;/code&gt; - не нащадок &lt;code&gt;Java&lt;/code&gt;. Швидше &lt;code&gt;С#&lt;/code&gt; і &lt;code&gt;Java&lt;/code&gt; можна вважати двоюрідними братами, що мають загальних предків, але що отримали від батьків різні набори &amp;ldquo;генів&amp;rdquo;.&lt;/p&gt;
@@ -250,7 +251,7 @@ graph TD;
     <item>
       <title>Лекція 2. Основи алгоритмізації</title>
       <link>/courses/csharp-basics/lecture2/</link>
-      <pubDate>Wed, 08 Jul 2020 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture2/</guid>
       <description>&lt;hr&gt;
 &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
