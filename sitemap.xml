@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>/courses/csharp-basics/lecture2/</loc>
-    <lastmod>2020-07-08T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/courses/example/python/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -130,21 +125,6 @@
   <url>
     <loc>/category/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/.net-framework/</loc>
-    <lastmod>2020-07-08T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/console-application/</loc>
-    <lastmod>2020-07-08T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/visual-studio/</loc>
-    <lastmod>2020-07-08T00:00:00+01:00</lastmod>
   </url>
   
   <url>
