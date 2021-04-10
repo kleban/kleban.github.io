@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html><html lang="uk" >
 
 <head>
 
@@ -37,7 +37,7 @@
   <meta name="description" content="Table of Contents  2.1.	Поняття та характеристики алгоритмів 2.2. Побудова алгоритмів з використанням блок-схем 2.3.	Ствоерення блок-схем з використанням Diagramm Designer 2.4.	Ствоерення блок-схем з використанням draw.io Контрольні запитання Список використаних джерел Додаткові матеріали для завнатаження     2.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/courses/csharp-basics/lecture2/">
+  <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/lecture2/">
 
   
 
@@ -86,10 +86,8 @@
     
       
       
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
       
     
 
@@ -242,7 +240,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.43d3c96e828e85b0b0be4980653cbf43.css">
+  <link rel="stylesheet" href="/css/wowchemy.33319bbe33e1b9feff835521b777a249.css">
 
   
 
@@ -250,6 +248,14 @@
 
 
   
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SXV7QJ');
+</script>
+
 
   
 
@@ -285,7 +291,7 @@
   <meta property="og:url" content="/courses/csharp-basics/lecture2/">
   <meta property="og:title" content="Лекція 2. Основи алгоритмізації | kleban.page">
   <meta property="og:description" content="Table of Contents  2.1.	Поняття та характеристики алгоритмів 2.2. Побудова алгоритмів з використанням блок-схем 2.3.	Ствоерення блок-схем з використанням Diagramm Designer 2.4.	Ствоерення блок-схем з використанням draw.io Контрольні запитання Список використаних джерел Додаткові матеріали для завнатаження     2."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
   
     
       <meta property="article:published_time" content="2021-04-02T00:00:00&#43;01:00">
@@ -757,6 +763,11 @@
 
   </div>
   
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture4/">4. Типи даних, змінні</a>
+
+  </div>
+  
   
 </nav>
 
@@ -858,7 +869,7 @@
 <p>Алгоритми мають ряд важливих властивостей:</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> <strong>Скінченність</strong>. Алгоритм має завжди завершуватись після виконання скінченної кількості кроків. Процедуру, яка має решту характеристик алгоритму, без, можливо, скінченності, називають методом обчислень.</li>
-<li><input checked="" disabled="" type="checkbox"> Дискретність. Процес, що визначається алгоритмом, можна розчленувати (розділити) на окремі елементарні етапи (кроки), кожен з яких називається кроком алгоритмічного процесу чи алгоритму.</li>
+<li><input checked="" disabled="" type="checkbox"> <strong>Дискретність</strong>. Процес, що визначається алгоритмом, можна розчленувати (розділити) на окремі елементарні етапи (кроки), кожен з яких називається кроком алгоритмічного процесу чи алгоритму.</li>
 <li><input checked="" disabled="" type="checkbox"> <strong>Визначеність</strong>. Кожен крок алгоритму має бути точно визначений. Дії, які необхідно здійснити, повинні бути чітко та недвозначно визначені для кожного можливого випадку.</li>
 <li><input checked="" disabled="" type="checkbox"> <strong>Вхідні дані</strong>. Алгоритм має деяку кількість (можливо, нульову) вхідних даних, тобто, величин, заданих до початку його роботи або значення яких визначають під час роботи алгоритму.</li>
 <li><input checked="" disabled="" type="checkbox"> <strong>Вихідні дані</strong>. Алгоритм має одне або декілька вихідних даних, тобто, величин, що мають досить визначений зв&rsquo;язок із вхідними даними.</li>
@@ -1815,6 +1826,12 @@
     <a href="/courses/csharp-basics/lecture1/" rel="next">Лекція 1. Вступ до основ програмування на платформі .NET</a>
   </div>
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/csharp-basics/lecture4/" rel="prev">Лекція 4. Типи даних та змінні у .NET</a>
+  </div>
   
 </div>
 

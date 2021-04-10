@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html><html lang="uk" >
 
 <head>
 
@@ -37,7 +37,7 @@
   <meta name="description" content="Курс вивчається економістами-кібернетиками 2-го року навчання у 1-му семестрі (кафедра економіко-математичного моделюваання та інформаційних технологій, економічний факультет, Національни.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/courses/csharp-basics/">
+  <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/">
 
   
 
@@ -86,10 +86,8 @@
     
       
       
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
       
     
 
@@ -242,7 +240,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.43d3c96e828e85b0b0be4980653cbf43.css">
+  <link rel="stylesheet" href="/css/wowchemy.33319bbe33e1b9feff835521b777a249.css">
 
   
 
@@ -250,6 +248,14 @@
 
 
   
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SXV7QJ');
+</script>
+
 
   
 
@@ -287,7 +293,7 @@
   <meta property="og:url" content="/courses/csharp-basics/">
   <meta property="og:title" content="Загальний опис курсу | kleban.page">
   <meta property="og:description" content="Курс вивчається економістами-кібернетиками 2-го року навчання у 1-му семестрі (кафедра економіко-математичного моделюваання та інформаційних технологій, економічний факультет, Національни."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
   
     <meta property="og:updated_time" content="2020-07-08T00:00:00&#43;00:00">
   
@@ -754,6 +760,11 @@
 
   </div>
   
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture4/">4. Типи даних, змінні</a>
+
+  </div>
+  
   
 </nav>
 
@@ -768,14 +779,7 @@
       <nav id="TableOfContents">
   <ul>
     <li><a href="#передмова-">Передмова ❗</a></li>
-    <li><a href="#мета-та-завдання-курсу">Мета та завдання курсу</a></li>
-    <li><a href="#delete-tutorials">Delete tutorials</a></li>
-    <li><a href="#update-site-menu">Update site menu</a></li>
-    <li><a href="#update-the-docs-menu">Update the docs menu</a></li>
-    <li><a href="#flexibility">Flexibility</a></li>
-    <li><a href="#delete-tutorials-1">Delete tutorials</a></li>
-    <li><a href="#update-site-menu-1">Update site menu</a></li>
-    <li><a href="#update-the-docs-menu-1">Update the docs menu</a></li>
+    <li><a href="#план-курсу">План курсу</a></li>
   </ul>
 </nav>
 
@@ -792,62 +796,51 @@
 
           <div class="article-style">
             <h2 id="передмова-">Передмова ❗</h2>
+<details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#передмова-">Передмова ❗</a></li>
+    <li><a href="#план-курсу">План курсу</a></li>
+  </ul>
+</nav>
+</details>
 <p>Матеріли створені з метою компактного та зрозумілого викладення матеріалу з основ програмування на мові C#. Завдання та приклади орієнтовані на студентів, що мають середній рівень математичної підготовки і вміють розв&rsquo;язувати задачі з алгебри, геометрії, логіки, а також курсів, що повязані із основами математичного моделювання (статистика, економетрика, економічна кібернетика, дослідження операцій тощо).</p>
 <p>Викладений матеріал не претендує на повноту у описі можливостей мови програмування C#, проте, на думку автора, може стати базою для написання нескладних програм або фундаментом для подальшого поглиблення знань та умінь.</p>
 <p>Зауваження, побажання та відгуки прошу надсилати на елетронну адресу <code>yurakleban@gmail.com</code>. Також додаткові матеріали та приклади програм, що використовуються у посібнику можна завантажити на сайті автора: <a href="http://kleban.page">http://kleban.page</a>.</p>
 <hr>
-<h2 id="мета-та-завдання-курсу">Мета та завдання курсу</h2>
-<p>This feature can be used for publishing content such as:</p>
+<h2 id="план-курсу">План курсу</h2>
+<pre><code class="language-{css}">.ul-x li, .ul-x ul li {
+   list-style-type: none;
+}
+</code></pre>
+<ol>
+<li>
+<p><a href="/courses/csharp-basics/lecture1/"><strong>Тема 1. Вступ до курсу</strong></a></p>
 <ul>
-<li><strong>Online courses</strong></li>
-<li><strong>Project or software documentation</strong></li>
-<li><strong>Tutorials</strong></li>
-</ul>
-<p>The <code>courses</code> folder may be renamed. For example, we can rename it to <code>docs</code> for software/project documentation or <code>tutorials</code> for creating an online course.</p>
-<h2 id="delete-tutorials">Delete tutorials</h2>
-<p><strong>To remove these pages, delete the <code>courses</code> folder and see below to delete the associated menu link.</strong></p>
-<h2 id="update-site-menu">Update site menu</h2>
-<p>After renaming or deleting the <code>courses</code> folder, you may wish to update any <code>[[main]]</code> menu links to it by editing your menu configuration at <code>config/_default/menus.toml</code>.</p>
-<p>For example, if you delete this folder, you can remove the following from your menu configuration:</p>
-<pre><code class="language-toml">[[main]]
-  name = &quot;Courses&quot;
-  url = &quot;courses/&quot;
-  weight = 50
-</code></pre>
-<p>Or, if you are creating a software documentation site, you can rename the <code>courses</code> folder to <code>docs</code> and update the associated <em>Courses</em> menu configuration to:</p>
-<pre><code class="language-toml">[[main]]
-  name = &quot;Docs&quot;
-  url = &quot;docs/&quot;
-  weight = 50
-</code></pre>
-<h2 id="update-the-docs-menu">Update the docs menu</h2>
-<p>If you use the <em>docs</em> layout, note that the name of the menu in the front matter should be in the form <code>[menu.X]</code> where <code>X</code> is the folder name. Hence, if you rename the <code>courses/example/</code> folder, you should also rename the menu definitions in the front matter of files within <code>courses/example/</code> from <code>[menu.example]</code> to <code>[menu.&lt;NewFolderName&gt;]</code>.</p>
-<h2 id="flexibility">Flexibility</h2>
-<p>This feature can be used for publishing content such as:</p>
-<ul>
-<li><strong>Online courses</strong></li>
-<li><strong>Project or software documentation</strong></li>
-<li><strong>Tutorials</strong></li>
-</ul>
-<p>The <code>courses</code> folder may be renamed. For example, we can rename it to <code>docs</code> for software/project documentation or <code>tutorials</code> for creating an online course.</p>
-<h2 id="delete-tutorials-1">Delete tutorials</h2>
-<p><strong>To remove these pages, delete the <code>courses</code> folder and see below to delete the associated menu link.</strong></p>
-<h2 id="update-site-menu-1">Update site menu</h2>
-<p>After renaming or deleting the <code>courses</code> folder, you may wish to update any <code>[[main]]</code> menu links to it by editing your menu configuration at <code>config/_default/menus.toml</code>.</p>
-<p>For example, if you delete this folder, you can remove the following from your menu configuration:</p>
-<pre><code class="language-toml">[[main]]
-  name = &quot;Courses&quot;
-  url = &quot;courses/&quot;
-  weight = 50
-</code></pre>
-<p>Or, if you are creating a software documentation site, you can rename the <code>courses</code> folder to <code>docs</code> and update the associated <em>Courses</em> menu configuration to:</p>
-<pre><code class="language-toml">[[main]]
-  name = &quot;Docs&quot;
-  url = &quot;docs/&quot;
-  weight = 50
-</code></pre>
-<h2 id="update-the-docs-menu-1">Update the docs menu</h2>
-<p>If you use the <em>docs</em> layout, note that the name of the menu in the front matter should be in the form <code>[menu.X]</code> where <code>X</code> is the folder name. Hence, if you rename the <code>courses/example/</code> folder, you should also rename the menu definitions in the front matter of files within <code>courses/example/</code> from <code>[menu.example]</code> to <code>[menu.&lt;NewFolderName&gt;]</code>.</p>
+ <li><a href="#11загальні-категорії-та-поняття-програмування">1.1.	Загальні категорії та поняття програмування</a></li>
+ <li><a href="#12коротка-історія-програмування-та-виникнення-мови-c">1.2.	Коротка історія програмування та виникнення мови C#</a>
+   <ul>
+     <li><a href="#121парадигми-програмування">1.2.1.	Парадигми програмування</a></li>
+     <li><a href="#122-процедурне-програмування">1.2.2. Процедурне програмування</a></li>
+     <li><a href="#123-обєктне-модульне-програмування">1.2.3. Об’єктне (модульне) програмування</a></li>
+     <li><a href="#124-обєктно-орієнтовне-програмування">1.2.4. Об’єктно-орієнтовне програмування</a></li>
+   </ul>
+ </li>
+ <li><a href="#13еволюція-мови-програмування-c">1.3	Еволюція мови програмування C#</a>
+   <ul>
+     <li><a href="#131створення-ооп-та-c">1.3.1	Створення ООП та C++</a></li>
+     <li><a href="#132internet-та-поява-мови-java">1.3.2	Internet та поява мови Java</a></li>
+     <li><a href="#133виникнення-c">1.3.3.	Виникнення C#</a></li>
+   </ul>
+ </li>
+ <li><a href="#14net-framework-поняття-та-структура">1.4	.NET Framework: поняття та структура.</a></li>
+ <li><a href="#контрольні-запитання">Контрольні запитання</a></li>
+ <li><a href="#список-використаних-джерел">Список використаних джерел</a></li>
+</li>
+</ol>
+  </ul>
+<hr>
 
           </div>
 

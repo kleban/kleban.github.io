@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/courses/csharp-basics/lecture4/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
@@ -33,17 +38,67 @@
   </url>
   
   <url>
-    <loc>/tag/algorithm/</loc>
-    <lastmod>2021-04-02T00:00:00+01:00</lastmod>
+    <loc>/tag/.net-framework/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/c/</loc>
-    <lastmod>2021-04-02T00:00:00+01:00</lastmod>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/console-application/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/csharp/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/cts/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/economic-cybernetics/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ostroh-academy/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/reference-type/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/value-type/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/visual-studio/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/algorithm/</loc>
     <lastmod>2021-04-02T00:00:00+01:00</lastmod>
   </url>
   
@@ -54,26 +109,6 @@
   
   <url>
     <loc>/tag/draw.io/</loc>
-    <lastmod>2021-04-02T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/economic-cybernetics/</loc>
-    <lastmod>2021-04-02T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/ostroh-academy/</loc>
-    <lastmod>2021-04-02T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2021-04-02T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
     <lastmod>2021-04-02T00:00:00+01:00</lastmod>
   </url>
   

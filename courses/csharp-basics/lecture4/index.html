@@ -1,0 +1,2167 @@
+<!DOCTYPE html><html lang="uk" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.2 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nelson Bighetti">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Table of Contents  Поняття типу даних. Система типів .NET. Оголошення та ініціалізація змінних. Константи Оператори та вирази  Арифметичні оператори Інкремент і декремент Логічні оператори. Оператори відношення Інші оператори   Літерали  Арифметичні літерали Логічні літерали Символьні літерали   Приведення типів даних Поняття стеку і кучі.">
+
+  
+  <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/lecture4/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.33319bbe33e1b9feff835521b777a249.css">
+
+  
+
+
+
+
+  
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SXV7QJ');
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/csharp-basics/lecture4/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="kleban.page">
+  <meta property="og:url" content="/courses/csharp-basics/lecture4/">
+  <meta property="og:title" content="Лекція 4. Типи даних та змінні у .NET | kleban.page">
+  <meta property="og:description" content="Table of Contents  Поняття типу даних. Система типів .NET. Оголошення та ініціалізація змінних. Константи Оператори та вирази  Арифметичні оператори Інкремент і декремент Логічні оператори. Оператори відношення Інші оператори   Літерали  Арифметичні літерали Логічні літерали Символьні літерали   Приведення типів даних Поняття стеку і кучі."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
+  
+    
+      <meta property="article:published_time" content="2021-04-09T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2021-04-09T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Лекція 4. Типи даних та змінні у .NET | kleban.page</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.0475bc389b7599ef6b1889ad17c11742.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">kleban.page</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">kleban.page</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Demo</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Проекти</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Курси</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/GeorgeCushen" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/">Про курс</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture1/">1. Вступ до курсу</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture2/">2. Алгоритмізація</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture4/">4. Типи даних, змінні</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#поняття-типу-даних-система-типів-net">Поняття типу даних. Система типів .NET.</a></li>
+    <li><a href="#оголошення-та-ініціалізація-змінних-константи">Оголошення та ініціалізація змінних. Константи</a></li>
+    <li><a href="#оператори-та-вирази">Оператори та вирази</a>
+      <ul>
+        <li><a href="#арифметичні-оператори">Арифметичні оператори</a></li>
+        <li><a href="#інкремент-і-декремент">Інкремент і декремент</a></li>
+        <li><a href="#логічні-оператори-оператори-відношення">Логічні оператори. Оператори відношення</a></li>
+        <li><a href="#інші-оператори">Інші оператори</a></li>
+      </ul>
+    </li>
+    <li><a href="#літерали">Літерали</a>
+      <ul>
+        <li><a href="#арифметичні-літерали">Арифметичні літерали</a></li>
+        <li><a href="#логічні-літерали">Логічні літерали</a></li>
+        <li><a href="#символьні-літерали">Символьні літерали</a></li>
+      </ul>
+    </li>
+    <li><a href="#приведення-типів-даних">Приведення типів даних</a></li>
+    <li><a href="#поняття-стеку-і-кучі-значимі-та-посилальні-типи-даних-у-net-і-с">Поняття стеку і кучі. Значимі та посилальні типи даних у .NET і С#</a></li>
+    <li><a href="#задачі">Задачі</a></li>
+    <li><a href="#контрольні-запитання">Контрольні запитання</a></li>
+    <li><a href="#список-використаних-джерел">Список використаних джерел</a></li>
+    <li><a href="#додаткові-матеріали-для-завантаження">Додаткові матеріали для завантаження</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Лекція 4. Типи даних та змінні у .NET</h1>
+
+          <div class="article-style">
+            <hr>
+<details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#поняття-типу-даних-система-типів-net">Поняття типу даних. Система типів .NET.</a></li>
+    <li><a href="#оголошення-та-ініціалізація-змінних-константи">Оголошення та ініціалізація змінних. Константи</a></li>
+    <li><a href="#оператори-та-вирази">Оператори та вирази</a>
+      <ul>
+        <li><a href="#арифметичні-оператори">Арифметичні оператори</a></li>
+        <li><a href="#інкремент-і-декремент">Інкремент і декремент</a></li>
+        <li><a href="#логічні-оператори-оператори-відношення">Логічні оператори. Оператори відношення</a></li>
+        <li><a href="#інші-оператори">Інші оператори</a></li>
+      </ul>
+    </li>
+    <li><a href="#літерали">Літерали</a>
+      <ul>
+        <li><a href="#арифметичні-літерали">Арифметичні літерали</a></li>
+        <li><a href="#логічні-літерали">Логічні літерали</a></li>
+        <li><a href="#символьні-літерали">Символьні літерали</a></li>
+      </ul>
+    </li>
+    <li><a href="#приведення-типів-даних">Приведення типів даних</a></li>
+    <li><a href="#поняття-стеку-і-кучі-значимі-та-посилальні-типи-даних-у-net-і-с">Поняття стеку і кучі. Значимі та посилальні типи даних у .NET і С#</a></li>
+    <li><a href="#задачі">Задачі</a></li>
+    <li><a href="#контрольні-запитання">Контрольні запитання</a></li>
+    <li><a href="#список-використаних-джерел">Список використаних джерел</a></li>
+    <li><a href="#додаткові-матеріали-для-завантаження">Додаткові матеріали для завантаження</a></li>
+  </ul>
+</nav>
+</details>
+<hr>
+<h2 id="поняття-типу-даних-система-типів-net">Поняття типу даних. Система типів .NET.</h2>
+<p><strong>Тип</strong> <em>(загальне поняття)</em> — це стійка сукупність елементів зі
+спільними характеристиками, яку можна виділити серед множини інших
+об’єктів.</p>
+<p>Тип даних як у математиці, так і у програмуванні має обмеження
+на значення, що дозволяє зменшити невизначеність у записах та
+уникнути частини помилок. Тип даних вказує яким чином об’єкти цього
+типу можуть взаємодіяти з іншими елементами мови програмування або
+між собою (Джерело: Cardelli &amp; Wegner, 1985).</p>
+<p>Системи типів у мовах програмування мають ряд властивостей
+та діляться за різними класифікаціями: статичні і динамічні, строго
+типізовані і не строго типізовані тощо. Також на сьогодні існують
+елементи мов програмування, що перемішують дані поняття або
+підміняють їх (наприклад <code>var</code> у <code>C#</code>).</p>
+<p>Система типів <code>.NET</code> називається <strong><code>Common Type System</code></strong> (далі <code>CTS</code>).
+CTS визначає спосіб оголошення використання та керування типами у
+середовищі <code>CLR</code>, а також є важливою частиною підтримки міжмовної
+інтеграції у середовищі виконання (MSDN, n.d.).</p>
+<p>Усі типи на платформі <code>.NET Framework</code> поділяються на типи-значення (<code>Value Type</code>) та типи-посилання (<code>Rerence Type</code>). Типи-значення представлені фактичними
+значеннями об’єкта, тобто під час присвоєння змінної відбувається
+створення нової копії об’єкта. Для типів посилань створення нової копії
+не відбувається. Типи посилання вказують на «комірку пам’яті» де
+розміщено значення.</p>
+<p>У спрощеному вигляді система типів .NET має такий вигляд:</p>
+<ul>
+<li>
+<p>типи-значення:</p>
+<ul>
+<li>прості типи;</li>
+<li>структури;</li>
+<li>перелічувані типи;</li>
+</ul>
+</li>
+<li>
+<p>типи-посилання:</p>
+<ul>
+<li>класи;</li>
+<li>інтерфейси;</li>
+<li>масиви;</li>
+</ul>
+</li>
+</ul>
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-рис-41-система-типів-net">
+
+
+  <a data-fancybox="" href="/media/courses/csharp-basics/svg/lecture-4-types.svg" data-caption="Рис. 4.1. Система типів .NET">
+
+
+  <img src="/media/courses/csharp-basics/svg/lecture-4-types.svg" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    Рис. 4.1. Система типів .NET
+  </figcaption>
+
+
+</figure>
+ 
+</center>
+<p>Варто також згадати, що типи даних, які підтримуються
+компілятором напряму і знаходяться у <code>.NET Framework Class Library</code>
+(<code>FCL</code>) називаються примітивними. Оскільки типи повинні бути
+універсальними між різними мовами, то розрізняються <code>FCL</code> типи та типи
+конкретної мови програмування (Також варто відмітити, що існує загальномовна специфікація типів (<code>Common Language Specification</code>), проте відповідність
+їй не обов’язкова). По суті типи конкретної мови
+програмування є псевдонімами <code>FCL</code> типів. Наприлад, <code>int</code> у C# — це Int32
+у FCL, проте записати можна обидва варіанти:</p>
+<pre><code class="language-csharp">int a = 0;
+Int32 b = 0;
+</code></pre>
+<p>Розглянемо примітивні типи даних C# та їх відмінності
+(табл. 4.1).</p>
+<center>_Таблиця 4.1. Примітивні типи C# та їх характеристики (Биллиг, 2005)_</center>
+<table class="table table-bordered" style="width:100%">
+  <tr>
+    <th colspan=4><center>Цілочисельні типи</center></th>
+  </tr>
+  <tr>
+    <th style="width: 25%">Назва</th>
+    <th style="width: 25%">FLC-тип</th>
+    <th style="width: 30%">Значення</th>
+    <th style="width: 20%">Розмір, біт</th>
+  </tr>
+  <tr>
+    <td>sbyte </td>
+    <td>System.SByte </td>
+    <td>$$[-128;127]$$</td>
+    <td>8</td>
+  </tr>
+  <tr><td>byte</td><td>System.Byte</td><td>$$[0;255]$$</td><td>8</td></tr>
+  <tr><td>short</td><td> System.Short</td><td>$$[-32768;32767]$$</td><td> 16</td></tr>
+  <tr><td>ushort</td><td> System.UShort</td><td>$$[0;65535]$$</td><td> 16</td></tr>
+  <tr><td>int</td><td> System.Int32</td><td>$$≈(-2*10^9;2*10^9)$$</td><td> 32</td></tr>
+  <tr><td>uint</td><td> System.UInt32</td><td>$$≈(0;4*10^9)$$</td><td> 32</td></tr>
+  <tr><td>long</td><td> System.Int64</td><td>$$≈(-9*10^{18};9*10^{18})$$</td><td> 64</td></tr>
+  <tr><td>ulong</td><td> System.UInt64</td><td>$$≈(0;18*10^{18})$$</td><td>64</td></tr>
+  <tr>
+    <th colspan=4><center>Числові типи з дробовою частиною</center></th>
+  </tr>
+  <tr>
+    <th style="width: 25%">Назва</th>
+    <th style="width: 25%">FLC-тип</th>
+    <th style="width: 30%">Значення</th>
+    <th style="width: 20%">Точність, знаків після коми</th>
+  </tr>
+   <tr><td>float</td><td>System.Single</td><td>$$≈(+1.5*10^{-45}; +3.4*10^{38})$$</td><td>7</td></tr>
+ <tr><td>double</td><td>System.Double</td><td>$$≈(+5.0*10^{-324}; +1.7*10^{308})$$</td><td>15-16</td></tr>
+ <tr><td>decimal</td><td>System.Decimal</td><td>$$≈(+1.0*10^{-28}; +7.9*10^{28})$$</td><td>28-29</td></tr>
+   <tr>
+    <th colspan=4><center>Логічний тип</center></th>
+  </tr>
+  <tr>
+    <th>Назва</th>
+    <th>FLC-тип</th>
+    <th>Значення</th>
+    <th>Розмір, біт</th>
+  </tr>
+   <tr><td>bool</td><td>System.Boolean</td><td>true/false</td><td>8</td></tr>
+      <tr>
+    <th colspan=4><center>Символи та рядки</center></th>
+  </tr>
+  <tr>
+    <th>Назва</th>
+    <th>FLC-тип</th>
+    <th>Значення</th>
+    <th>Розмір, біт</th>
+  </tr>
+   <tr><td>char</td><td>System.Char</td><td>U+0000 - U+ffff</td><td>16</td></tr>
+     <tr><td>string</td><td>System.String</td><td colspan=2>Рядок символів Unicode</td></tr>
+        <tr>
+    <th colspan=4><center>Об'єктний тип</center></th>
+  </tr>
+  <tr>
+    <th>Назва</th>
+    <th>FLC-тип</th>
+    <th colspan=2>Притмітки</th>
+  </tr>
+   <tr><td>object</td><td>System.Object</td><td colspan=2>Базовий тип для усіх інших</td></tr>
+</table>
+<hr>
+<p>Розглянемо коротко структури, класи та перелічувані типи даних.</p>
+<p><strong>Структури.</strong> Структура є першим визначеним користувачем
+типом, який ми розглянемо. Схожі <code>UDT</code> (<code>User Defined Types</code>) є і у мовах
+<code>Pascal</code>, <code>C</code> тощо. По суті структури у C# є спрощеною версією класів із
+мінімальними відмінностями та наслідуєть не напряму від <code>System.Object</code>,
+а від <code>System.ValueType</code>. Структури в С# створюються за допомогою
+ключового слова <strong><code>struct</code></strong> (Лістинг 4.1).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.1. Структура Point</em></p>
+<pre><code class="language-{csharp,">public struct Point
+{
+    // Поле структури
+    public int x, y;
+  
+    //Параметризований конструктор
+    public Point(int xPosition, int yPosition) {
+        x = xPosition;
+        y = yPosition;
+    }
+    
+    //Метод структури
+    public void Display() {
+        System.Console.WriteLine(&quot;({0}, {1})&quot;, x, y);
+    }
+}
+</code></pre>
+<p><strong>Класи.</strong> Клас є посилальним типом даних, що неявно
+наслідується від <code>System.Object</code>. У класі оголошуються поля, методи,
+властивості, конструктори, події та інші елементи, що визначають його
+дані та можливості. Оголошення класу відбувається із використанням
+ключовго слова class (лістинг 4.2).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.2. Клас Student.</em></p>
+<pre><code class="language-{csharp}">public class Student
+{
+    private int _age;
+    
+    public int GetAge() 
+    {
+      return _age;
+    }
+}
+
+</code></pre>
+<p><strong>Перелічувані типи.</strong> Перелічуваний тип (<code>enum) – це програмна конструкція, що дозволяє у межах типу даних визначити альтернативні значення для базового примітивного типу. Перелічувані типи наслідують напряму </code>System.Enum`. Перелічувані типи мають значні обмеження у
+можливостях порівняно з класами або структурами. Оголошення
+перелічуваного типу даних відбувається за допомогою ключового слова
+enum (лістинг 4.3).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.3. Перелічуваний тип Character.</em></p>
+<pre><code class="language-csharp">public enum Character
+{
+    Student = 0,
+    Teacher = 1,
+    Dekan = 2,
+    Rector = 3
+}
+</code></pre>
+<p>Розглянемо відмінності між типами-посиланнями та типами
+значеннями (Albahari &amp; Albahari, 2012).</p>
+<center>
+_Таблиця 4.2. Порівняння типів-значень та типів-посилань у C#_
+</center>
+<table style="width:100%">
+  <tr><td>1</td><th style="width:50%"><center>Тип-значення</center></th>
+  <th style="width:50%"><center>Тип-посилання</center></th></tr>
+  <tr><td>2</td>
+    <td>
+<pre>
+public <b>struct</b> Point
+{
+    public int X { get;set; }
+    public int Y { get;set; }
+}
+</pre>
+    </td>
+        <td>
+<pre>
+public <b>class</b> Point
+{
+    public int X { get;set; }
+    public int Y { get;set; }
+}
+</pre>
+    </td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td colspan=2>
+  <pre>
+var p1 = new Point { X = 5, Y = 7 };
+var p2 = p1;
+p2.X = 10;
+Console.WriteLine("p1: X = {0}", p1.X);
+Console.WriteLine("p2: X = {0}", p2.X);
+  </pre></td>
+  </tr>
+  <tr><td>4</td>
+    <td>
+<pre>
+p1: X = 5
+p2: X = 10
+</pre>
+    </td>
+        <td>
+<pre>
+p1: X = 10
+p2: X = 10
+</pre>
+    </td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td><div class="mermaid">
+graph TD;
+  p1-->X1[X=5];
+  p1-->Y1[Y=7];
+  p2-->X2[X=10];
+  p2-->Y2[Y=7];
+</div></td>
+  <td><div class="mermaid">
+graph TD;
+  p1-->REF[object_ref];
+  p2-->REF[object_ref];
+  REF-->X3[X=10];
+  REF-->Y3[Y=7];
+</div></td>
+  </tr>
+</table>
+<p>Як видно із табл. 4.2 тип-значення створює копію елемента у
+пам’яті і працює з копією, не впливаючи на початкові дані. Тип-посилання вказує на ділянку пам’яті і під час зміни значення поля впливає на усі об’єкти, що «прив’язані» до цієї змінної.</p>
+<h2 id="оголошення-та-ініціалізація-змінних-константи">Оголошення та ініціалізація змінних. Константи</h2>
+<p>Змінна у програмуванні є по суті назвою, що вказує на деякий
+об’єкт у пам’яті. Також можна сказати, що змінна вказує на адресу у
+пам’яті і надає доступ до значення, що знаходиться за цією адресою.</p>
+<p>Для оголошення змінної використовується запис у вигляді:</p>
+<p><code>тип ім’я_змінної;</code></p>
+<p>Правила іменування змінних у C#:</p>
+<ul>
+<li>Ім’я змінної може починатися із латинської букви або
+знаку «_».</li>
+<li>Ім’я змінної може складатися із латинських букв, цифр
+або знаку «_».</li>
+<li>Якщо ім’я змінної співпадає із ключовим словом мови
+програмування, то потрібне використовувати його із
+знаком @ (Наприклад: <code>int @class = 1;</code> ).</li>
+</ul>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.4. Приклад оголошення змінних у C#.</em></p>
+<pre><code class="language-csharp">  int a;
+  float myNumber;
+  double _salary;
+  string name;
+  bool isPresent;
+  decimal discount;
+</code></pre>
+<p>Під час оголошення змінної створюється екземпляр вказаного
+типу. Таким чином, можна сказати, що можливості конкретної змінної
+визначаються можливостями типу даних. Наприклад, у змінну
+цілочисельного типу не можна записати рядок (<code>string</code>). Також важливо
+відмітити, що у C# не можна змінити тип даних під час існування змінної.
+До того як змінна буде використана у коді програми вона повинна
+бути оголошеною. Компілятор перевіряє наявність оголошення змінної у
+момент її використання.</p>
+<p>Будь-яка змінна до використання повинна бути ініціалізованою.
+Ініціалізація змінних – процес виділення у «пам’яті» під конкретний тип
+даних із записом значення. Також ініціалізацію змінних можна пояснити
+як надання конкретного значення змінній (лістинг 4.5).</p>
+<p>Ініціалізацію змінної можна провести одразу під час оголошення
+або у процесі виконання програми (динамічна ініціалізація). Синтаксис
+ініціалізації змінної під час оголошення:</p>
+<p><code>тип ім’я_зміннної = значення;</code></p>
+<div class="alert alert-note">
+  <div>
+    Оператор <strong><code>=</code></strong> у записі означає «присвоїти». «Дорівнює»
+записується як <strong><code>==</code></strong> і є оператором відношення.
+  </div>
+</div>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.5. Ініціалізація змінних.</em></p>
+<pre><code class="language-csharp">  int a = 10;
+  float myNumber = 0.2;
+  double _salary = 100.9;
+  string name = &quot;Ivan&quot;;
+  bool isPresent = true;
+  decimal discount = 0.02;
+  char c = 'R';
+</code></pre>
+<p>Під час оголошення двох і більше змінних однакового типу даних
+списком (розділення комами) можна здійснювати вибіркове присвоєння
+значень (лістинг 4.6).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.6. Оголошення та ініціалізація змінних.</em></p>
+<pre><code class="language-csharp">  int a = 10, b, c = 20;
+  char d, f = 'F', s = '3';
+</code></pre>
+<p>Динамічна ініціалізація змінних передбачає присвоєння значення
+у процесі виконання програми, наприклад, за результатами обчислень
+(лістинг 4.7).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.7. Динамічна ініціалізація змінних.</em></p>
+<pre><code class="language-csharp">  double a = 5, b = 7; //Катети
+  double c; // гіпотенуза
+  c = Math.Sqrt(a * a + b * b);
+  Console.WriteLine(&quot;Гіпотенуза дорівнює - {0:F}&quot;, c);
+</code></pre>
+<p>У C# є можливість оголошення та ініціалізації констант.
+<code>Константа</code> у математиці є величиною, значення якої не
+змінюється. Константа є протиставленням до змінної. У програмуванні
+<code>константа</code> – це спосіб запису інформації, зміна якої заборонена. Значення
+констати повинно бути відомим у момент компіляції програми. По суті
+константу потрібно ініціалізувати у момент оголошення (лістинг 4.8).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.8. Оголошення та ініціалізація констант.</em></p>
+<pre><code class="language-csharp">  const string spec = &quot;економічна кібернетика';
+  const double PI = 3.14;
+  const bool Truth = true;
+  43 з 111
+  const char _iSymbol = 'i';
+</code></pre>
+<p><strong>Область видимості та час існування змінної.</strong> Усі змінні до цього
+часу ми оголошували у межах функції <code>Main()</code>. Насправді змінна може
+бути оголошеною у межах різних блоків програми. Блоки програми
+відкремлються «фігурними» дужками (<code>{}</code>). Блок коду визначає область
+видимості та час існування змінної. За межами цього блоку змінної не
+існує і доступу до неї немає. Розглянемо приклад коду (лістинг 4.9).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.9. Область видимості змінної.</em></p>
+<pre><code class="language-csharp">static void Main(string[] args)
+{
+   int x; // Змінна відома у межах метода Main()
+   x = 10;
+   if (x == 10)
+   {
+     // Початок нової області видимості
+     int у = 20; // Змінна відома лише цьому блоку
+     Console.WriteLine(&quot;х та у: &quot; + x + &quot; &quot; + у);
+     x = у * 2;
+   }
+   // y = 100; //- помилка &quot;y&quot; - не існує
+   Console.WriteLine(&quot;х : &quot; + x);
+}
+</code></pre>
+<p>Якщо видалити коментування у рядку <code>y = 100</code>, то компілятор
+проінформує про помилку <code>~ «Змінна ‘y’ не існує у даному контексті»</code>,
+тобто вона поза областю видимості і доступу немає.</p>
+<p>Зміні створюються у момент входження у область видимості і
+видаляються у момент виходу з неї. Таким чином можна зрозуміти, що
+повторне входження у область видимості створює змінну із початковим
+значенням повторно і не зберігає значення між викликами (лістинг 4.10).</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.10. Область видимості змінних.</em></p>
+<pre><code class="language-csharp">  int x = 10;
+  
+  if (x == 10) {
+     x = x + 1;
+     int a = x;
+  }
+  
+  if (x == 11) {
+     x = x + 1;
+     int a = x;
+  }
+</code></pre>
+<p>З прикладу лістингу 4.10. видно, що змінна a оголошена двічі,
+проте в різних областях видимості. У таком випадку помилки компіляції
+не буде. Отже, час існування змінної визначається областю її видимості.</p>
+<h2 id="оператори-та-вирази">Оператори та вирази</h2>
+<p>У С# передбачений широкий набір операторів, які дають в руки програмістові потужні важелі
+управління при створенні всіляких виразів і їх обчисленні. У С# є чотири загальні класи операторів:</p>
+<ul>
+<li>арифметичні;</li>
+<li>порозрядні;</li>
+<li>логічні;</li>
+<li>оператори відношення.</li>
+</ul>
+<h3 id="арифметичні-оператори">Арифметичні оператори</h3>
+<p><em>Таблиця 3. Арифметичні оператори</em></p>
+<table>
+<thead>
+<tr>
+<th>Оператор</th>
+<th>Дія</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>+</code></strong></td>
+<td>Додавання</td>
+</tr>
+<tr>
+<td><strong>-</strong></td>
+<td>Віднімання, унарний мінус</td>
+</tr>
+<tr>
+<td><b><code>*</code></b></td>
+<td>Множення</td>
+</tr>
+<tr>
+<td><strong><code>/</code></strong></td>
+<td>Ділення</td>
+</tr>
+<tr>
+<td><strong><code>%</code></strong></td>
+<td>Ділення по модулю</td>
+</tr>
+<tr>
+<td><strong><code>--</code></strong></td>
+<td>Декремент</td>
+</tr>
+<tr>
+<td><strong><code>++</code></strong></td>
+<td>Інкремент</td>
+</tr>
+</tbody>
+</table>
+<p>Дія С#-операторів <code>+</code>, <code>-</code>, <code>*</code> і <code>/</code> збігається з дією аналогічних операторів в будь-якій іншій мові програмування (і в алгебрі). Їх можна застосовувати до даних будь-якого вбудованого числового типу.</p>
+<p>Перш за все хочу нагадати, що після застосування оператора ділення (<code>/</code>) до цілого числа залишок буде відкинутий. Наприклад, результат цілочисельного ділення <code>10/3</code> дорівнюватиме <code>3</code>.</p>
+<p>Залишок від ділення можна отримати за допомогою оператора ділення по модулю (%). Цей оператор працює практично так само, як в інших мовах програмування: повертає залишок від ділення без остачі. Наприклад, <code>10%3</code> рівне <code>1</code>. У С# оператор <code>%</code> можна застосувати як до цілочисельних типів, так і типам з плаваючою крапкою. Наприклад, <code>10,0%3,0</code> також рівне <code>1</code>. (У мовах C/C++ операції ділення по модулю застосовні лише до цілочисельних типів.)</p>
+<h3 id="інкремент-і-декремент">Інкремент і декремент</h3>
+<p>Оператори інкремента (<code>++</code>) і декремента (<code>--</code>) збільшують і зменшують значення операнда на
+одиницю, відповідно. Як буде показано нижче, ці оператори володіють спеціальними
+властивостями, які роблять їх цікавими для розгляду. Отже, оператор інкремента виконує складання операнда з числом 1, а оператор декремента віднімає 1 зі свого операнда. Це означає, що інструкція</p>
+<p><code>х = х + 1;</code></p>
+<p>аналогічна такій інструкції:</p>
+<p><code>х++</code>.</p>
+<p>Так само інструкція</p>
+<p><code>х = х - 1;</code></p>
+<p>аналогічна такій інструкції:</p>
+<p><code>х--</code>.</p>
+<p>Оператори інкремента і декремента можуть стояти як перед своїм операндом, так і після нього.
+Наприклад, інструкцію <code>х = х - 1;</code> можна переписати у вигляді префіксної форми</p>
+<pre><code class="language-csharp">++х; // Префіксна форма оператора інкремента
+</code></pre>
+<p>або у вигляді постфіксної форми:</p>
+<pre><code class="language-csharp">х++; // Постфіксна форма оператора інкремента
+</code></pre>
+<p>У попередньому прикладі не мало значення, в якій формі був застосований оператор інкремента:
+префіксній або постфіксній. Але якщо оператор інкремента або декремента використовується як
+частина більшого виразу, то форма його використання має важливе значення.</p>
+<p>Якщо такий оператор застосований в префіксній формі, то С# спочатку виконає цю операцію, аби операнд набув нового значення, яке потім буде використано останньою частиною вираження. Якщо ж оператор застосований в постфіксній формі, то С# використовує у вираженні його старе значення, а потім виконає операцію, в результаті якої операнд знайде нове значення. Розглянемо наступний фрагмент коду:</p>
+<pre><code class="language-csharp">х = 10; 
+int a = ++х;
+</code></pre>
+<p><code>Результат: a = 11;</code></p>
+<pre><code class="language-csharp">х = 10; 
+int a = х++;
+</code></pre>
+<p><code>Результат: a = 10;</code></p>
+<h3 id="логічні-оператори-оператори-відношення">Логічні оператори. Оператори відношення</h3>
+<p>Результат виконання операторів відношення і логічних операторів має тип <code>bool</code>.</p>
+<p><em>Таблиця 3. Оператори відношення і логічні оператори</em></p>
+<table>
+<thead>
+<tr>
+<th>Оператор</th>
+<th>Дія</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>==</code></strong></td>
+<td>Рівно</td>
+</tr>
+<tr>
+<td><strong><code>!=</code></strong></td>
+<td>Не рівно</td>
+</tr>
+<tr>
+<td><strong><code>&gt;</code></strong></td>
+<td>Більше</td>
+</tr>
+<tr>
+<td><strong><code>&lt;</code></strong></td>
+<td>Менше</td>
+</tr>
+<tr>
+<td><strong><code>&gt;=</code></strong></td>
+<td>Більше або рівно</td>
+</tr>
+<tr>
+<td><strong><code>&lt;=</code></strong></td>
+<td>Менше або рівно</td>
+</tr>
+<tr>
+<td><strong><code>&amp;</code></strong></td>
+<td>І</td>
+</tr>
+<tr>
+<td><strong><code>|</code></strong></td>
+<td>Або</td>
+</tr>
+<tr>
+<td><strong><code>^</code></strong></td>
+<td>Виключаюче або</td>
+</tr>
+<tr>
+<td><strong><code>||</code></strong></td>
+<td>Скорочене або</td>
+</tr>
+<tr>
+<td><strong><code>&amp;&amp;</code></strong></td>
+<td>Скорочене і</td>
+</tr>
+<tr>
+<td><strong><code>!</code></strong></td>
+<td>Не</td>
+</tr>
+</tbody>
+</table>
+<p>У С# на рівність або нерівність можна порівнювати (відповідно, за допомогою операторів <code>==</code> та <code>!=</code>) всі об&rsquo;єкти. Але такі оператори порівняння, як <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code> або <code>&gt;=</code>, можна застосовувати лише до типів, які підтримують відношення впорядкування. Це означає, що всі оператори відношення можна застосовувати до всіх числових типів. Проте значення типу <code>bool</code> можна порівнювати лише на рівність або нерівність, оскільки значення <code>true</code> і <code>false</code> не упорядковуються. Наприклад, в С# порівняння <code>true &gt; false</code> не має сенсу.</p>
+<p>Що стосується логічних операторів, то їх операнди повинні мати тип <code>bool</code>, і результат логічної операції завжди матиме тип <code>bool</code>. Логічні оператори <em><code>&amp;</code></em>, <em><code>|</code></em>, <em><code>^</code></em> і <em><code>!</code></em> виконують базові логічні операції <code>І</code>, <code>АБО</code>, <code>взаємовиключення</code> і <code>НЕ</code>.</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.11. Оператори відношення та логічні оператори.</em></p>
+<pre><code class="language-csharp">static void Main(string[] args)
+{
+    int a = 10, b = 11;
+    bool abool = true, bbool = false;
+
+    if(a &gt; b) Console.WriteLine(&quot;a &gt; b&quot;);                             //false
+    if(a &lt; b) Console.WriteLine(&quot;a &lt; b&quot;);                             //true
+
+    if(a == b) Console.WriteLine(&quot;a == b&quot;);                           //false
+    if(a != b) Console.WriteLine(&quot;a != b&quot;);                           //true
+    if (abool || bbool) Console.WriteLine(&quot;abool || bbool - true&quot;);   //true
+    if (abool &amp;&amp; bbool) Console.WriteLine(&quot;abool &amp;&amp; bbool - true&quot;);   //false
+    if (abool ^ bbool) Console.WriteLine(&quot;abool ^ bbool - true&quot;);     //true
+    if (!abool) Console.WriteLine(&quot;!abool - true&quot;);                   //false
+} 
+</code></pre>
+<h3 id="інші-оператори">Інші оператори</h3>
+<p>Окрім базовового набору, у C# доступний набір і інших операторів, що використовуються під час написання програм. Опишемо їх коротко у вигляді таблиць з описами.</p>
+<p><em>Таблиця. Інші оператори</em></p>
+<table>
+<thead>
+<tr>
+<th>Дія</th>
+<th>Оператор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Доступ до членів</td>
+<td>.</td>
+</tr>
+<tr>
+<td>Індексація</td>
+<td><code>**[]**</code></td>
+</tr>
+<tr>
+<td>Приведення типів</td>
+<td><strong><code>()</code></strong></td>
+</tr>
+<tr>
+<td>Тернарний оператор</td>
+<td><strong><code>?:</code></strong></td>
+</tr>
+<tr>
+<td>Створення нового об’єкта</td>
+<td><strong><code>new()</code></strong></td>
+</tr>
+<tr>
+<td>Інформація про тип даних</td>
+<td><strong><code>is</code></strong> <strong><code>sizeof</code></strong> <strong><code>typeof</code></strong></td>
+</tr>
+<tr>
+<td>Управління виключеннями переповнення</td>
+<td><strong><code>checked</code></strong> <strong><code>unchecked</code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Є також і інші оператори у C#. Ми розглянули лише основні, які будемо використовувати у нашому
+курсі.</p>
+<p>При присворенні виразів аналогічно до алгебри враховується пріоритет операцій:</p>
+<p><em>Таблиця 5. Пріоритет операцій</em></p>
+<table>
+<thead>
+<tr>
+<th>Пріор.</th>
+<th>Оператор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong><code>()</code></strong> <strong><code>[]</code></strong> <strong><code>.</code></strong> <strong><code>(постфікс)++</code></strong> <strong><code>(постфікс)––</code></strong> <strong><code>new</code></strong> <strong><code>sizeof</code></strong> <strong><code>typeof</code></strong> <strong><code>unchecked</code></strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong><code>!</code></strong> <strong><code>~</code></strong> <strong><code>(ім’я типу)</code></strong> <strong><code>+(унарний)</code></strong> <strong><code>–(унарний)</code></strong> <strong><code>++(префікс)</code></strong> <strong><code>––(префікс)</code></strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong><code>*</code></strong> <strong><code>/</code></strong> <strong><code>%</code></strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong><code>+</code></strong> <strong><code>–</code></strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong><code>&lt;&lt;</code></strong> <strong><code>&gt;&gt;</code></strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong><code>&lt;</code></strong> <strong><code>&gt;</code></strong> <strong><code>&lt;=</code></strong> <strong><code>=&gt;</code></strong> <strong><code>is</code></strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong><code>==</code></strong> <strong><code>!=</code></strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong><code>&amp;</code></strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong><code>^</code></strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong><code>|</code></strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong><code>&amp;&amp;</code></strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong><code>||</code></strong></td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong><code>?:</code></strong></td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong><code>=</code></strong> <strong><code>+=</code></strong> <strong><code>–=</code></strong> <strong><code>*=</code></strong> <strong><code>/=</code></strong> <strong><code>%=</code></strong> <strong><code>&amp;=</code></strong> <strong><code>|=</code></strong> <strong><code>^=</code></strong> <strong><code>&lt;&lt;=</code></strong> <strong><code>&gt;&gt;=</code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Оператор присвоєння має додаткові можливості.</p>
+<p>Присвоєння можна проводити наступним чином:</p>
+<pre><code class="language-csharp">  int a, b, c; 
+  int d = c = b = c = 3.
+</code></pre>
+<p>У результаті виконання коду усі змінні будуть ініціалізовані значенням <code>3</code>.</p>
+<p>У <code>C#</code>, так само як і у <code>С++</code>, є складений оператор присвоєння. Для виразу <code>x = x + 10</code> складений оператор матиме вигляд: <code>x += 10</code>. Складений оператор означає додавання до поточного значення певного числа. Аналогічні операції можна застосовувати і до
+інших операторів: <strong><code>-=</code></strong>, <strong><code>*=</code></strong>, <strong><code>/=</code></strong>, <strong><code>%=</code></strong>.</p>
+<h2 id="літерали">Літерали</h2>
+<p>У програмах на мовах високого рівня (у тому числі C#) <strong>літералами</strong> називають послідовність
+символів, що входять у алфавіт мови програмування, які забезпечують явне представлення значень, які використовуються для позначення початкових значень в оголошенні членів класів, змінних і
+констант в методах класу. Розрізняються літерали <code>арифметичні</code> (різних типів), <code>логічні</code>, <code>символьні</code>
+(включаючи Escape-послідовності), <code>рядкові</code>.</p>
+<h3 id="арифметичні-літерали">Арифметичні літерали</h3>
+<p>Арифметичні літерали кодують значення різних (арифметичних) типів. Тип арифметичного
+літерала визначається наступними інтуїтивно зрозумілими зовнішніми ознаками:</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> <strong>стандартним зовнішнім виглядом</strong></p>
+<p>Значення цілочисельного типу зазвичай кодується інтуїтивно
+зрозумілою послідовністю символів $ 1, 2, 3, &hellip; N$.</p>
+<p>Значення чисел з дробовою частиною також передбачає
+стандартний вигляд (крапка-роздільник між цілою і дробовою частиною, або наукова або
+експоненціальна нотація - $1.2500E+052$).</p>
+<p>Шістнадцяткове представлення цілочисельного значення кодується шістнадцятковим літералом, що складається з символів $0, &hellip;, 9$, а також $&lsquo;a&rsquo; &hellip;, &lsquo;f&rsquo;$, або $&lsquo;A&rsquo; &hellip;,
+&lsquo;F&rsquo;$ з префіксом <code>'0x'</code>.</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> <strong>власне значенням</strong></p>
+<p>Так, накприклад, 32768 ніяк не може бути значенням типу <code>short</code>.</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> <strong>додатковим суфіксом</strong></p>
+<p>Суфікси <code>l</code>, <code>L</code> відповідають типові <code>long</code>; <code>ul</code>, <code>UL</code> - <code>unsigned long</code>; <code>f</code>, <code>F</code> - <code>float</code>; <code>d</code>, <code>D</code> -
+<code>double</code>, <code>M</code>, <code>m</code> - <code>decimal</code>. Значення типу <code>double</code> кодуються також без префікса з вказанням розділювача дробової частини, наприклад, $25.0$.</p>
+</li>
+</ul>
+<h3 id="логічні-літерали">Логічні літерали</h3>
+<p>До логічних літералів відносяться наступні послідовності символів: <code>true</code> і <code>false</code>.</p>
+<h3 id="символьні-літерали">Символьні літерали</h3>
+<p><strong>Символьні літерали</strong> - це взяті в одинарні лапки символи, що вводяться з клавіатури, наприклад, <code>'X'</code>, <code>'p'</code>, <code>'Q'</code>, <code>'7'</code>, а також цілочисельні значення в діапазоні від $0$ до $65535$, перед якими розташовується конструкція вигляду <code>(char)</code> - операція явного приведення до типу <code>char</code>.</p>
+<p>Наступні взяті в одинарні лапки послідовності символів є <code>Escape</code>-послідовностями. Ця категорія
+літералів використовується для створення додаткових ефектів (дзвінок), простого форматування
+інформації, що виводиться, і кодування символів при виводі і порівнянні (у виразах порівняння).</p>
+<p><em>Таблиця 6.Символьні Escape-послідовності</em></p>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Пояснення</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>\a</code></strong></td>
+<td>Звуковий сигнал</td>
+</tr>
+<tr>
+<td><strong><code>\b</code></strong></td>
+<td>Повернення на одну позицію назад</td>
+</tr>
+<tr>
+<td><strong><code>\f</code></strong></td>
+<td>Перехід на нову сторінку</td>
+</tr>
+<tr>
+<td><strong><code>\n</code></strong></td>
+<td>Перехід на новий рядок</td>
+</tr>
+<tr>
+<td><strong><code>\r</code></strong></td>
+<td>Повернення каретки</td>
+</tr>
+<tr>
+<td><strong><code>\t</code></strong></td>
+<td>Горизонтальна табуляція</td>
+</tr>
+<tr>
+<td><strong><code>\v</code></strong></td>
+<td>Вертикальна табуляція</td>
+</tr>
+<tr>
+<td><strong><code>\0</code></strong></td>
+<td>Нуль</td>
+</tr>
+<tr>
+<td><strong><code>\'</code></strong></td>
+<td>Одинарна лапка</td>
+</tr>
+<tr>
+<td><strong><code>\&quot;</code></strong></td>
+<td>Подвійна лапка</td>
+</tr>
+<tr>
+<td><strong><code>\\</code></strong></td>
+<td>Зворотна коса лінія</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Рядкові літерали</strong> - це послідовність символів і символьних <code>Escape</code>-послідовностей, взятих у подвійні
+лапки.</p>
+<p><strong><code>Verbatim string</code></strong> - рядковий літерал, що інтерпретується компілятором так, як він записаний. <code>Escape</code>-послідовності сприймаються строго як послідовності символів.</p>
+<p><code>Verbatim string</code> представляється за допомогою символу <strong><code>@</code></strong>, який розташовується безпосередньо
+перед текстом, взятим в парні подвійні лапки. Представлення подвійних лапок в
+<code>Verbatim string</code> забезпечується їх дублюванням.</p>
+<p>Пара літералів (другий - Verbatim string)</p>
+<pre><code class="language-csharp">  ...&quot;c:\\My Documents\\sample.txt&quot;...
+  ...@&quot;c:\My Documents\sample.txt&quot;...
+</code></pre>
+<p>мають одне і те ж значення: <code>c:\My Documents\sample.txt</code>.</p>
+<p>Рядкові літерали є об&rsquo;єктами типу <code>string</code>.</p>
+<h2 id="приведення-типів-даних">Приведення типів даних</h2>
+<p>Приведення типів - один з аспектів безпеки будь-якої мови програмування.</p>
+<p>Використовувані в програмі типи характеризуються власними діапазонами значень, які
+визначаються властивостями типів, у тому числі і розміром області пам&rsquo;яті, призначеної для
+кодування значень відповідного типу. При цьому області значень різних типів перетинаються.</p>
+<p>Багато значень можна виразити більш ніж одним типом. Наприклад, значення 4 можна
+представити як значення типу <code>sbyte</code>, <code>byte</code>, <code>short</code>, <code>ushort</code>, <code>int</code>, <code>uint</code>, <code>long</code>, <code>ulong</code>. При цьому в програмі все повинно бути влаштовано так, щоб логіка перетворення значень одного типу до іншого 
+була зрозумілою, а результати цих перетворень - передбачувані.</p>
+<p><em>Інколи приведення значення до іншого типу відбувається автоматично.</em> Такі перетворення
+називаються <strong>неявними</strong>.</p>
+<p>Але у ряді випадків перетворення вимагає додаткової уваги з боку програміста, який повинен <strong>явним</strong>
+чином вказувати необхідність перетворення, використовуючи вирази приведення типу або звертаючись до спеціальних методів перетворення, визначеним в класі <code>System.Convert</code>, які забезпечують перетворення значення одного типу до значення іншого.</p>
+<p>Перетворення типу створює значення нового типу, еквівалентне значенню старого типу, проте при
+цьому не обов&rsquo;язково зберігається ідентичність (або точні значення) двох об&rsquo;єктів.</p>
+<p>Розрізняють <strong>розширююче</strong> та <strong>звужуюче</strong> перетворення.</p>
+<p><strong>Розширююче перетворення</strong> - значення одного типу перетвориться до значення іншого типу, яке має
+такий же або більший розмір. Наприклад, значення, представлене у вигляді 32-розрядного цілого
+числа із знаком, може бути перетворене в 64-розрядне ціле число із знаком. Розширене
+перетворення вважається безпечним, оскільки вихідна інформація при такому перетворенні не
+спотворюється.</p>
+<p>Можливість розширеного перетворення представлено у таблиці нижче.</p>
+<p><em>Таблиця 7. Можливість розширеного перетворення типів даних</em></p>
+<table>
+<thead>
+<tr>
+<th>Тип, що перетворюється</th>
+<th>У який тип перетворюється</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Byte</code></td>
+<td><code>UInt16</code>, <code>Int16</code>, <code>UInt32</code>, <code>Int32</code>, <code>UInt64</code>, <code>Int64</code>, <code>Single</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>SByte</code></td>
+<td><code>Int16</code>, <code>Int32</code>, <code>Int64</code>, <code>Single</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>Int16</code></td>
+<td><code>Int32</code>, <code>Int64</code>, <code>Single</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>UInt16</code></td>
+<td><code>UInt32</code>, <code>Int32</code>, <code>UInt64</code>, <code>Int64</code>, <code>Single</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>Char</code></td>
+<td><code>UInt16</code>, <code>UInt32</code>, <code>Int32</code>, <code>UInt64</code>, <code>Int64</code>, <code>Single</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>Int32</code></td>
+<td><code>Int64</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>UInt32</code></td>
+<td><code>Int64</code>, <code>Double</code>, <code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>Int64</code></td>
+<td><code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>UInt64</code></td>
+<td><code>Decimal</code></td>
+</tr>
+<tr>
+<td><code>Single</code></td>
+<td><code>Double</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Звужуюче перетворення</strong> - значення одного типу перетвориться до значення іншого типу, яке має
+менший розмір (з 64-розрядного в 32-розрядне). Таке перетворення потенційне небезпечне втратою
+значення. Звужуючі перетворення можуть призводити до втрати інформації.</p>
+<p>Якщо тип, до якого здійснюється перетворення, не може правильно передати значення джерела, то результат
+перетворення виявляється дорівнює константі <code>PositiveInfinity</code> або <code>NegativeInfinity</code>. <em>Примітка. Перевірити інформацію!</em> При цьому значення <code>PositiveInfinity</code> інтерпретується як результат ділення додатнього числа на нуль, а значення <code>NegativeInfinity</code> - як результат ділення відємного числа на нуль. Якщо звужуюче перетворення
+забезпечується методами класу <code>System.Convert</code>, то втрата інформації супроводиться генерацією
+виключення (про виключення пізніше).</p>
+<p><em>Таблиця 8. Можливість звужуючого перетворення типів даних</em></p>
+<table>
+<thead>
+<tr>
+<th>Тип, що перетворюється</th>
+<th>У який тип перетворюється</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Byte</code></td>
+<td><code>Sbyte</code></td>
+</tr>
+<tr>
+<td><code>SByte</code></td>
+<td><code>Byte</code>, <code>UInt16</code>, <code>UInt32</code>, <code>UInt64</code></td>
+</tr>
+<tr>
+<td><code>Int16</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>UInt16</code></td>
+</tr>
+<tr>
+<td><code>UInt16</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code></td>
+</tr>
+<tr>
+<td><code>Int32</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>UInt32</code></td>
+</tr>
+<tr>
+<td><code>UInt32</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>Int32</code></td>
+</tr>
+<tr>
+<td><code>Int64</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>Int32</code>, <code>UInt32</code>, <code>UInt64</code></td>
+</tr>
+<tr>
+<td><code>UInt64</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>Int32</code>, <code>UInt32</code>, <code>Int64</code></td>
+</tr>
+<tr>
+<td><code>Decimal</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>Int32</code>, <code>UInt32</code>, <code>Int64</code>, <code>UInt64</code></td>
+</tr>
+<tr>
+<td><code>Single</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>Int32</code>, <code>UInt32</code>, <code>Int64</code>, <code>UInt64</code></td>
+</tr>
+<tr>
+<td><code>Double</code></td>
+<td><code>Byte</code>, <code>SByte</code>, <code>Int16</code>, <code>UInt16</code>, <code>Int32</code>, <code>UInt32</code>, <code>Int64</code>, <code>UInt6</code></td>
+</tr>
+</tbody>
+</table>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 4.12. Звужуюче перетворення</em></p>
+<pre><code class="language-csharp">public static void Main()
+{
+    int i = 1234567;
+    short s = (short)i;
+    Console.WriteLine(&quot;int - {0}\n short - {1}&quot;, i,s);
+}
+</code></pre>
+<p>Результат виконання:</p>
+<pre><code>  int - 1234567
+  short - -10617
+</code></pre>
+<h2 id="поняття-стеку-і-кучі-значимі-та-посилальні-типи-даних-у-net-і-с">Поняття стеку і кучі. Значимі та посилальні типи даних у .NET і С#</h2>
+<div class="alert alert-note">
+  <div>
+    Звершити розділ
+  </div>
+</div>
+<p><strong>Стек</strong> (<code>Stack</code>) відноситься до області пам&rsquo;яті, підтримуваної процесором, в якій зберігаються локальні змінні.
+Доступ до стека у багато разів швидший, ніж до загальної області пам&rsquo;яті, тому використання стека
+для зберігання даних прискорює роботу вашої програми. У С# розмірні типи (наприклад, цілі
+числа) розташовуються в стеку: для їх значень зарезервована область в стеку, і доступ до неї
+здійснюється по назві змінної.</p>
+<p>Посилальні типи (наприклад, об&rsquo;єкти) розташовуються в <strong>купі</strong> (<code>Heap</code>). <strong>Купа</strong> — це оперативна пам&rsquo;ять
+вашого комп&rsquo;ютера. Доступ до неї здійснюється повільніше, ніж до стека. Коли об&rsquo;єкт
+розташовується в купі, то змінна зберігає лише адресу об&rsquo;єкта. Ця адреса зберігається в стеку. За адресою програма має доступ до самого об&rsquo;єкту, всі дані якого зберігаються в загальній пам&rsquo;яті (купі).</p>
+<p><strong>«Збиральник сміття»</strong> (<code>Garbage Collector</code>) знищує об&rsquo;єкти, розташовані в стеку, кожен раз, коли
+відповідна змінна виходить за область видимості. Таким чином, якщо ви оголошуєте локальну
+змінну в межах функції, то об&rsquo;єкт буде помічений як об&rsquo;єкт для «збирання сміття». І він буде
+видалений з пам&rsquo;яті після завершення роботи функції. Об&rsquo;єкти у купі теж очищаються
+збиральником сміття, після того, як кінцеве посилання на них буде знищено.</p>
+<hr>
+
+  <i class="fas fa-list-alt fa-2x text-success  pr-1 fa-fw"></i>
+<h2 id="задачі">Задачі</h2>
+<p><strong>Задача 1.</strong> Виведіть на екран наступний текст:</p>
+<pre>"Саме знання нікому їсти не дасть."
+                      \І. Я. Франко\</pre>
+<p><strong>Задача 2.</strong> Напишіть програму, яка обчислює суму, добуток, різницю, частку та остачу від ділення двох заданих чисел.</p>
+<p><strong>Задача 3.</strong></p>
+<p>Напишіть програму, яка конвертує суму грн. у євро.</p>
+<p><strong>Задача 4.</strong> Напишіть попередню програму з умовою, що суму у грн. та курс валюти задає користувач.</p>
+<p><strong>Задача 5.</strong></p>
+<p>Написати програму, яка обчислює квадрат введеного числа.</p>
+<p><strong>Задача 6<code>*</code>.</strong></p>
+<p>Написати програму, яка замінює місцями значення двох
+числових змінних без створення третьої змінної.</p>
+<p><strong>Задача 7.</strong> Обрахувати ціну покупки, якщо відомо:</p>
+<ul>
+<li>ціну за одиницю товару;</li>
+<li>кількість товару;</li>
+<li>знижка (у % від загальної суми).</li>
+</ul>
+<p><strong>Задача 8.</strong> Дано катети прямокутного трикутника (вводяться з клавіатури користувачем). Визначити довжину гіпотенузи.</p>
+<p><strong>Задача 9.</strong> У C# немає функції, яка обчислює квадрат числа. Написати програму, яка обчислює квадрат введеного числа.</p>
+<hr>
+
+  <i class="fas fa-question-circle fa-2x text-warning  pr-1 fa-fw"></i>
+<h2 id="контрольні-запитання">Контрольні запитання</h2>
+<ol>
+<li>Що таке тип даних?</li>
+<li>Дайте класифікацію типів даних .NET.</li>
+<li>Що таке змінна? Який синтаксис оголошення змінної.</li>
+<li>Що таке констаната? Який синтаксис оголошення констант?</li>
+<li>Що таке область видимості змінної?</li>
+<li>Які види операторів існують у C#?</li>
+<li>Що таке інкремент та декремент? Яка різниця між постфіксним та
+прфіксним записом цих операторів?</li>
+<li>Що таке літерал? Який синтаксис запису літералів для різних типів
+даних.</li>
+<li>Що таке привдення типів даних?
+10.Яка різниця та синтаксис явного та неявного привдення типів даних?
+11.Опишіть основні характеристики значимих типів даних.
+12.Опишіть основні характеристики посилальних типів даних.</li>
+</ol>
+<hr>
+
+  <i class="fas fa-book fa-2x text-primary  pr-1 fa-fw"></i>
+<h2 id="список-використаних-джерел">Список використаних джерел</h2>
+<ol>
+<li>Albahari, J., &amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.</li>
+<li>Cardelli, L., &amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з <a href="http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf">http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf</a></li>
+<li>Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.</li>
+<li>MSDN. (без дати). Отримано з Microsoft Developer Network: <a href="http://msdn.microsoft.com/">http://msdn.microsoft.com/</a></li>
+<li>Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.</li>
+<li>Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &ldquo;И.Д. Вильямс&rdquo;.</li>
+<li>Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.</li>
+</ol>
+<hr>
+
+  <i class="fas fa-download fa-2x  pr-1 fa-fw"></i>
+<h2 id="додаткові-матеріали-для-завантаження">Додаткові матеріали для завантаження</h2>
+<ol>
+<li><del>Лекція у форматі DOCX <a href="">
+  <i class="fas fa-file-word  pr-1 fa-fw"></i> Завантажити</a></del> (у розробці)</li>
+<li><del>Лекція у форматі PDF <a href="">
+  <i class="fas fa-file-pdf  pr-1 fa-fw"></i> Завантажити</a></del> (у розробці)</li>
+<li>Діаграми до лекції у форматі <code>
+  <i class="fas fa-project-diagram  pr-1 fa-fw"></i>draw.io</code> на <code>
+  <i class="fab fa-github  pr-1 fa-fw"></i>github</code> <a href="https://github.com/kleban/csharp-basics-public/tree/master/diagrams" target="_blank" rel="noopener"> Перейти</a></li>
+</ol>
+<hr>
+<div class="alert alert-note">
+  <div>
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  </div>
+</div>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/csharp/">csharp</a>
+  
+  <a class="badge badge-light" href="/tag/economic-cybernetics/">economic cybernetics</a>
+  
+  <a class="badge badge-light" href="/tag/ostroh-academy/">ostroh academy</a>
+  
+  <a class="badge badge-light" href="/tag/c/">C#</a>
+  
+  <a class="badge badge-light" href="/tag/visual-studio/">visual studio</a>
+  
+  <a class="badge badge-light" href="/tag/.net-framework/">.net framework</a>
+  
+  <a class="badge badge-light" href="/tag/console-application/">console application</a>
+  
+  <a class="badge badge-light" href="/tag/cts/">CTS</a>
+  
+  <a class="badge badge-light" href="/tag/value-type/">Value Type</a>
+  
+  <a class="badge badge-light" href="/tag/reference-type/">Reference Type</a>
+  
+</div>
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/csharp-basics/lecture2/" rel="next">Лекція 2. Основи алгоритмізації</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 9, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2021 Yurii Kleban
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/csharp.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.06e52bf0665167274d459a9300d0fab2.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

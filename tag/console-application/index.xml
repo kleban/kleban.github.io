@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>console application | kleban.page</title>
+    <link>/tag/console-application/</link>
+      <atom:link href="/tag/console-application/index.xml" rel="self" type="application/rss+xml" />
+    <description>console application</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>uk</language><copyright>© 2021 Yurii Kleban</copyright><lastBuildDate>Fri, 09 Apr 2021 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>console application</title>
+      <link>/tag/console-application/</link>
+    </image>
+    
+    <item>
+      <title>Лекція 4. Типи даних та змінні у .NET</title>
+      <link>/courses/csharp-basics/lecture4/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0100</pubDate>
+      <guid>/courses/csharp-basics/lecture4/</guid>
+      <description>&lt;hr&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#поняття-типу-даних-система-типів-net&#34;&gt;Поняття типу даних. Система типів .NET.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#оголошення-та-ініціалізація-змінних-константи&#34;&gt;Оголошення та ініціалізація змінних. Константи&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#оператори-та-вирази&#34;&gt;Оператори та вирази&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#арифметичні-оператори&#34;&gt;Арифметичні оператори&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#інкремент-і-декремент&#34;&gt;Інкремент і декремент&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#логічні-оператори-оператори-відношення&#34;&gt;Логічні оператори. Оператори відношення&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#інші-оператори&#34;&gt;Інші оператори&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#літерали&#34;&gt;Літерали&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#арифметичні-літерали&#34;&gt;Арифметичні літерали&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#логічні-літерали&#34;&gt;Логічні літерали&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#символьні-літерали&#34;&gt;Символьні літерали&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#приведення-типів-даних&#34;&gt;Приведення типів даних&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#поняття-стеку-і-кучі-значимі-та-посилальні-типи-даних-у-net-і-с&#34;&gt;Поняття стеку і кучі. Значимі та посилальні типи даних у .NET і С#&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#задачі&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#контрольні-запитання&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#список-використаних-джерел&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#додаткові-матеріали-для-завантаження&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;поняття-типу-даних-система-типів-net&#34;&gt;Поняття типу даних. Система типів .NET.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Тип&lt;/strong&gt; &lt;em&gt;(загальне поняття)&lt;/em&gt; — це стійка сукупність елементів зі
+спільними характеристиками, яку можна виділити серед множини інших
+об’єктів.&lt;/p&gt;
+&lt;p&gt;Тип даних як у математиці, так і у програмуванні має обмеження
+на значення, що дозволяє зменшити невизначеність у записах та
+уникнути частини помилок. Тип даних вказує яким чином об’єкти цього
+типу можуть взаємодіяти з іншими елементами мови програмування або
+між собою (Джерело: Cardelli &amp;amp; Wegner, 1985).&lt;/p&gt;
+&lt;p&gt;Системи типів у мовах програмування мають ряд властивостей
+та діляться за різними класифікаціями: статичні і динамічні, строго
+типізовані і не строго типізовані тощо. Також на сьогодні існують
+елементи мов програмування, що перемішують дані поняття або
+підміняють їх (наприклад &lt;code&gt;var&lt;/code&gt; у &lt;code&gt;C#&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Система типів &lt;code&gt;.NET&lt;/code&gt; називається &lt;strong&gt;&lt;code&gt;Common Type System&lt;/code&gt;&lt;/strong&gt; (далі &lt;code&gt;CTS&lt;/code&gt;).
+CTS визначає спосіб оголошення використання та керування типами у
+середовищі &lt;code&gt;CLR&lt;/code&gt;, а також є важливою частиною підтримки міжмовної
+інтеграції у середовищі виконання (MSDN, n.d.).&lt;/p&gt;
+&lt;p&gt;Усі типи на платформі &lt;code&gt;.NET Framework&lt;/code&gt; поділяються на типи-значення (&lt;code&gt;Value Type&lt;/code&gt;) та типи-посилання (&lt;code&gt;Rerence Type&lt;/code&gt;). Типи-значення представлені фактичними
+значеннями об’єкта, тобто під час присвоєння змінної відбувається
+створення нової копії об’єкта. Для типів посилань створення нової копії
+не відбувається. Типи посилання вказують на «комірку пам’яті» де
+розміщено значення.&lt;/p&gt;
+&lt;p&gt;У спрощеному вигляді система типів .NET має такий вигляд:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;типи-значення:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;прості типи;&lt;/li&gt;
+&lt;li&gt;структури;&lt;/li&gt;
+&lt;li&gt;перелічувані типи;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;типи-посилання:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;класи;&lt;/li&gt;
+&lt;li&gt;інтерфейси;&lt;/li&gt;
+&lt;li&gt;масиви;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-рис-41-система-типів-net&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/media/courses/csharp-basics/svg/lecture-4-types.svg&#34; data-caption=&#34;Рис. 4.1. Система типів .NET&#34;&gt;
+
+
+  &lt;img src=&#34;/media/courses/csharp-basics/svg/lecture-4-types.svg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Рис. 4.1. Система типів .NET
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ 
+&lt;/center&gt;
+&lt;p&gt;Варто також згадати, що типи даних, які підтримуються
+компілятором напряму і знаходяться у &lt;code&gt;.NET Framework Class Library&lt;/code&gt;
+(&lt;code&gt;FCL&lt;/code&gt;) називаються примітивними. Оскільки типи повинні бути
+універсальними між різними мовами, то розрізняються &lt;code&gt;FCL&lt;/code&gt; типи та типи
+конкретної мови програмування (Також варто відмітити, що існує загальномовна специфікація типів (&lt;code&gt;Common Language Specification&lt;/code&gt;), проте відповідність
+їй не обов’язкова). По суті типи конкретної мови
+програмування є псевдонімами &lt;code&gt;FCL&lt;/code&gt; типів. Наприлад, &lt;code&gt;int&lt;/code&gt; у C# — це Int32
+у FCL, проте записати можна обидва варіанти:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;int a = 0;
+Int32 b = 0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Розглянемо примітивні типи даних C# та їх відмінності
+(табл. 4.1).&lt;/p&gt;
+&lt;center&gt;_Таблиця 4.1. Примітивні типи C# та їх характеристики (Биллиг, 2005)_&lt;/center&gt;
+&lt;table class=&#34;table table-bordered&#34; style=&#34;width:100%&#34;&gt;
+  &lt;tr&gt;
+    &lt;th colspan=4&gt;&lt;center&gt;Цілочисельні типи&lt;/center&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th style=&#34;width: 25%&#34;&gt;Назва&lt;/th&gt;
+    &lt;th style=&#34;width: 25%&#34;&gt;FLC-тип&lt;/th&gt;
+    &lt;th style=&#34;width: 30%&#34;&gt;Значення&lt;/th&gt;
+    &lt;th style=&#34;width: 20%&#34;&gt;Розмір, біт&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;sbyte &lt;/td&gt;
+    &lt;td&gt;System.SByte &lt;/td&gt;
+    &lt;td&gt;$$[-128;127]$$&lt;/td&gt;
+    &lt;td&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;byte&lt;/td&gt;&lt;td&gt;System.Byte&lt;/td&gt;&lt;td&gt;$$[0;255]$$&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;short&lt;/td&gt;&lt;td&gt; System.Short&lt;/td&gt;&lt;td&gt;$$[-32768;32767]$$&lt;/td&gt;&lt;td&gt; 16&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;ushort&lt;/td&gt;&lt;td&gt; System.UShort&lt;/td&gt;&lt;td&gt;$$[0;65535]$$&lt;/td&gt;&lt;td&gt; 16&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt; System.Int32&lt;/td&gt;&lt;td&gt;$$≈(-2*10^9;2*10^9)$$&lt;/td&gt;&lt;td&gt; 32&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;uint&lt;/td&gt;&lt;td&gt; System.UInt32&lt;/td&gt;&lt;td&gt;$$≈(0;4*10^9)$$&lt;/td&gt;&lt;td&gt; 32&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;long&lt;/td&gt;&lt;td&gt; System.Int64&lt;/td&gt;&lt;td&gt;$$≈(-9*10^{18};9*10^{18})$$&lt;/td&gt;&lt;td&gt; 64&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;ulong&lt;/td&gt;&lt;td&gt; System.UInt64&lt;/td&gt;&lt;td&gt;$$≈(0;18*10^{18})$$&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th colspan=4&gt;&lt;center&gt;Числові типи з дробовою частиною&lt;/center&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th style=&#34;width: 25%&#34;&gt;Назва&lt;/th&gt;
+    &lt;th style=&#34;width: 25%&#34;&gt;FLC-тип&lt;/th&gt;
+    &lt;th style=&#34;width: 30%&#34;&gt;Значення&lt;/th&gt;
+    &lt;th style=&#34;width: 20%&#34;&gt;Точність, знаків після коми&lt;/th&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;float&lt;/td&gt;&lt;td&gt;System.Single&lt;/td&gt;&lt;td&gt;$$≈(+1.5*10^{-45}; +3.4*10^{38})$$&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;double&lt;/td&gt;&lt;td&gt;System.Double&lt;/td&gt;&lt;td&gt;$$≈(+5.0*10^{-324}; +1.7*10^{308})$$&lt;/td&gt;&lt;td&gt;15-16&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;System.Decimal&lt;/td&gt;&lt;td&gt;$$≈(+1.0*10^{-28}; +7.9*10^{28})$$&lt;/td&gt;&lt;td&gt;28-29&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;th colspan=4&gt;&lt;center&gt;Логічний тип&lt;/center&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Назва&lt;/th&gt;
+    &lt;th&gt;FLC-тип&lt;/th&gt;
+    &lt;th&gt;Значення&lt;/th&gt;
+    &lt;th&gt;Розмір, біт&lt;/th&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;bool&lt;/td&gt;&lt;td&gt;System.Boolean&lt;/td&gt;&lt;td&gt;true/false&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;
+    &lt;th colspan=4&gt;&lt;center&gt;Символи та рядки&lt;/center&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Назва&lt;/th&gt;
+    &lt;th&gt;FLC-тип&lt;/th&gt;
+    &lt;th&gt;Значення&lt;/th&gt;
+    &lt;th&gt;Розмір, біт&lt;/th&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;char&lt;/td&gt;&lt;td&gt;System.Char&lt;/td&gt;&lt;td&gt;U+0000 - U+ffff&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;System.String&lt;/td&gt;&lt;td colspan=2&gt;Рядок символів Unicode&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+    &lt;th colspan=4&gt;&lt;center&gt;Об&#39;єктний тип&lt;/center&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Назва&lt;/th&gt;
+    &lt;th&gt;FLC-тип&lt;/th&gt;
+    &lt;th colspan=2&gt;Притмітки&lt;/th&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;object&lt;/td&gt;&lt;td&gt;System.Object&lt;/td&gt;&lt;td colspan=2&gt;Базовий тип для усіх інших&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Розглянемо коротко структури, класи та перелічувані типи даних.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Структури.&lt;/strong&gt; Структура є першим визначеним користувачем
+типом, який ми розглянемо. Схожі &lt;code&gt;UDT&lt;/code&gt; (&lt;code&gt;User Defined Types&lt;/code&gt;) є і у мовах
+&lt;code&gt;Pascal&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt; тощо. По суті структури у C# є спрощеною версією класів із
+мінімальними відмінностями та наслідуєть не напряму від &lt;code&gt;System.Object&lt;/code&gt;,
+а від &lt;code&gt;System.ValueType&lt;/code&gt;. Структури в С# створюються за допомогою
+ключового слова &lt;strong&gt;&lt;code&gt;struct&lt;/code&gt;&lt;/strong&gt; (Лістинг 4.1).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.1. Структура Point&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{csharp,&#34;&gt;public struct Point
+{
+    // Поле структури
+    public int x, y;
+  
+    //Параметризований конструктор
+    public Point(int xPosition, int yPosition) {
+        x = xPosition;
+        y = yPosition;
+    }
+    
+    //Метод структури
+    public void Display() {
+        System.Console.WriteLine(&amp;quot;({0}, {1})&amp;quot;, x, y);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Класи.&lt;/strong&gt; Клас є посилальним типом даних, що неявно
+наслідується від &lt;code&gt;System.Object&lt;/code&gt;. У класі оголошуються поля, методи,
+властивості, конструктори, події та інші елементи, що визначають його
+дані та можливості. Оголошення класу відбувається із використанням
+ключовго слова class (лістинг 4.2).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.2. Клас Student.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{csharp}&#34;&gt;public class Student
+{
+    private int _age;
+    
+    public int GetAge() 
+    {
+      return _age;
+    }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Перелічувані типи.&lt;/strong&gt; Перелічуваний тип (&lt;code&gt;enum) – це програмна конструкція, що дозволяє у межах типу даних визначити альтернативні значення для базового примітивного типу. Перелічувані типи наслідують напряму &lt;/code&gt;System.Enum`. Перелічувані типи мають значні обмеження у
+можливостях порівняно з класами або структурами. Оголошення
+перелічуваного типу даних відбувається за допомогою ключового слова
+enum (лістинг 4.3).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.3. Перелічуваний тип Character.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;public enum Character
+{
+    Student = 0,
+    Teacher = 1,
+    Dekan = 2,
+    Rector = 3
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Розглянемо відмінності між типами-посиланнями та типами
+значеннями (Albahari &amp;amp; Albahari, 2012).&lt;/p&gt;
+&lt;center&gt;
+_Таблиця 4.2. Порівняння типів-значень та типів-посилань у C#_
+&lt;/center&gt;
+&lt;table style=&#34;width:100%&#34;&gt;
+  &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;th style=&#34;width:50%&#34;&gt;&lt;center&gt;Тип-значення&lt;/center&gt;&lt;/th&gt;
+  &lt;th style=&#34;width:50%&#34;&gt;&lt;center&gt;Тип-посилання&lt;/center&gt;&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;
+&lt;pre&gt;
+public &lt;b&gt;struct&lt;/b&gt; Point
+{
+    public int X { get;set; }
+    public int Y { get;set; }
+}
+&lt;/pre&gt;
+    &lt;/td&gt;
+        &lt;td&gt;
+&lt;pre&gt;
+public &lt;b&gt;class&lt;/b&gt; Point
+{
+    public int X { get;set; }
+    public int Y { get;set; }
+}
+&lt;/pre&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;3&lt;/td&gt;
+  &lt;td colspan=2&gt;
+  &lt;pre&gt;
+var p1 = new Point { X = 5, Y = 7 };
+var p2 = p1;
+p2.X = 10;
+Console.WriteLine(&#34;p1: X = {0}&#34;, p1.X);
+Console.WriteLine(&#34;p2: X = {0}&#34;, p2.X);
+  &lt;/pre&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;
+&lt;pre&gt;
+p1: X = 5
+p2: X = 10
+&lt;/pre&gt;
+    &lt;/td&gt;
+        &lt;td&gt;
+&lt;pre&gt;
+p1: X = 10
+p2: X = 10
+&lt;/pre&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;5&lt;/td&gt;
+  &lt;td&gt;&lt;div class=&#34;mermaid&#34;&gt;
+graph TD;
+  p1--&gt;X1[X=5];
+  p1--&gt;Y1[Y=7];
+  p2--&gt;X2[X=10];
+  p2--&gt;Y2[Y=7];
+&lt;/div&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;div class=&#34;mermaid&#34;&gt;
+graph TD;
+  p1--&gt;REF[object_ref];
+  p2--&gt;REF[object_ref];
+  REF--&gt;X3[X=10];
+  REF--&gt;Y3[Y=7];
+&lt;/div&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;Як видно із табл. 4.2 тип-значення створює копію елемента у
+пам’яті і працює з копією, не впливаючи на початкові дані. Тип-посилання вказує на ділянку пам’яті і під час зміни значення поля впливає на усі об’єкти, що «прив’язані» до цієї змінної.&lt;/p&gt;
+&lt;h2 id=&#34;оголошення-та-ініціалізація-змінних-константи&#34;&gt;Оголошення та ініціалізація змінних. Константи&lt;/h2&gt;
+&lt;p&gt;Змінна у програмуванні є по суті назвою, що вказує на деякий
+об’єкт у пам’яті. Також можна сказати, що змінна вказує на адресу у
+пам’яті і надає доступ до значення, що знаходиться за цією адресою.&lt;/p&gt;
+&lt;p&gt;Для оголошення змінної використовується запис у вигляді:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;тип ім’я_змінної;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Правила іменування змінних у C#:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ім’я змінної може починатися із латинської букви або
+знаку «_».&lt;/li&gt;
+&lt;li&gt;Ім’я змінної може складатися із латинських букв, цифр
+або знаку «_».&lt;/li&gt;
+&lt;li&gt;Якщо ім’я змінної співпадає із ключовим словом мови
+програмування, то потрібне використовувати його із
+знаком @ (Наприклад: &lt;code&gt;int @class = 1;&lt;/code&gt; ).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.4. Приклад оголошення змінних у C#.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int a;
+  float myNumber;
+  double _salary;
+  string name;
+  bool isPresent;
+  decimal discount;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Під час оголошення змінної створюється екземпляр вказаного
+типу. Таким чином, можна сказати, що можливості конкретної змінної
+визначаються можливостями типу даних. Наприклад, у змінну
+цілочисельного типу не можна записати рядок (&lt;code&gt;string&lt;/code&gt;). Також важливо
+відмітити, що у C# не можна змінити тип даних під час існування змінної.
+До того як змінна буде використана у коді програми вона повинна
+бути оголошеною. Компілятор перевіряє наявність оголошення змінної у
+момент її використання.&lt;/p&gt;
+&lt;p&gt;Будь-яка змінна до використання повинна бути ініціалізованою.
+Ініціалізація змінних – процес виділення у «пам’яті» під конкретний тип
+даних із записом значення. Також ініціалізацію змінних можна пояснити
+як надання конкретного значення змінній (лістинг 4.5).&lt;/p&gt;
+&lt;p&gt;Ініціалізацію змінної можна провести одразу під час оголошення
+або у процесі виконання програми (динамічна ініціалізація). Синтаксис
+ініціалізації змінної під час оголошення:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;тип ім’я_зміннної = значення;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Оператор &lt;strong&gt;&lt;code&gt;=&lt;/code&gt;&lt;/strong&gt; у записі означає «присвоїти». «Дорівнює»
+записується як &lt;strong&gt;&lt;code&gt;==&lt;/code&gt;&lt;/strong&gt; і є оператором відношення.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.5. Ініціалізація змінних.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int a = 10;
+  float myNumber = 0.2;
+  double _salary = 100.9;
+  string name = &amp;quot;Ivan&amp;quot;;
+  bool isPresent = true;
+  decimal discount = 0.02;
+  char c = &#39;R&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Під час оголошення двох і більше змінних однакового типу даних
+списком (розділення комами) можна здійснювати вибіркове присвоєння
+значень (лістинг 4.6).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.6. Оголошення та ініціалізація змінних.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int a = 10, b, c = 20;
+  char d, f = &#39;F&#39;, s = &#39;3&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Динамічна ініціалізація змінних передбачає присвоєння значення
+у процесі виконання програми, наприклад, за результатами обчислень
+(лістинг 4.7).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.7. Динамічна ініціалізація змінних.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  double a = 5, b = 7; //Катети
+  double c; // гіпотенуза
+  c = Math.Sqrt(a * a + b * b);
+  Console.WriteLine(&amp;quot;Гіпотенуза дорівнює - {0:F}&amp;quot;, c);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;У C# є можливість оголошення та ініціалізації констант.
+&lt;code&gt;Константа&lt;/code&gt; у математиці є величиною, значення якої не
+змінюється. Константа є протиставленням до змінної. У програмуванні
+&lt;code&gt;константа&lt;/code&gt; – це спосіб запису інформації, зміна якої заборонена. Значення
+констати повинно бути відомим у момент компіляції програми. По суті
+константу потрібно ініціалізувати у момент оголошення (лістинг 4.8).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.8. Оголошення та ініціалізація констант.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  const string spec = &amp;quot;економічна кібернетика&#39;;
+  const double PI = 3.14;
+  const bool Truth = true;
+  43 з 111
+  const char _iSymbol = &#39;i&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Область видимості та час існування змінної.&lt;/strong&gt; Усі змінні до цього
+часу ми оголошували у межах функції &lt;code&gt;Main()&lt;/code&gt;. Насправді змінна може
+бути оголошеною у межах різних блоків програми. Блоки програми
+відкремлються «фігурними» дужками (&lt;code&gt;{}&lt;/code&gt;). Блок коду визначає область
+видимості та час існування змінної. За межами цього блоку змінної не
+існує і доступу до неї немає. Розглянемо приклад коду (лістинг 4.9).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.9. Область видимості змінної.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;static void Main(string[] args)
+{
+   int x; // Змінна відома у межах метода Main()
+   x = 10;
+   if (x == 10)
+   {
+     // Початок нової області видимості
+     int у = 20; // Змінна відома лише цьому блоку
+     Console.WriteLine(&amp;quot;х та у: &amp;quot; + x + &amp;quot; &amp;quot; + у);
+     x = у * 2;
+   }
+   // y = 100; //- помилка &amp;quot;y&amp;quot; - не існує
+   Console.WriteLine(&amp;quot;х : &amp;quot; + x);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Якщо видалити коментування у рядку &lt;code&gt;y = 100&lt;/code&gt;, то компілятор
+проінформує про помилку &lt;code&gt;~ «Змінна ‘y’ не існує у даному контексті»&lt;/code&gt;,
+тобто вона поза областю видимості і доступу немає.&lt;/p&gt;
+&lt;p&gt;Зміні створюються у момент входження у область видимості і
+видаляються у момент виходу з неї. Таким чином можна зрозуміти, що
+повторне входження у область видимості створює змінну із початковим
+значенням повторно і не зберігає значення між викликами (лістинг 4.10).&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.10. Область видимості змінних.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int x = 10;
+  
+  if (x == 10) {
+     x = x + 1;
+     int a = x;
+  }
+  
+  if (x == 11) {
+     x = x + 1;
+     int a = x;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;З прикладу лістингу 4.10. видно, що змінна a оголошена двічі,
+проте в різних областях видимості. У таком випадку помилки компіляції
+не буде. Отже, час існування змінної визначається областю її видимості.&lt;/p&gt;
+&lt;h2 id=&#34;оператори-та-вирази&#34;&gt;Оператори та вирази&lt;/h2&gt;
+&lt;p&gt;У С# передбачений широкий набір операторів, які дають в руки програмістові потужні важелі
+управління при створенні всіляких виразів і їх обчисленні. У С# є чотири загальні класи операторів:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;арифметичні;&lt;/li&gt;
+&lt;li&gt;порозрядні;&lt;/li&gt;
+&lt;li&gt;логічні;&lt;/li&gt;
+&lt;li&gt;оператори відношення.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;арифметичні-оператори&#34;&gt;Арифметичні оператори&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Таблиця 3. Арифметичні оператори&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Оператор&lt;/th&gt;
+&lt;th&gt;Дія&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;+&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Додавання&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;-&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Віднімання, унарний мінус&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;&lt;code&gt;*&lt;/code&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;Множення&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;/&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Ділення&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;%&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Ділення по модулю&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;--&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Декремент&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;++&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Інкремент&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Дія С#-операторів &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt; і &lt;code&gt;/&lt;/code&gt; збігається з дією аналогічних операторів в будь-якій іншій мові програмування (і в алгебрі). Їх можна застосовувати до даних будь-якого вбудованого числового типу.&lt;/p&gt;
+&lt;p&gt;Перш за все хочу нагадати, що після застосування оператора ділення (&lt;code&gt;/&lt;/code&gt;) до цілого числа залишок буде відкинутий. Наприклад, результат цілочисельного ділення &lt;code&gt;10/3&lt;/code&gt; дорівнюватиме &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Залишок від ділення можна отримати за допомогою оператора ділення по модулю (%). Цей оператор працює практично так само, як в інших мовах програмування: повертає залишок від ділення без остачі. Наприклад, &lt;code&gt;10%3&lt;/code&gt; рівне &lt;code&gt;1&lt;/code&gt;. У С# оператор &lt;code&gt;%&lt;/code&gt; можна застосувати як до цілочисельних типів, так і типам з плаваючою крапкою. Наприклад, &lt;code&gt;10,0%3,0&lt;/code&gt; також рівне &lt;code&gt;1&lt;/code&gt;. (У мовах C/C++ операції ділення по модулю застосовні лише до цілочисельних типів.)&lt;/p&gt;
+&lt;h3 id=&#34;інкремент-і-декремент&#34;&gt;Інкремент і декремент&lt;/h3&gt;
+&lt;p&gt;Оператори інкремента (&lt;code&gt;++&lt;/code&gt;) і декремента (&lt;code&gt;--&lt;/code&gt;) збільшують і зменшують значення операнда на
+одиницю, відповідно. Як буде показано нижче, ці оператори володіють спеціальними
+властивостями, які роблять їх цікавими для розгляду. Отже, оператор інкремента виконує складання операнда з числом 1, а оператор декремента віднімає 1 зі свого операнда. Це означає, що інструкція&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;х = х + 1;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;аналогічна такій інструкції:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;х++&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Так само інструкція&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;х = х - 1;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;аналогічна такій інструкції:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;х--&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Оператори інкремента і декремента можуть стояти як перед своїм операндом, так і після нього.
+Наприклад, інструкцію &lt;code&gt;х = х - 1;&lt;/code&gt; можна переписати у вигляді префіксної форми&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;++х; // Префіксна форма оператора інкремента
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;або у вигляді постфіксної форми:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;х++; // Постфіксна форма оператора інкремента
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;У попередньому прикладі не мало значення, в якій формі був застосований оператор інкремента:
+префіксній або постфіксній. Але якщо оператор інкремента або декремента використовується як
+частина більшого виразу, то форма його використання має важливе значення.&lt;/p&gt;
+&lt;p&gt;Якщо такий оператор застосований в префіксній формі, то С# спочатку виконає цю операцію, аби операнд набув нового значення, яке потім буде використано останньою частиною вираження. Якщо ж оператор застосований в постфіксній формі, то С# використовує у вираженні його старе значення, а потім виконає операцію, в результаті якої операнд знайде нове значення. Розглянемо наступний фрагмент коду:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;х = 10; 
+int a = ++х;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Результат: a = 11;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;х = 10; 
+int a = х++;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Результат: a = 10;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;логічні-оператори-оператори-відношення&#34;&gt;Логічні оператори. Оператори відношення&lt;/h3&gt;
+&lt;p&gt;Результат виконання операторів відношення і логічних операторів має тип &lt;code&gt;bool&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Таблиця 3. Оператори відношення і логічні оператори&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Оператор&lt;/th&gt;
+&lt;th&gt;Дія&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;==&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Рівно&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Не рівно&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Більше&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Менше&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Більше або рівно&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Менше або рівно&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;І&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Або&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;^&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Виключаюче або&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;||&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Скорочене або&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Скорочене і&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;!&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Не&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;У С# на рівність або нерівність можна порівнювати (відповідно, за допомогою операторів &lt;code&gt;==&lt;/code&gt; та &lt;code&gt;!=&lt;/code&gt;) всі об&amp;rsquo;єкти. Але такі оператори порівняння, як &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt; або &lt;code&gt;&amp;gt;=&lt;/code&gt;, можна застосовувати лише до типів, які підтримують відношення впорядкування. Це означає, що всі оператори відношення можна застосовувати до всіх числових типів. Проте значення типу &lt;code&gt;bool&lt;/code&gt; можна порівнювати лише на рівність або нерівність, оскільки значення &lt;code&gt;true&lt;/code&gt; і &lt;code&gt;false&lt;/code&gt; не упорядковуються. Наприклад, в С# порівняння &lt;code&gt;true &amp;gt; false&lt;/code&gt; не має сенсу.&lt;/p&gt;
+&lt;p&gt;Що стосується логічних операторів, то їх операнди повинні мати тип &lt;code&gt;bool&lt;/code&gt;, і результат логічної операції завжди матиме тип &lt;code&gt;bool&lt;/code&gt;. Логічні оператори &lt;em&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/em&gt;, &lt;em&gt;&lt;code&gt;|&lt;/code&gt;&lt;/em&gt;, &lt;em&gt;&lt;code&gt;^&lt;/code&gt;&lt;/em&gt; і &lt;em&gt;&lt;code&gt;!&lt;/code&gt;&lt;/em&gt; виконують базові логічні операції &lt;code&gt;І&lt;/code&gt;, &lt;code&gt;АБО&lt;/code&gt;, &lt;code&gt;взаємовиключення&lt;/code&gt; і &lt;code&gt;НЕ&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.11. Оператори відношення та логічні оператори.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;static void Main(string[] args)
+{
+    int a = 10, b = 11;
+    bool abool = true, bbool = false;
+
+    if(a &amp;gt; b) Console.WriteLine(&amp;quot;a &amp;gt; b&amp;quot;);                             //false
+    if(a &amp;lt; b) Console.WriteLine(&amp;quot;a &amp;lt; b&amp;quot;);                             //true
+
+    if(a == b) Console.WriteLine(&amp;quot;a == b&amp;quot;);                           //false
+    if(a != b) Console.WriteLine(&amp;quot;a != b&amp;quot;);                           //true
+    if (abool || bbool) Console.WriteLine(&amp;quot;abool || bbool - true&amp;quot;);   //true
+    if (abool &amp;amp;&amp;amp; bbool) Console.WriteLine(&amp;quot;abool &amp;amp;&amp;amp; bbool - true&amp;quot;);   //false
+    if (abool ^ bbool) Console.WriteLine(&amp;quot;abool ^ bbool - true&amp;quot;);     //true
+    if (!abool) Console.WriteLine(&amp;quot;!abool - true&amp;quot;);                   //false
+} 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;інші-оператори&#34;&gt;Інші оператори&lt;/h3&gt;
+&lt;p&gt;Окрім базовового набору, у C# доступний набір і інших операторів, що використовуються під час написання програм. Опишемо їх коротко у вигляді таблиць з описами.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Таблиця. Інші оператори&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Дія&lt;/th&gt;
+&lt;th&gt;Оператор&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Доступ до членів&lt;/td&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Індексація&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;**[]**&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Приведення типів&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;()&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Тернарний оператор&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;?:&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Створення нового об’єкта&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;new()&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Інформація про тип даних&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;is&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;sizeof&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;typeof&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Управління виключеннями переповнення&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;checked&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;unchecked&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Є також і інші оператори у C#. Ми розглянули лише основні, які будемо використовувати у нашому
+курсі.&lt;/p&gt;
+&lt;p&gt;При присворенні виразів аналогічно до алгебри враховується пріоритет операцій:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Таблиця 5. Пріоритет операцій&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Пріор.&lt;/th&gt;
+&lt;th&gt;Оператор&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;()&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;[]&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;.&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;(постфікс)++&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;(постфікс)––&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;new&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;sizeof&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;typeof&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;unchecked&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;!&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;~&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;(ім’я типу)&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;+(унарний)&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;–(унарний)&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;++(префікс)&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;––(префікс)&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;*&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;/&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;%&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;+&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;–&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;=&amp;gt;&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;is&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;==&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;^&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;||&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;?:&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;+=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;–=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;*=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;/=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;%=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;&amp;amp;=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;|=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;^=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;&amp;lt;&amp;lt;=&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;&amp;gt;&amp;gt;=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Оператор присвоєння має додаткові можливості.&lt;/p&gt;
+&lt;p&gt;Присвоєння можна проводити наступним чином:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int a, b, c; 
+  int d = c = b = c = 3.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;У результаті виконання коду усі змінні будуть ініціалізовані значенням &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;У &lt;code&gt;C#&lt;/code&gt;, так само як і у &lt;code&gt;С++&lt;/code&gt;, є складений оператор присвоєння. Для виразу &lt;code&gt;x = x + 10&lt;/code&gt; складений оператор матиме вигляд: &lt;code&gt;x += 10&lt;/code&gt;. Складений оператор означає додавання до поточного значення певного числа. Аналогічні операції можна застосовувати і до
+інших операторів: &lt;strong&gt;&lt;code&gt;-=&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;*=&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;/=&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;%=&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;літерали&#34;&gt;Літерали&lt;/h2&gt;
+&lt;p&gt;У програмах на мовах високого рівня (у тому числі C#) &lt;strong&gt;літералами&lt;/strong&gt; називають послідовність
+символів, що входять у алфавіт мови програмування, які забезпечують явне представлення значень, які використовуються для позначення початкових значень в оголошенні членів класів, змінних і
+констант в методах класу. Розрізняються літерали &lt;code&gt;арифметичні&lt;/code&gt; (різних типів), &lt;code&gt;логічні&lt;/code&gt;, &lt;code&gt;символьні&lt;/code&gt;
+(включаючи Escape-послідовності), &lt;code&gt;рядкові&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;арифметичні-літерали&#34;&gt;Арифметичні літерали&lt;/h3&gt;
+&lt;p&gt;Арифметичні літерали кодують значення різних (арифметичних) типів. Тип арифметичного
+літерала визначається наступними інтуїтивно зрозумілими зовнішніми ознаками:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;стандартним зовнішнім виглядом&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Значення цілочисельного типу зазвичай кодується інтуїтивно
+зрозумілою послідовністю символів $ 1, 2, 3, &amp;hellip; N$.&lt;/p&gt;
+&lt;p&gt;Значення чисел з дробовою частиною також передбачає
+стандартний вигляд (крапка-роздільник між цілою і дробовою частиною, або наукова або
+експоненціальна нотація - $1.2500E+052$).&lt;/p&gt;
+&lt;p&gt;Шістнадцяткове представлення цілочисельного значення кодується шістнадцятковим літералом, що складається з символів $0, &amp;hellip;, 9$, а також $&amp;lsquo;a&amp;rsquo; &amp;hellip;, &amp;lsquo;f&amp;rsquo;$, або $&amp;lsquo;A&amp;rsquo; &amp;hellip;,
+&amp;lsquo;F&amp;rsquo;$ з префіксом &lt;code&gt;&#39;0x&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;власне значенням&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Так, накприклад, 32768 ніяк не може бути значенням типу &lt;code&gt;short&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;додатковим суфіксом&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Суфікси &lt;code&gt;l&lt;/code&gt;, &lt;code&gt;L&lt;/code&gt; відповідають типові &lt;code&gt;long&lt;/code&gt;; &lt;code&gt;ul&lt;/code&gt;, &lt;code&gt;UL&lt;/code&gt; - &lt;code&gt;unsigned long&lt;/code&gt;; &lt;code&gt;f&lt;/code&gt;, &lt;code&gt;F&lt;/code&gt; - &lt;code&gt;float&lt;/code&gt;; &lt;code&gt;d&lt;/code&gt;, &lt;code&gt;D&lt;/code&gt; -
+&lt;code&gt;double&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt; - &lt;code&gt;decimal&lt;/code&gt;. Значення типу &lt;code&gt;double&lt;/code&gt; кодуються також без префікса з вказанням розділювача дробової частини, наприклад, $25.0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;логічні-літерали&#34;&gt;Логічні літерали&lt;/h3&gt;
+&lt;p&gt;До логічних літералів відносяться наступні послідовності символів: &lt;code&gt;true&lt;/code&gt; і &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;символьні-літерали&#34;&gt;Символьні літерали&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Символьні літерали&lt;/strong&gt; - це взяті в одинарні лапки символи, що вводяться з клавіатури, наприклад, &lt;code&gt;&#39;X&#39;&lt;/code&gt;, &lt;code&gt;&#39;p&#39;&lt;/code&gt;, &lt;code&gt;&#39;Q&#39;&lt;/code&gt;, &lt;code&gt;&#39;7&#39;&lt;/code&gt;, а також цілочисельні значення в діапазоні від $0$ до $65535$, перед якими розташовується конструкція вигляду &lt;code&gt;(char)&lt;/code&gt; - операція явного приведення до типу &lt;code&gt;char&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Наступні взяті в одинарні лапки послідовності символів є &lt;code&gt;Escape&lt;/code&gt;-послідовностями. Ця категорія
+літералів використовується для створення додаткових ефектів (дзвінок), простого форматування
+інформації, що виводиться, і кодування символів при виводі і порівнянні (у виразах порівняння).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Таблиця 6.Символьні Escape-послідовності&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Команда&lt;/th&gt;
+&lt;th&gt;Пояснення&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\a&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Звуковий сигнал&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\b&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Повернення на одну позицію назад&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\f&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Перехід на нову сторінку&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\n&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Перехід на новий рядок&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\r&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Повернення каретки&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\t&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Горизонтальна табуляція&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\v&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Вертикальна табуляція&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\0&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Нуль&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\&#39;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Одинарна лапка&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Подвійна лапка&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;\\&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Зворотна коса лінія&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Рядкові літерали&lt;/strong&gt; - це послідовність символів і символьних &lt;code&gt;Escape&lt;/code&gt;-послідовностей, взятих у подвійні
+лапки.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Verbatim string&lt;/code&gt;&lt;/strong&gt; - рядковий літерал, що інтерпретується компілятором так, як він записаний. &lt;code&gt;Escape&lt;/code&gt;-послідовності сприймаються строго як послідовності символів.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Verbatim string&lt;/code&gt; представляється за допомогою символу &lt;strong&gt;&lt;code&gt;@&lt;/code&gt;&lt;/strong&gt;, який розташовується безпосередньо
+перед текстом, взятим в парні подвійні лапки. Представлення подвійних лапок в
+&lt;code&gt;Verbatim string&lt;/code&gt; забезпечується їх дублюванням.&lt;/p&gt;
+&lt;p&gt;Пара літералів (другий - Verbatim string)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  ...&amp;quot;c:\\My Documents\\sample.txt&amp;quot;...
+  ...@&amp;quot;c:\My Documents\sample.txt&amp;quot;...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;мають одне і те ж значення: &lt;code&gt;c:\My Documents\sample.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Рядкові літерали є об&amp;rsquo;єктами типу &lt;code&gt;string&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;приведення-типів-даних&#34;&gt;Приведення типів даних&lt;/h2&gt;
+&lt;p&gt;Приведення типів - один з аспектів безпеки будь-якої мови програмування.&lt;/p&gt;
+&lt;p&gt;Використовувані в програмі типи характеризуються власними діапазонами значень, які
+визначаються властивостями типів, у тому числі і розміром області пам&amp;rsquo;яті, призначеної для
+кодування значень відповідного типу. При цьому області значень різних типів перетинаються.&lt;/p&gt;
+&lt;p&gt;Багато значень можна виразити більш ніж одним типом. Наприклад, значення 4 можна
+представити як значення типу &lt;code&gt;sbyte&lt;/code&gt;, &lt;code&gt;byte&lt;/code&gt;, &lt;code&gt;short&lt;/code&gt;, &lt;code&gt;ushort&lt;/code&gt;, &lt;code&gt;int&lt;/code&gt;, &lt;code&gt;uint&lt;/code&gt;, &lt;code&gt;long&lt;/code&gt;, &lt;code&gt;ulong&lt;/code&gt;. При цьому в програмі все повинно бути влаштовано так, щоб логіка перетворення значень одного типу до іншого 
+була зрозумілою, а результати цих перетворень - передбачувані.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Інколи приведення значення до іншого типу відбувається автоматично.&lt;/em&gt; Такі перетворення
+називаються &lt;strong&gt;неявними&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Але у ряді випадків перетворення вимагає додаткової уваги з боку програміста, який повинен &lt;strong&gt;явним&lt;/strong&gt;
+чином вказувати необхідність перетворення, використовуючи вирази приведення типу або звертаючись до спеціальних методів перетворення, визначеним в класі &lt;code&gt;System.Convert&lt;/code&gt;, які забезпечують перетворення значення одного типу до значення іншого.&lt;/p&gt;
+&lt;p&gt;Перетворення типу створює значення нового типу, еквівалентне значенню старого типу, проте при
+цьому не обов&amp;rsquo;язково зберігається ідентичність (або точні значення) двох об&amp;rsquo;єктів.&lt;/p&gt;
+&lt;p&gt;Розрізняють &lt;strong&gt;розширююче&lt;/strong&gt; та &lt;strong&gt;звужуюче&lt;/strong&gt; перетворення.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Розширююче перетворення&lt;/strong&gt; - значення одного типу перетвориться до значення іншого типу, яке має
+такий же або більший розмір. Наприклад, значення, представлене у вигляді 32-розрядного цілого
+числа із знаком, може бути перетворене в 64-розрядне ціле число із знаком. Розширене
+перетворення вважається безпечним, оскільки вихідна інформація при такому перетворенні не
+спотворюється.&lt;/p&gt;
+&lt;p&gt;Можливість розширеного перетворення представлено у таблиці нижче.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Таблиця 7. Можливість розширеного перетворення типів даних&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Тип, що перетворюється&lt;/th&gt;
+&lt;th&gt;У який тип перетворюється&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Single&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;SByte&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Single&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Int16&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Single&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UInt16&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Single&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Char&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Single&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Int32&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UInt32&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;Double&lt;/code&gt;, &lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Int64&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UInt64&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Single&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Double&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Звужуюче перетворення&lt;/strong&gt; - значення одного типу перетвориться до значення іншого типу, яке має
+менший розмір (з 64-розрядного в 32-розрядне). Таке перетворення потенційне небезпечне втратою
+значення. Звужуючі перетворення можуть призводити до втрати інформації.&lt;/p&gt;
+&lt;p&gt;Якщо тип, до якого здійснюється перетворення, не може правильно передати значення джерела, то результат
+перетворення виявляється дорівнює константі &lt;code&gt;PositiveInfinity&lt;/code&gt; або &lt;code&gt;NegativeInfinity&lt;/code&gt;. &lt;em&gt;Примітка. Перевірити інформацію!&lt;/em&gt; При цьому значення &lt;code&gt;PositiveInfinity&lt;/code&gt; інтерпретується як результат ділення додатнього числа на нуль, а значення &lt;code&gt;NegativeInfinity&lt;/code&gt; - як результат ділення відємного числа на нуль. Якщо звужуюче перетворення
+забезпечується методами класу &lt;code&gt;System.Convert&lt;/code&gt;, то втрата інформації супроводиться генерацією
+виключення (про виключення пізніше).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Таблиця 8. Можливість звужуючого перетворення типів даних&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Тип, що перетворюється&lt;/th&gt;
+&lt;th&gt;У який тип перетворюється&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Sbyte&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;SByte&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Int16&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UInt16&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Int32&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UInt32&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Int64&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UInt64&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Decimal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Single&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;UInt64&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Double&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Byte&lt;/code&gt;, &lt;code&gt;SByte&lt;/code&gt;, &lt;code&gt;Int16&lt;/code&gt;, &lt;code&gt;UInt16&lt;/code&gt;, &lt;code&gt;Int32&lt;/code&gt;, &lt;code&gt;UInt32&lt;/code&gt;, &lt;code&gt;Int64&lt;/code&gt;, &lt;code&gt;UInt6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 4.12. Звужуюче перетворення&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;public static void Main()
+{
+    int i = 1234567;
+    short s = (short)i;
+    Console.WriteLine(&amp;quot;int - {0}\n short - {1}&amp;quot;, i,s);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Результат виконання:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  int - 1234567
+  short - -10617
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;поняття-стеку-і-кучі-значимі-та-посилальні-типи-даних-у-net-і-с&#34;&gt;Поняття стеку і кучі. Значимі та посилальні типи даних у .NET і С#&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Звершити розділ
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Стек&lt;/strong&gt; (&lt;code&gt;Stack&lt;/code&gt;) відноситься до області пам&amp;rsquo;яті, підтримуваної процесором, в якій зберігаються локальні змінні.
+Доступ до стека у багато разів швидший, ніж до загальної області пам&amp;rsquo;яті, тому використання стека
+для зберігання даних прискорює роботу вашої програми. У С# розмірні типи (наприклад, цілі
+числа) розташовуються в стеку: для їх значень зарезервована область в стеку, і доступ до неї
+здійснюється по назві змінної.&lt;/p&gt;
+&lt;p&gt;Посилальні типи (наприклад, об&amp;rsquo;єкти) розташовуються в &lt;strong&gt;купі&lt;/strong&gt; (&lt;code&gt;Heap&lt;/code&gt;). &lt;strong&gt;Купа&lt;/strong&gt; — це оперативна пам&amp;rsquo;ять
+вашого комп&amp;rsquo;ютера. Доступ до неї здійснюється повільніше, ніж до стека. Коли об&amp;rsquo;єкт
+розташовується в купі, то змінна зберігає лише адресу об&amp;rsquo;єкта. Ця адреса зберігається в стеку. За адресою програма має доступ до самого об&amp;rsquo;єкту, всі дані якого зберігаються в загальній пам&amp;rsquo;яті (купі).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;«Збиральник сміття»&lt;/strong&gt; (&lt;code&gt;Garbage Collector&lt;/code&gt;) знищує об&amp;rsquo;єкти, розташовані в стеку, кожен раз, коли
+відповідна змінна виходить за область видимості. Таким чином, якщо ви оголошуєте локальну
+змінну в межах функції, то об&amp;rsquo;єкт буде помічений як об&amp;rsquo;єкт для «збирання сміття». І він буде
+видалений з пам&amp;rsquo;яті після завершення роботи функції. Об&amp;rsquo;єкти у купі теж очищаються
+збиральником сміття, після того, як кінцеве посилання на них буде знищено.&lt;/p&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;задачі&#34;&gt;Задачі&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Виведіть на екран наступний текст:&lt;/p&gt;
+&lt;pre&gt;&#34;Саме знання нікому їсти не дасть.&#34;
+                      \І. Я. Франко\&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Задача 2.&lt;/strong&gt; Напишіть програму, яка обчислює суму, добуток, різницю, частку та остачу від ділення двох заданих чисел.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 3.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Напишіть програму, яка конвертує суму грн. у євро.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 4.&lt;/strong&gt; Напишіть попередню програму з умовою, що суму у грн. та курс валюти задає користувач.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Написати програму, яка обчислює квадрат введеного числа.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 6&lt;code&gt;*&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Написати програму, яка замінює місцями значення двох
+числових змінних без створення третьої змінної.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 7.&lt;/strong&gt; Обрахувати ціну покупки, якщо відомо:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ціну за одиницю товару;&lt;/li&gt;
+&lt;li&gt;кількість товару;&lt;/li&gt;
+&lt;li&gt;знижка (у % від загальної суми).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Задача 8.&lt;/strong&gt; Дано катети прямокутного трикутника (вводяться з клавіатури користувачем). Визначити довжину гіпотенузи.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 9.&lt;/strong&gt; У C# немає функції, яка обчислює квадрат числа. Написати програму, яка обчислює квадрат введеного числа.&lt;/p&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;контрольні-запитання&#34;&gt;Контрольні запитання&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Що таке тип даних?&lt;/li&gt;
+&lt;li&gt;Дайте класифікацію типів даних .NET.&lt;/li&gt;
+&lt;li&gt;Що таке змінна? Який синтаксис оголошення змінної.&lt;/li&gt;
+&lt;li&gt;Що таке констаната? Який синтаксис оголошення констант?&lt;/li&gt;
+&lt;li&gt;Що таке область видимості змінної?&lt;/li&gt;
+&lt;li&gt;Які види операторів існують у C#?&lt;/li&gt;
+&lt;li&gt;Що таке інкремент та декремент? Яка різниця між постфіксним та
+прфіксним записом цих операторів?&lt;/li&gt;
+&lt;li&gt;Що таке літерал? Який синтаксис запису літералів для різних типів
+даних.&lt;/li&gt;
+&lt;li&gt;Що таке привдення типів даних?
+10.Яка різниця та синтаксис явного та неявного привдення типів даних?
+11.Опишіть основні характеристики значимих типів даних.
+12.Опишіть основні характеристики посилальних типів даних.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;список-використаних-джерел&#34;&gt;Список використаних джерел&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;Cardelli, L., &amp;amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з &lt;a href=&#34;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&#34;&gt;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;MSDN. (без дати). Отримано з Microsoft Developer Network: &lt;a href=&#34;http://msdn.microsoft.com/&#34;&gt;http://msdn.microsoft.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.&lt;/li&gt;
+&lt;li&gt;Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &amp;ldquo;И.Д. Вильямс&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;додаткові-матеріали-для-завантаження&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі PDF &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;Діаграми до лекції у форматі &lt;code&gt;
+  &lt;i class=&#34;fas fa-project-diagram  pr-1 fa-fw&#34;&gt;&lt;/i&gt;draw.io&lt;/code&gt; на &lt;code&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt;github&lt;/code&gt; &lt;a href=&#34;https://github.com/kleban/csharp-basics-public/tree/master/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Перейти&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
