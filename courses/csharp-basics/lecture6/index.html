@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів  6.5. Цикл foreach та масиви 6.">
+  <meta name="description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів 6.5. Цикл foreach та масиви 6.6. Сортування масивів [-] 6.">
 
   
   <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/lecture6/">
@@ -290,7 +290,7 @@
   <meta property="og:site_name" content="kleban.page">
   <meta property="og:url" content="/courses/csharp-basics/lecture6/">
   <meta property="og:title" content="Лекція 6. Основи роботи з масивами | kleban.page">
-  <meta property="og:description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів  6.5. Цикл foreach та масиви 6."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів 6.5. Цикл foreach та масиви 6.6. Сортування масивів [-] 6."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
   
     
@@ -804,13 +804,10 @@
       </ul>
     </li>
     <li><a href="#chapter63">6.3. Багатовимірні масиви</a></li>
-    <li><a href="#chapter64">6.4. Масиви масивів</a>
-      <ul>
-        <li><a href="#chapter624">6.5. Цикл foreach та масиви</a></li>
-        <li><a href="#chapter66">6.6. Сортування масивів [-]</a></li>
-        <li><a href="#chapter67">6.7. Робота з класом Array [-]</a></li>
-      </ul>
-    </li>
+    <li><a href="#chapter64">6.4. Масиви масивів</a></li>
+    <li><a href="#chapter624">6.5. Цикл foreach та масиви</a></li>
+    <li><a href="#chapter66">6.6. Сортування масивів [-]</a></li>
+    <li><a href="#chapter67">6.7. Робота з класом Array [-]</a></li>
     <li><a href="#chapter6tasks">Задачі</a></li>
     <li><a href="#chapter6questions">Контрольні запитання</a></li>
     <li><a href="#chapter6sourses">Список використаних джерел</a></li>
@@ -842,13 +839,10 @@
       </ul>
     </li>
     <li><a href="#chapter63">6.3. Багатовимірні масиви</a></li>
-    <li><a href="#chapter64">6.4. Масиви масивів</a>
-      <ul>
-        <li><a href="#chapter624">6.5. Цикл foreach та масиви</a></li>
-        <li><a href="#chapter66">6.6. Сортування масивів [-]</a></li>
-        <li><a href="#chapter67">6.7. Робота з класом Array [-]</a></li>
-      </ul>
-    </li>
+    <li><a href="#chapter64">6.4. Масиви масивів</a></li>
+    <li><a href="#chapter624">6.5. Цикл foreach та масиви</a></li>
+    <li><a href="#chapter66">6.6. Сортування масивів [-]</a></li>
+    <li><a href="#chapter67">6.7. Робота з класом Array [-]</a></li>
     <li><a href="#chapter6tasks">Задачі</a></li>
     <li><a href="#chapter6questions">Контрольні запитання</a></li>
     <li><a href="#chapter6sourses">Список використаних джерел</a></li>
@@ -1124,7 +1118,7 @@ arrays</strong>). Такий масив масивів можна розгляд
 </code></pre>
 <p>Оголошувати вкладені масиви обов’язково.</p>
 <hr>
-<h3 id="chapter624">6.5. Цикл foreach та масиви</h3>
+<h2 id="chapter624">6.5. Цикл foreach та масиви</h2>
 <p>У лекції про цикли загдувалося, що у мові С# визначений цикл <code>foreach</code>, але детальний його розгляд
 був відкладений «на потім». Час для нього настав.</p>
 <p>Цикл <code>foreach</code> використовується для опису елементів колекції. <strong>Колекція</strong> – це група об&rsquo;єктів. С#
@@ -1171,14 +1165,14 @@ arrays</strong>). Такий масив масивів можна розгляд
   Сума елементів: 580
 </code></pre>
 <hr>
-<h3 id="chapter66">6.6. Сортування масивів [-]</h3>
+<h2 id="chapter66">6.6. Сортування масивів [-]</h2>
 <div class="alert alert-note">
   <div>
     Розділ у процесі наповнення
   </div>
 </div>
 <hr>
-<h3 id="chapter67">6.7. Робота з класом Array [-]</h3>
+<h2 id="chapter67">6.7. Робота з класом Array [-]</h2>
 <div class="alert alert-note">
   <div>
     Розділ у процесі наповнення

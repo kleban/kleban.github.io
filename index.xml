@@ -3125,13 +3125,10 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter63&#34;&gt;6.3. Багатовимірні масиви&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#chapter64&#34;&gt;6.4. Масиви масивів&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#chapter624&#34;&gt;6.5. Цикл foreach та масиви&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#chapter66&#34;&gt;6.6. Сортування масивів [-]&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#chapter67&#34;&gt;6.7. Робота з класом Array [-]&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter64&#34;&gt;6.4. Масиви масивів&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter624&#34;&gt;6.5. Цикл foreach та масиви&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter66&#34;&gt;6.6. Сортування масивів [-]&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter67&#34;&gt;6.7. Робота з класом Array [-]&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter6tasks&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter6questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter6sourses&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
@@ -3407,7 +3404,7 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Оголошувати вкладені масиви обов’язково.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;chapter624&#34;&gt;6.5. Цикл foreach та масиви&lt;/h3&gt;
+&lt;h2 id=&#34;chapter624&#34;&gt;6.5. Цикл foreach та масиви&lt;/h2&gt;
 &lt;p&gt;У лекції про цикли загдувалося, що у мові С# визначений цикл &lt;code&gt;foreach&lt;/code&gt;, але детальний його розгляд
 був відкладений «на потім». Час для нього настав.&lt;/p&gt;
 &lt;p&gt;Цикл &lt;code&gt;foreach&lt;/code&gt; використовується для опису елементів колекції. &lt;strong&gt;Колекція&lt;/strong&gt; – це група об&amp;rsquo;єктів. С#
@@ -3454,14 +3451,14 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
   Сума елементів: 580
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;chapter66&#34;&gt;6.6. Сортування масивів [-]&lt;/h3&gt;
+&lt;h2 id=&#34;chapter66&#34;&gt;6.6. Сортування масивів [-]&lt;/h2&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Розділ у процесі наповнення
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;chapter67&#34;&gt;6.7. Робота з класом Array [-]&lt;/h3&gt;
+&lt;h2 id=&#34;chapter67&#34;&gt;6.7. Робота з класом Array [-]&lt;/h2&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Розділ у процесі наповнення
@@ -3843,7 +3840,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-257643891&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-859673412&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -3853,7 +3850,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-257643891&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-859673412&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
