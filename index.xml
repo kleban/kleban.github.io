@@ -1243,6 +1243,133 @@ graph TD;
     </item>
     
     <item>
+      <title>Лекція 3. Основи роботи з Visual Studio та платформою .NET</title>
+      <link>/courses/csharp-basics/lecture3/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0100</pubDate>
+      <guid>/courses/csharp-basics/lecture3/</guid>
+      <description>&lt;hr&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#31коротка-характеристика-та-історія-розвитку-середовища-розробки-visual-studio&#34;&gt;3.1	Коротка характеристика та історія розвитку середовища розробки Visual Studio.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#контрольні-запитання&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#список-використаних-джерел&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#додаткові-матеріали-для-завнатаження&#34;&gt;Додаткові матеріали для завнатаження&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Розділ у процесі наповнення.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;31коротка-характеристика-та-історія-розвитку-середовища-розробки-visual-studio&#34;&gt;3.1	Коротка характеристика та історія розвитку середовища розробки Visual Studio.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Microsoft Visual Studio&lt;/code&gt;&lt;/strong&gt; - лінійка продуктів компанії Майкрософт, що включають інтегроване середовище розробки програмного забезпечення і ряд інших інструментальних засобів.&lt;/p&gt;
+&lt;p&gt;Середовище розробки &lt;code&gt;Visual Studio&lt;/code&gt; представляє собою повний набір інструментів для створення як настільних додатків, так і корпоративних веб-додатків для спільної роботи груп. Використовуючи ефективні інструменти розробки &lt;code&gt;Visual Studio&lt;/code&gt;, засновані на використанні компонентів, та інші технології, можна не тільки створювати ефективно працюючі настільні додатки, але і спрощувати спільне проектування, розробку і розгортання корпоративних рішень.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio&lt;/code&gt; включає один або декілька компонентів з наступних:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Visual Basic .NET&lt;/code&gt;, а до його появи - &lt;code&gt;Visual Basic&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Visual C++&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Visual C#&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Visual F#&lt;/code&gt; (включений у &lt;code&gt;Visual Studio 2010&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Багато варіантів поставки також включають	&lt;code&gt;Microsoft SQL Server&lt;/code&gt; або &lt;code&gt;Microsoft SQL Server Express&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;На сьогодні &lt;code&gt;Visual Studio&lt;/code&gt; уже підтримує досить велику кількість мов програмування та фреймворків не лише зі стеку &lt;code&gt;.NET&lt;/code&gt;-технологій.&lt;/p&gt;
+&lt;p&gt;Опишемо коротко найважливіші версії &lt;code&gt;IDE Visual Studio&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio 97&lt;/code&gt; - перша випущена версія &lt;code&gt;Visual Studio&lt;/code&gt;, у ній вперше були зібрані разом різні засоби розробки ПЗ. Вона була випущена в двох версіях &lt;code&gt;Professional&lt;/code&gt; та &lt;code&gt;Enterprise&lt;/code&gt;. Вона включала в себе &lt;code&gt;Visual Basic 5.0&lt;/code&gt;, &lt;code&gt;Visual C++ 5.0&lt;/code&gt;, &lt;code&gt;Visual J++ 1.1&lt;/code&gt;, &lt;code&gt;Visual FoxPro 5.0&lt;/code&gt;, вперше з&amp;rsquo;явилося середовище розробки &lt;code&gt;ASP - Visual InterDev&lt;/code&gt;. &lt;code&gt;Visual Studio 97&lt;/code&gt; - була першою спробою &lt;code&gt;Microsoft&lt;/code&gt; створити єдине середовище для розробки на різних мовах програмування: &lt;code&gt;Visual C++&lt;/code&gt;, &lt;code&gt;Visual J++&lt;/code&gt;, &lt;code&gt;Visual InterDev&lt;/code&gt;, і MSDN використовували одне середовище, так зване &lt;code&gt;Developer Studio&lt;/code&gt;. &lt;code&gt;Visual Basic&lt;/code&gt; і &lt;code&gt;Visual FoxPro&lt;/code&gt; використовували окремі середовища для розробки.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio. NET&lt;/code&gt; (кодове ім&amp;rsquo;я &lt;code&gt;Rainier&lt;/code&gt;; внутрішня версія 7.0) - випущена в лютому 2002 (включає &lt;code&gt;.NET Framework 1.0&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio. NET 2003&lt;/code&gt; (кодове ім&amp;rsquo;я &lt;code&gt;Everett&lt;/code&gt;; внутрішня версія 7.1) - випущена в квітні 2003 (включає &lt;code&gt;.NET Framework 1.1&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio 2005&lt;/code&gt; (кодове ім&amp;rsquo;я &lt;code&gt;Whidbey&lt;/code&gt;; внутрішня версія 8.0) - випущена в кінці жовтня 2005, остання що офіційно працює на &lt;code&gt;Windows 2000&lt;/code&gt;, (включає &lt;code&gt;.NET Framework 2.0&lt;/code&gt;). На початку листопада 2005 також вийшла серія продуктів в редакції &lt;code&gt;Express&lt;/code&gt;: &lt;code&gt;Visual C++ 2005 Express&lt;/code&gt;, &lt;code&gt;Visual Basic 2005 Express&lt;/code&gt;, &lt;code&gt;Visual C # 2005 Express&lt;/code&gt; і ін. 19 квітня 2006 редакція &lt;code&gt;Express&lt;/code&gt; стала безкоштовною.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio 2008&lt;/code&gt; (кодове ім&amp;rsquo;я &lt;code&gt;Orcas&lt;/code&gt;) - випущена 19 листопада 2007, одночасно з . &lt;code&gt;NET Framework 3.5&lt;/code&gt;. Націлена на створення додатків для ОС &lt;code&gt;Windows Vista&lt;/code&gt; (але підтримує і &lt;code&gt;XP&lt;/code&gt;), &lt;code&gt;Office 2007&lt;/code&gt; та веб-додатків. Включає в себе &lt;code&gt;LINQ&lt;/code&gt;, нові версії мов &lt;code&gt;C#&lt;/code&gt; і &lt;code&gt;Visual Basic&lt;/code&gt;. До студії не увійшов &lt;code&gt;Visual J#&lt;/code&gt;. З 28 жовтня 2008 вперше доступна версія російською мовою.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Visual Studio 2010&lt;/code&gt; (кодове ім&amp;rsquo;я &lt;code&gt;Hawaii&lt;/code&gt;, для &lt;code&gt;Ultimate&lt;/code&gt; - &lt;code&gt;Rosario&lt;/code&gt;) - випущена 12 квітня 2010 разом з &lt;code&gt;.NET Framework 4.0&lt;/code&gt;. &lt;code&gt;Visual Studio&lt;/code&gt; включає підтримку мов &lt;code&gt;C# 4.0&lt;/code&gt; і &lt;code&gt;Visual Basic. NET 10.0&lt;/code&gt;, а також мову &lt;code&gt;F#&lt;/code&gt;, яка була відсутня в попередніх версіях.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;контрольні-запитання&#34;&gt;Контрольні запитання&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;список-використаних-джерел&#34;&gt;Список використаних джерел&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ada Lovelace on Wikipedia. Url: &lt;a href=&#34;https://en.wikipedia.org/wiki/Ada_Lovelace&#34;&gt;https://en.wikipedia.org/wiki/Ada_Lovelace&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DiagramDesigner. Url: &lt;a href=&#34;https://logicnet.dk/DiagramDesigner/&#34;&gt;https://logicnet.dk/DiagramDesigner/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Draw.IO. Url: &lt;a href=&#34;https://www.diagrams.net/&#34;&gt;https://www.diagrams.net/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cardelli, L., &amp;amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з &lt;a href=&#34;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&#34;&gt;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MSDN. (без дати). Отримано з Microsoft Developer Network: &lt;a href=&#34;http://msdn.microsoft.com/&#34;&gt;http://msdn.microsoft.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &amp;ldquo;И.Д. Вильямс&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!--
+---
+
+
+  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+## Задачі
+--&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;додаткові-матеріали-для-завнатаження&#34;&gt;Додаткові матеріали для завнатаження&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі PDF &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;Діаграми до лекції у форматі &lt;code&gt;
+  &lt;i class=&#34;fas fa-project-diagram  pr-1 fa-fw&#34;&gt;&lt;/i&gt;draw.io&lt;/code&gt; на &lt;code&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt;github&lt;/code&gt; &lt;a href=&#34;https://github.com/kleban/csharp-basics-public/tree/master/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Перейти&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Лекція 4. Типи даних та змінні у .NET</title>
       <link>/courses/csharp-basics/lecture4/</link>
       <pubDate>Fri, 09 Apr 2021 00:00:00 +0100</pubDate>
@@ -2982,6 +3109,471 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Лекція 6. Основи роботи з масивами</title>
+      <link>/courses/csharp-basics/lecture6/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0100</pubDate>
+      <guid>/courses/csharp-basics/lecture6/</guid>
+      <description>&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter61&#34;&gt;6.1. Поняття масиву даних&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter62&#34;&gt;6.2. Одновимірні масиви&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter621&#34;&gt;6.2.1. Оголошення&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter622&#34;&gt;6.2.2. Ініціалізація&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter63&#34;&gt;6.3. Багатовимірні масиви&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter64&#34;&gt;6.4. Масиви масивів&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter624&#34;&gt;6.5. Цикл foreach та масиви&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter66&#34;&gt;6.6. Сортування масивів [-]&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter67&#34;&gt;6.7. Робота з класом Array [-]&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter6tasks&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter6questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter6sourses&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter6additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter61&#34;&gt;6.1. Поняття масиву даних&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Масив&lt;/strong&gt; задає спосіб організації даних. &lt;strong&gt;Масивом&lt;/strong&gt; називають впорядковану сукупність елементів одного типу.&lt;/p&gt;
+&lt;p&gt;Кожен елемент масиву має індекси, що визначають порядок елементів. Число індексів
+характеризує розмір масиву. Кожен індекс змінюється в деякому діапазоні &lt;code&gt;[а,b]&lt;/code&gt;. У мові C#, як і в
+багатьох інших мовах, індекси задаються цілочисельним типом. Діапазон &lt;code&gt;[а,b]&lt;/code&gt; називається
+граничною парою, &lt;code&gt;а&lt;/code&gt; – нижньою межою, &lt;code&gt;b&lt;/code&gt; – верхньою межею. Якщо межі задані константними
+виразами, то число елементів масиву відоме у момент його оголошення і йому може бути виділена
+пам&amp;rsquo;ять ще на етапі трансляції. Такі масиви називаються статичними. Якщо ж вирази, які задають
+межі, залежать від змінних, то такі масиви називаються динамічними, оскільки пам&amp;rsquo;ять їм може
+бути відведена лише динамічно в процесі виконання програми, коли стають відомими значення
+відповідних змінних. Масиву, як правило, виділяється безперервна область пам&amp;rsquo;яті.&lt;/p&gt;
+&lt;p&gt;У мові C++ всі масиви є статичними. У мові C# знято істотне обмеження мови C++ на статичність масивів. Масиви в мові C# є справжніми динамічними масивами. Як наслідок цього масиви відносяться до посилальних типів (&lt;code&gt;Reference&lt;/code&gt;), пам&amp;rsquo;ять їм відводиться динамічно в &amp;ldquo;купі&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;У мові C++ &amp;ldquo;класичних&amp;rdquo; багатовимірних масивів немає. Тут введені одновимірні масиви і масиви
+масивів. Останні є загальнішою структурою даних і дозволяють задати не лише багатовимірний куб,
+але і порізану, ступінчасту структуру. У мові C# збережені одновимірні масиви і масиви масивів. На додаток до них в мову додані багатовимірні масиви. Динамічні багатовимірні масиви мови C# є потужною, надійною, зрозумілою і зручною структурою даних, яку сміливо можна рекомендувати до вживання не лише професіоналам, але і новачкам, що програмують на C#.&lt;/p&gt;
+&lt;p&gt;Після цього короткого огляду давайте перейдемо до більш систематичного вивчення деталей роботи з масивами в C#.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter62&#34;&gt;6.2. Одновимірні масиви&lt;/h2&gt;
+&lt;h3 id=&#34;chapter621&#34;&gt;6.2.1. Оголошення&lt;/h3&gt;
+&lt;p&gt;У спрощеному вигляді оголошення одновимірного масиву виглядає таким чином:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;тип[] ім’я_змінної;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Увага, на відміну від мови C++ квадратні дужки приписані не до імені змінної, а до типу. Вони є
+невід&amp;rsquo;ємною частиною визначення класу, так що запис &lt;code&gt;T[]&lt;/code&gt; слід розуміти як клас одновимірний масив
+з елементами типу &lt;code&gt;T&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Що ж до меж зміни індексів, то ця характеристика до класу не відноситься, вона є характеристикою
+змінних - екземплярів, кожен з яких є одновимірним масивом зі своїм числом елементів, що
+задаються в оголошенні змінної.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int[] а, b, с;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Найчастіше при оголошенні масиву використовується ім&amp;rsquo;я з ініціалізацією. І знову-таки, як і в разі
+простих змінних, можуть бути два варіанти ініціалізації. У першому випадку ініціалізація є явною і
+задається константним масивом. Ось приклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;double[] x= {5.5, 6.6, 7.7};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Слідуючи синтаксису, елементи константного масиву слід брати у фігурні дужки.
+У другому випадку створення і ініціалізація масиву виконується в об&amp;rsquo;єктному стилі з викликом
+конструктора масиву. І це найбільш поширена практика оголошення масивів. Наведу приклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int[] d= new int[5];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Отже, якщо масив оголошується без ініціалізації, то створюється лише висяче посилання із
+значенням void. Якщо ініціалізація виконується конструктором, то в динамічній пам&amp;rsquo;яті створюється
+сам масив, елементи якого ініціалізувалися константами відповідного типу, і посилання зв&amp;rsquo;язується з цим масивом. Якщо масив ініціалізувався константним масивом, то в пам&amp;rsquo;яті створюється
+константний масив, з яким і зв&amp;rsquo;язується посилання.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;chapter622&#34;&gt;6.2.2. Ініціалізація&lt;/h3&gt;
+&lt;p&gt;Ініціалізувати масиви, наприклад, можна наступними способами:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Літералами відповідного типу (лістинг 6.1).&lt;/li&gt;
+&lt;li&gt;Випадковими числами (лістинг 6.2).&lt;/li&gt;
+&lt;li&gt;Ввести з клавіатури (лістинг 6.3).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Заповнення масиву літералами може відбуватися наступним чином:&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 6.1. Заповнення одновимірного масиву літералами&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int[] nums = { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+  int[] nums;
+  nums = new int[ ] { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+  int[] nums = new int[10] { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Приклад програми на C#, яка заповнює масив випадковими числами:&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 6.2. Заповнення одновимірного масиву літералами&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int[] array = new int[10];
+    
+  //Параметр фіксується для відтворюваності результатів
+  Random rand = new Random(2021);
+    
+  for (int i = 0; i &amp;lt; 10; ++i)
+  {
+    array[i] = rand.Next(0, 100);
+    Console.Write(&amp;quot; {0}&amp;quot;, array[i]);
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-play text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Результат виконання:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  54 81 42 92 65 70 42 34 0 51
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ввести з клавіатури значення масиву можна наступним чином:&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 6.3. Заповнення масиву значеннями, введеними з клавіатури&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  //Додаємо кодування кириличних символів
+  Console.OutputEncoding = Encoding.UTF8;
+  
+  int[] array;
+  Console.Write(&amp;quot;\n Введіть розмір масиву &amp;gt;\t&amp;quot;);
+  int size = Convert.ToInt32(Console.ReadLine());
+  array = new int[size];
+  
+  for (int i = 0; i &amp;lt; array.Length; ++i)
+  {
+    Console.Write(&amp;quot; Введіть {0}-й елемент:\t&amp;quot;, i + 1);
+    array[i] = Convert.ToInt32(Console.ReadLine());
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-play text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Результат виконання:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Введіть розмір масиву &amp;gt;        4
+  Введіть 1-й елемент:   7
+  Введіть 2-й елемент:   45
+  Введіть 3-й елемент:   8
+  Введіть 4-й елемент:   11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter63&#34;&gt;6.3. Багатовимірні масиви&lt;/h2&gt;
+&lt;p&gt;Жодної принципової різниці між одновимірними та багатовимірними масивами немає.&lt;/p&gt;
+&lt;p&gt;Одновимірні масиви - це окремий випадок багатовимірних. Можна говорити і по-іншому:
+&lt;strong&gt;багатовимірні масиви&lt;/strong&gt; є природним узагальненням одновимірних. Одновимірні масиви дозволяють
+задавати такі математичні структури як вектори, двовимірні - матриці, тривимірні - куби даних,
+масиви більшої розмірності - багатовимірні куби даних. Варто відмітити, що при роботі з базами даних багатовимірні куби, так звані куби &lt;code&gt;OLAP&lt;/code&gt;, зустрічаються часто.&lt;/p&gt;
+&lt;p&gt;От як виглядає оголошення багатовимірного масиву в загальному випадку:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int[,] array;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Приклад ініціалізації:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int[,]matrix = {1,2},{3,4};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Давайте розглянемо класичне завдання додавання прямокутних матриць. Нам знадобиться три
+динамічні масиви для представлення матриць і три методи, один з яких заповнюватиме вхідні
+матриці випадковими числами (&lt;code&gt;FillArray&lt;/code&gt;), інший - виконувати додавання матриць (&lt;code&gt;AddMatrix&lt;/code&gt;), третій - друкувати самі матриці (&lt;code&gt;PrintArray&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Ось тестовий приклад (програма містить трішки довгий код, але варто його переглянути):&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 6.4. Приклад додавання матриць&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  static void Main(string[] args)
+  {
+      //Оголосимо розмірність наших матриць
+      int rows = 3, cols = 5;
+  
+      //Оголосимо матриці
+      int[,] a = new int[rows, cols];
+      int[,] b = new int[rows, cols];
+      int[,] result = new int[rows, cols];
+  
+      //Заповнимо матриці випадковими числами
+      a = FillArray(rows, cols, 1);
+      b = FillArray(rows, cols, 2);
+      //Виведемо на консоль матрицю А
+      Console.WriteLine(&amp;quot;\nArray1: &amp;quot;);
+      PrintArray(a);
+      //Виведемо на консоль матрицю B
+      Console.WriteLine(&amp;quot;\nArray2: &amp;quot;);
+      PrintArray(b);
+  
+      //Додамо і присвоїмо результат
+      result = AddMatrix(a, b);
+  
+      if (result != null)
+      {
+          Console.WriteLine(&amp;quot;\nResultMatrix: &amp;quot;);
+          PrintArray(result);
+      }
+  }
+  
+  static int[,] AddMatrix(int[,] a, int[,] b)
+  {
+      //Оголосимо матрицю у яку будемо записувати результат.
+      int[,] res = new int[a.GetLength(0), a.GetLength(1)];
+  
+      //Перевіримо чи однаковий розмір матриць
+      if ((a.GetLength(0) != b.GetLength(0)) || (a.GetLength(1) != b.GetLength(1)))
+          Console.WriteLine(&amp;quot;Мариці неоднакового розміру.&amp;quot;);
+      else
+      {
+          for (int i = 0; i &amp;lt; a.GetLength(0); ++i)
+          {
+              //Виконуємо додавання елементів матриць
+              for (int j = 0; j &amp;lt; a.GetLength(1); ++j)
+                  res[i, j] = a[i, j] + b[i, j];
+          }
+          return res;
+      }
+      return null;
+  }
+  
+  static int[,] FillArray(int rows, int cols, int seed)
+  {
+      int[,] array = new int[rows, cols];
+      //Створює змінну класу Random для генерування значень
+      Random rand = new Random(seed);
+  
+      for (int i = 0; i &amp;lt; rows; ++i)
+      {
+          for (int j = 0; j &amp;lt; cols; ++j)
+          {
+              array[i, j] = rand.Next(0, 100);
+          }
+      }
+      return array;
+  }
+  
+  static void PrintArray(int[,] array)
+  {
+      for (int i = 0; i &amp;lt; array.GetLength(0); ++i)
+      {
+          for (int j = 0; j &amp;lt; array.GetLength(1); ++j)
+          {
+              //Виводимо значення на консоль
+              Console.Write(&amp;quot; {0}\t&amp;quot;, array[i, j]);
+          }
+          Console.WriteLine();
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-play text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Результат виконання:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Array1:
+   24      11      46      77      65
+   43      35      94      10      64
+   2       24      32      98      68
+  
+  Array2:
+   77      40      16      98      10
+   30      80      44      22      1
+   76      2       0       51      38
+  
+  ResultMatrix:
+   101     51      62      175     75
+   73      115     138     32      65
+   78      26      32      149     106
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter64&#34;&gt;6.4. Масиви масивів&lt;/h2&gt;
+&lt;p&gt;Ще одним видом масивів C# є масиви масивів, звані також різаними/рваними масивами (&lt;strong&gt;jagged
+arrays&lt;/strong&gt;). Такий масив масивів можна розглядати як одновимірний масив, елементи якого є масивами,
+елементи яких, у свою чергу, знову можуть бути масивами, і так може тривати до деякого рівня
+вкладеності.&lt;/p&gt;
+&lt;p&gt;У яких ситуаціях може виникати необхідність в таких структурах даних? Ці масиви можуть
+застосовуватися для представлення дерев, в яких вузли можуть мати довільне число нащадків. Таким
+може бути, наприклад, генеалогічне дерево. Вершини першого рівня - &lt;code&gt;Fathers&lt;/code&gt;, що представляють
+батьків, можуть задаватися одновимірним масивом, так що &lt;code&gt;Fathers[i]&lt;/code&gt; - це &lt;code&gt;i&lt;/code&gt;-й батько. Вершини
+другого рівня представляються масивом масивів - &lt;code&gt;Children&lt;/code&gt;, так що &lt;code&gt;Children[i]&lt;/code&gt; - це масив дітей &lt;code&gt;i&lt;/code&gt;-го батька, а &lt;code&gt;Children[i][j]&lt;/code&gt; - це &lt;code&gt;j&lt;/code&gt;-а дитина &lt;code&gt;i&lt;/code&gt;-го батька. Для представлення внуків знадобиться третій рівень, так що &lt;code&gt;GrandChildren[i][j][k]&lt;/code&gt; представлятиме &lt;code&gt;k&lt;/code&gt;-го внука &lt;code&gt;j&lt;/code&gt;-ї дитини &lt;code&gt;i&lt;/code&gt;-го батька.&lt;/p&gt;
+&lt;p&gt;Є деякі особливості в оголошенні і ініціалізації таких масивів. Якщо при оголошенні багатовимірних
+масивів для вказівки розмірності використовувалися коми, то для порізаних масивів застосовується
+зрозуміліша символіка - сукупності пар квадратних дужок; наприклад, &lt;code&gt;int[][]&lt;/code&gt; задає масив, елементи якого - одновимірні масиви елементів типу &lt;code&gt;int&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Складніше зі створенням самих масивів і їх ініціалізацією. Тут не можна викликати конструктор &lt;code&gt;new int[3][5]&lt;/code&gt;, оскільки він не задає порізаний масив. Фактично потрібно викликати конструктор для
+кожного масиву на нийнижчому рівні. У цьому і полягає складність оголошення таких масивів.&lt;/p&gt;
+&lt;p&gt;Розпочнемо з формального прикладу:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int[][] jagger = new int[3][]
+  {
+    new int[] {5,7,9,11},
+    new int[] {2,8},
+    new int[] {6,12,4}
+  };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Масив &lt;code&gt;jagger&lt;/code&gt; має всього два рівні. Можна вважати, що у нього три елементи, кожен з яких є
+масивом. Для кожного такого масиву необхідно викликати конструктор &lt;code&gt;new&lt;/code&gt;, аби створити
+внутрішній масив. У даному прикладі елементи внутрішніх масивів набувають значення, будучи
+явно ініціалізовані константними масивами. Звичайно, допустимим є і таке оголошення:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int[][] jagger1 = new int[3][]
+  {
+    new int[4],
+    new int[2],
+    new int[3]
+  };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;В цьому випадку елементи масиву набудуть при ініціалізації нульових значень. Реальну
+ініціалізацію потрібно буде виконувати програмним шляхом. Варто відмітити, що в конструкторі
+верхнього рівня константу &lt;code&gt;3&lt;/code&gt; можна опустити і писати просто &lt;code&gt;new int[][]&lt;/code&gt;. Також виклик
+цього конструктора можна взагалі опустити - він матиметься на увазі:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  int[][] jagger2 =
+  {
+    new int[4],
+    new int[2],
+    new int[3]
+  };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Оголошувати вкладені масиви обов’язково.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;chapter624&#34;&gt;6.5. Цикл foreach та масиви&lt;/h3&gt;
+&lt;p&gt;У лекції про цикли загдувалося, що у мові С# визначений цикл &lt;code&gt;foreach&lt;/code&gt;, але детальний його розгляд
+був відкладений «на потім». Час для нього настав.&lt;/p&gt;
+&lt;p&gt;Цикл &lt;code&gt;foreach&lt;/code&gt; використовується для опису елементів колекції. &lt;strong&gt;Колекція&lt;/strong&gt; – це група об&amp;rsquo;єктів. С#
+визначає декілька типів колекцій, і одним з них є масив. Формат запису циклу &lt;code&gt;foreach&lt;/code&gt; має такий
+вигляд:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  foreach (тип ім&#39;я_змінної in колекція) 
+  {
+    інструкції;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Тут елементи тип та ім’я_змінної задають тип та ім&amp;rsquo;я ітераційної змінної, яка при функціонуванні
+циклу &lt;code&gt;fоreach&lt;/code&gt; набуватиме значень елементів з колекції. Елемент колекція служить для вказівки
+опитуваної колекції (в даному випадку як колекцію ми розглядаємо масив). Таким чином, елемент
+тип повинен збігатися (або бути сумісним) з базовим типом масиву. Тут важливо запам&amp;rsquo;ятати, що
+ітераційну змінну стосовно масиву можна використовувати лише для читання. Отже, неможливо
+змінити вміст масиву, присвоївши ітераційній змінній нове значення.&lt;/p&gt;
+&lt;p&gt;Розглянемо простий приклад використання циклу &lt;code&gt;foreach&lt;/code&gt;. Приведена нижче програма створює
+масив для зберігання цілих чисел і присвоює його елементам початкові значення. Потім вона
+відображає елементи масиву, попутно обчислюючи їх суму.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;em&gt;Лістинг 6.5. Робота з циклом foreach&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  Console.OutputEncoding = Encoding.UTF8;
+  
+  int[] array = new int[10];
+  int suma = 0;
+  Random r = new Random(2021);
+  
+  //Заповнюмє масив випадковими числами
+  for (int i = 0; i &amp;lt; array.Length; ++i)
+      array[i] = r.Next(10, 100);
+  
+  Console.Write(&amp;quot;Array:\t&amp;quot;);
+  foreach (int element in array)
+  {
+      Console.Write(&amp;quot;{0} &amp;quot;, element);
+      suma += element;
+  }
+  Console.WriteLine(&amp;quot;\n\nСума елементів:\t{0}&amp;quot;, suma);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-play text-muted  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Результат виконання:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Array:  59 83 48 93 69 73 48 41 10 56
+
+  Сума елементів: 580
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;chapter66&#34;&gt;6.6. Сортування масивів [-]&lt;/h3&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Розділ у процесі наповнення
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;chapter67&#34;&gt;6.7. Робота з класом Array [-]&lt;/h3&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Розділ у процесі наповнення
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter6tasks&#34;&gt;Задачі&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Написати програму, яка знаходить суму парних і суму непарних елементів масиву.
+Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить користувач.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 2.&lt;/strong&gt; Написати програму, яка знаходить в масиві значення, що повторюються два і більше разів, і показує їх на екран. Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить користувач. Наприклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  45  12  12  63
+  15  12  45  78
+  75  56  89  1
+  
+  Результат: 12, 75
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 3.&lt;/strong&gt; Написати програму, яка знаходить в масиві найменше непарне число і показує його на
+екран. Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить
+користувач.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 4.&lt;/strong&gt; Задано масив із $n$ дійсних чисел. Обчислити різницю між максимальним та мінімальним
+за модулем елементами цього масиву. Елементи масиву генеруються випадковим чином. Кількість
+стовпців та рядків вводить користувач.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.&lt;/strong&gt; Дано одновимірний масив із дійсних чисел. Відсортувати його таким чином, щоб всі
+додатні елементи знаходилися на початку, а всі від&amp;rsquo;ємні – в кінці, і при цьому зберігся початковий
+порядок елементів в обох групах.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 6.&lt;/strong&gt; Задано одновимірний масив. Знайти два серед його елементів, модуль різниці яких має
+найменше значення.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 7.&lt;/strong&gt; Сформувати цілочисельний масив, елементами якого є випадкові числа із діапазону.
+Знайти суму елементів масиву, значення яких кратні $8$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 8.&lt;/strong&gt; Розробити функцію, що переставляє в зворотному порядку елементи головної діагоналі
+квадтаної матриці.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 9.&lt;/strong&gt; Переформатувати марицю (двовимірний масив) таким чином, щоб її рядки розміщувалися за зростанням їх поелементних сум.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 10.&lt;/strong&gt; Знайти мінімальний елемент серед тих елементів масиву $A$, які не є елементами масиву $B$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 11.&lt;/strong&gt; Визначити, скільки різних чисел міститься в заданому цілочисельному масиві.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 12.&lt;/strong&gt; Відсортувати рядки двохвимірного масиву за зростанням. Кількість рядків і стовпців вводить користувач. Масив заповнюється випадковими числами із діапазону $[10; 100)$.&lt;/p&gt;
+&lt;p&gt;Наприклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  45  12  12  63
+  15  12  45  78
+  75  56  89  1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Результат:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  12  12  45  63
+  12  15  45  78
+  1   56  75  89
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 13.&lt;/strong&gt; Згенерувати матрицю значень $n*n$ (квадратну). Знайти максимальний елемент у виділеному кольором діапазоні масиву:&lt;/p&gt;
+&lt;figure &gt;
+&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;/media/courses/csharp-basics/lecture6/lecture-6-task-13.svg&#34; &gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/media/courses/csharp-basics/lecture6/lecture-6-task-13.svg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;p&gt;Так, для підзавдання 13.3 і матриці поданої нижче&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  45  12  12  63
+  15  12  45  78 
+  75  56  89  1
+  53  75  78  21
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;максимум становитиме &lt;strong&gt;89&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter6questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter6sourses&#34;&gt;Список використаних джерел&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;Cardelli, L., &amp;amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з &lt;a href=&#34;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&#34;&gt;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;MSDN. (без дати). Отримано з Microsoft Developer Network: &lt;a href=&#34;http://msdn.microsoft.com/&#34;&gt;http://msdn.microsoft.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.&lt;/li&gt;
+&lt;li&gt;Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &amp;ldquo;И.Д. Вильямс&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter6additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі PDF &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;Діаграми до лекції у форматі &lt;code&gt;
+  &lt;i class=&#34;fas fa-project-diagram  pr-1 fa-fw&#34;&gt;&lt;/i&gt;draw.io&lt;/code&gt; на &lt;code&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt;github&lt;/code&gt; &lt;a href=&#34;https://github.com/kleban/csharp-basics-public/tree/master/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Перейти&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Example Talk</title>
       <link>/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
@@ -2998,6 +3590,134 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DataClass</title>
+      <link>/project/example/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/project/example/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How configure R for education and machine learning [EN]</title>
+      <link>/post/r-configuration/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/post/r-configuration/</guid>
+      <description>&lt;hr&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#get-started&#34;&gt;Get Started&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans&#34;&gt;&lt;a href=&#34;https://wowchemy.com/plans/&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#ecosystem&#34;&gt;Ecosystem&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#inspiration&#34;&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#themes&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
+&lt;li&gt;The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong&gt;no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong&gt; and having &lt;strong&gt;flexibility to later add even deeper personalization with HTML and CSS&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-the-template-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png&#34; data-caption=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    The template is mobile first with a responsive design to ensure that your site looks stunning on every device.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;Wowchemy community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%28%23MadeWithWowchemy%20OR%20%23MadeWithAcademic%29&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💡 &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Updating Wowchemy?&lt;/strong&gt; View the &lt;a href=&#34;https://wowchemy.com/docs/guide/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
+&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
+&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans&#34;&gt;&lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/wowchemy/hugo-academic-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CLI&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://wowchemy.com/user-stories/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://wowchemy.com/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://wowchemy.com/docs/import/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://wowchemy.com/docs/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://wowchemy.com/docs/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 34+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Wowchemy and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     
@@ -3123,7 +3843,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-695473281&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-257643891&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -3133,7 +3853,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-695473281&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-257643891&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3543,19 +4263,6 @@ Three
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Project</title>
-      <link>/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
     </item>
     

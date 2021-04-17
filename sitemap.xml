@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/courses/csharp-basics/lecture3/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/csharp-basics/lecture4/</loc>
     <lastmod>2021-04-09T00:00:00+01:00</lastmod>
   </url>
@@ -25,6 +30,11 @@
   <url>
     <loc>/courses/csharp-basics/lecture5/</loc>
     <lastmod>2021-04-06T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/csharp-basics/lecture6/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -43,63 +53,173 @@
   </url>
   
   <url>
-    <loc>/tag/.net-framework/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc></loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/c/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/tag/anaconda/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/console-application/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/csharp/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/category/course/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/cts/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/tag/dataclass/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/economic-cybernetics/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/project/example/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ostroh-academy/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/tag/education/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/reference-type/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <loc>/category/education/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/r-configuration/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/jupyter-notebooks/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/r/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rstudio/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/tutorial/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/tutorial/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/.net-framework/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/array/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/c/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/collection/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/console-application/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/csharp/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/cts/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/economic-cybernetics/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/jagged-array/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ostroh-academy/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/reference-type/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/sorting/</loc>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/value-type/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/visual-studio/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/</loc>
-    <lastmod>2021-04-09T00:00:00+01:00</lastmod>
+    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -158,32 +278,12 @@
   </url>
   
   <url>
-    <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/academic/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/category/demo/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -253,17 +353,7 @@
   </url>
   
   <url>
-    <loc>/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/example/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -274,11 +364,6 @@
   
   <url>
     <loc>/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   

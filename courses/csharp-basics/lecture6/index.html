@@ -1,0 +1,1554 @@
+<!DOCTYPE html><html lang="uk" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.2 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Yurii Kleban">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів  6.5. Цикл foreach та масиви 6.">
+
+  
+  <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/lecture6/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs2015.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.33319bbe33e1b9feff835521b777a249.css">
+
+  
+
+
+
+
+  
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SXV7QJ');
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/csharp-basics/lecture6/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="kleban.page">
+  <meta property="og:url" content="/courses/csharp-basics/lecture6/">
+  <meta property="og:title" content="Лекція 6. Основи роботи з масивами | kleban.page">
+  <meta property="og:description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів  6.5. Цикл foreach та масиви 6."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
+  
+    
+      <meta property="article:published_time" content="2021-04-17T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2021-04-17T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Лекція 6. Основи роботи з масивами | kleban.page</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.0475bc389b7599ef6b1889ad17c11742.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">kleban.page</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">kleban.page</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Demo</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Проекти</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Курси</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/GeorgeCushen" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/">Про курс</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture1/">1. Вступ до курсу</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture2/">2. Алгоритмізація</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture3/">3. Visual Studio і .NET</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture4/">4. Типи даних, змінні</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture5/">5. Розгалуження та цикли</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecture6/">6. Масиви</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter61">6.1. Поняття масиву даних</a></li>
+    <li><a href="#chapter62">6.2. Одновимірні масиви</a>
+      <ul>
+        <li><a href="#chapter621">6.2.1. Оголошення</a></li>
+        <li><a href="#chapter622">6.2.2. Ініціалізація</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter63">6.3. Багатовимірні масиви</a></li>
+    <li><a href="#chapter64">6.4. Масиви масивів</a>
+      <ul>
+        <li><a href="#chapter624">6.5. Цикл foreach та масиви</a></li>
+        <li><a href="#chapter66">6.6. Сортування масивів [-]</a></li>
+        <li><a href="#chapter67">6.7. Робота з класом Array [-]</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter6tasks">Задачі</a></li>
+    <li><a href="#chapter6questions">Контрольні запитання</a></li>
+    <li><a href="#chapter6sourses">Список використаних джерел</a></li>
+    <li><a href="#chapter6additional">Додаткові матеріали для завантаження</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Лекція 6. Основи роботи з масивами</h1>
+
+          <div class="article-style">
+            <details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter61">6.1. Поняття масиву даних</a></li>
+    <li><a href="#chapter62">6.2. Одновимірні масиви</a>
+      <ul>
+        <li><a href="#chapter621">6.2.1. Оголошення</a></li>
+        <li><a href="#chapter622">6.2.2. Ініціалізація</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter63">6.3. Багатовимірні масиви</a></li>
+    <li><a href="#chapter64">6.4. Масиви масивів</a>
+      <ul>
+        <li><a href="#chapter624">6.5. Цикл foreach та масиви</a></li>
+        <li><a href="#chapter66">6.6. Сортування масивів [-]</a></li>
+        <li><a href="#chapter67">6.7. Робота з класом Array [-]</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter6tasks">Задачі</a></li>
+    <li><a href="#chapter6questions">Контрольні запитання</a></li>
+    <li><a href="#chapter6sourses">Список використаних джерел</a></li>
+    <li><a href="#chapter6additional">Додаткові матеріали для завантаження</a></li>
+  </ul>
+</nav>
+</details>
+<hr>
+<h2 id="chapter61">6.1. Поняття масиву даних</h2>
+<p><strong>Масив</strong> задає спосіб організації даних. <strong>Масивом</strong> називають впорядковану сукупність елементів одного типу.</p>
+<p>Кожен елемент масиву має індекси, що визначають порядок елементів. Число індексів
+характеризує розмір масиву. Кожен індекс змінюється в деякому діапазоні <code>[а,b]</code>. У мові C#, як і в
+багатьох інших мовах, індекси задаються цілочисельним типом. Діапазон <code>[а,b]</code> називається
+граничною парою, <code>а</code> – нижньою межою, <code>b</code> – верхньою межею. Якщо межі задані константними
+виразами, то число елементів масиву відоме у момент його оголошення і йому може бути виділена
+пам&rsquo;ять ще на етапі трансляції. Такі масиви називаються статичними. Якщо ж вирази, які задають
+межі, залежать від змінних, то такі масиви називаються динамічними, оскільки пам&rsquo;ять їм може
+бути відведена лише динамічно в процесі виконання програми, коли стають відомими значення
+відповідних змінних. Масиву, як правило, виділяється безперервна область пам&rsquo;яті.</p>
+<p>У мові C++ всі масиви є статичними. У мові C# знято істотне обмеження мови C++ на статичність масивів. Масиви в мові C# є справжніми динамічними масивами. Як наслідок цього масиви відносяться до посилальних типів (<code>Reference</code>), пам&rsquo;ять їм відводиться динамічно в &ldquo;купі&rdquo;.</p>
+<p>У мові C++ &ldquo;класичних&rdquo; багатовимірних масивів немає. Тут введені одновимірні масиви і масиви
+масивів. Останні є загальнішою структурою даних і дозволяють задати не лише багатовимірний куб,
+але і порізану, ступінчасту структуру. У мові C# збережені одновимірні масиви і масиви масивів. На додаток до них в мову додані багатовимірні масиви. Динамічні багатовимірні масиви мови C# є потужною, надійною, зрозумілою і зручною структурою даних, яку сміливо можна рекомендувати до вживання не лише професіоналам, але і новачкам, що програмують на C#.</p>
+<p>Після цього короткого огляду давайте перейдемо до більш систематичного вивчення деталей роботи з масивами в C#.</p>
+<hr>
+<h2 id="chapter62">6.2. Одновимірні масиви</h2>
+<h3 id="chapter621">6.2.1. Оголошення</h3>
+<p>У спрощеному вигляді оголошення одновимірного масиву виглядає таким чином:</p>
+<pre><code>тип[] ім’я_змінної;
+</code></pre>
+<p>Увага, на відміну від мови C++ квадратні дужки приписані не до імені змінної, а до типу. Вони є
+невід&rsquo;ємною частиною визначення класу, так що запис <code>T[]</code> слід розуміти як клас одновимірний масив
+з елементами типу <code>T</code>.</p>
+<p>Що ж до меж зміни індексів, то ця характеристика до класу не відноситься, вона є характеристикою
+змінних - екземплярів, кожен з яких є одновимірним масивом зі своїм числом елементів, що
+задаються в оголошенні змінної.</p>
+<pre><code>int[] а, b, с;
+</code></pre>
+<p>Найчастіше при оголошенні масиву використовується ім&rsquo;я з ініціалізацією. І знову-таки, як і в разі
+простих змінних, можуть бути два варіанти ініціалізації. У першому випадку ініціалізація є явною і
+задається константним масивом. Ось приклад:</p>
+<pre><code>double[] x= {5.5, 6.6, 7.7};
+</code></pre>
+<p>Слідуючи синтаксису, елементи константного масиву слід брати у фігурні дужки.
+У другому випадку створення і ініціалізація масиву виконується в об&rsquo;єктному стилі з викликом
+конструктора масиву. І це найбільш поширена практика оголошення масивів. Наведу приклад:</p>
+<pre><code>int[] d= new int[5];
+</code></pre>
+<p>Отже, якщо масив оголошується без ініціалізації, то створюється лише висяче посилання із
+значенням void. Якщо ініціалізація виконується конструктором, то в динамічній пам&rsquo;яті створюється
+сам масив, елементи якого ініціалізувалися константами відповідного типу, і посилання зв&rsquo;язується з цим масивом. Якщо масив ініціалізувався константним масивом, то в пам&rsquo;яті створюється
+константний масив, з яким і зв&rsquo;язується посилання.</p>
+<hr>
+<h3 id="chapter622">6.2.2. Ініціалізація</h3>
+<p>Ініціалізувати масиви, наприклад, можна наступними способами:</p>
+<ol>
+<li>Літералами відповідного типу (лістинг 6.1).</li>
+<li>Випадковими числами (лістинг 6.2).</li>
+<li>Ввести з клавіатури (лістинг 6.3).</li>
+</ol>
+<p>Заповнення масиву літералами може відбуватися наступним чином:</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 6.1. Заповнення одновимірного масиву літералами</em></p>
+<pre><code class="language-csharp">  int[] nums = { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+  int[] nums;
+  nums = new int[ ] { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+  int[] nums = new int[10] { 99, 10, 100, 18, 78, 23, 63, 9, 87, 49 };
+</code></pre>
+<p>Приклад програми на C#, яка заповнює масив випадковими числами:</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 6.2. Заповнення одновимірного масиву літералами</em></p>
+<pre><code class="language-csharp">  int[] array = new int[10];
+    
+  //Параметр фіксується для відтворюваності результатів
+  Random rand = new Random(2021);
+    
+  for (int i = 0; i &lt; 10; ++i)
+  {
+    array[i] = rand.Next(0, 100);
+    Console.Write(&quot; {0}&quot;, array[i]);
+  }
+</code></pre>
+<p>
+  <i class="fas fa-play text-muted  pr-1 fa-fw"></i> Результат виконання:</p>
+<pre><code>  54 81 42 92 65 70 42 34 0 51
+</code></pre>
+<p>Ввести з клавіатури значення масиву можна наступним чином:</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 6.3. Заповнення масиву значеннями, введеними з клавіатури</em></p>
+<pre><code class="language-csharp">  //Додаємо кодування кириличних символів
+  Console.OutputEncoding = Encoding.UTF8;
+  
+  int[] array;
+  Console.Write(&quot;\n Введіть розмір масиву &gt;\t&quot;);
+  int size = Convert.ToInt32(Console.ReadLine());
+  array = new int[size];
+  
+  for (int i = 0; i &lt; array.Length; ++i)
+  {
+    Console.Write(&quot; Введіть {0}-й елемент:\t&quot;, i + 1);
+    array[i] = Convert.ToInt32(Console.ReadLine());
+  }
+</code></pre>
+<p>
+  <i class="fas fa-play text-muted  pr-1 fa-fw"></i> Результат виконання:</p>
+<pre><code>  Введіть розмір масиву &gt;        4
+  Введіть 1-й елемент:   7
+  Введіть 2-й елемент:   45
+  Введіть 3-й елемент:   8
+  Введіть 4-й елемент:   11
+</code></pre>
+<hr>
+<h2 id="chapter63">6.3. Багатовимірні масиви</h2>
+<p>Жодної принципової різниці між одновимірними та багатовимірними масивами немає.</p>
+<p>Одновимірні масиви - це окремий випадок багатовимірних. Можна говорити і по-іншому:
+<strong>багатовимірні масиви</strong> є природним узагальненням одновимірних. Одновимірні масиви дозволяють
+задавати такі математичні структури як вектори, двовимірні - матриці, тривимірні - куби даних,
+масиви більшої розмірності - багатовимірні куби даних. Варто відмітити, що при роботі з базами даних багатовимірні куби, так звані куби <code>OLAP</code>, зустрічаються часто.</p>
+<p>От як виглядає оголошення багатовимірного масиву в загальному випадку:</p>
+<pre><code>int[,] array;
+</code></pre>
+<p>Приклад ініціалізації:</p>
+<pre><code>int[,]matrix = {1,2},{3,4};
+</code></pre>
+<p>Давайте розглянемо класичне завдання додавання прямокутних матриць. Нам знадобиться три
+динамічні масиви для представлення матриць і три методи, один з яких заповнюватиме вхідні
+матриці випадковими числами (<code>FillArray</code>), інший - виконувати додавання матриць (<code>AddMatrix</code>), третій - друкувати самі матриці (<code>PrintArray</code>).</p>
+<p>Ось тестовий приклад (програма містить трішки довгий код, але варто його переглянути):</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 6.4. Приклад додавання матриць</em></p>
+<pre><code class="language-csharp">  static void Main(string[] args)
+  {
+      //Оголосимо розмірність наших матриць
+      int rows = 3, cols = 5;
+  
+      //Оголосимо матриці
+      int[,] a = new int[rows, cols];
+      int[,] b = new int[rows, cols];
+      int[,] result = new int[rows, cols];
+  
+      //Заповнимо матриці випадковими числами
+      a = FillArray(rows, cols, 1);
+      b = FillArray(rows, cols, 2);
+      //Виведемо на консоль матрицю А
+      Console.WriteLine(&quot;\nArray1: &quot;);
+      PrintArray(a);
+      //Виведемо на консоль матрицю B
+      Console.WriteLine(&quot;\nArray2: &quot;);
+      PrintArray(b);
+  
+      //Додамо і присвоїмо результат
+      result = AddMatrix(a, b);
+  
+      if (result != null)
+      {
+          Console.WriteLine(&quot;\nResultMatrix: &quot;);
+          PrintArray(result);
+      }
+  }
+  
+  static int[,] AddMatrix(int[,] a, int[,] b)
+  {
+      //Оголосимо матрицю у яку будемо записувати результат.
+      int[,] res = new int[a.GetLength(0), a.GetLength(1)];
+  
+      //Перевіримо чи однаковий розмір матриць
+      if ((a.GetLength(0) != b.GetLength(0)) || (a.GetLength(1) != b.GetLength(1)))
+          Console.WriteLine(&quot;Мариці неоднакового розміру.&quot;);
+      else
+      {
+          for (int i = 0; i &lt; a.GetLength(0); ++i)
+          {
+              //Виконуємо додавання елементів матриць
+              for (int j = 0; j &lt; a.GetLength(1); ++j)
+                  res[i, j] = a[i, j] + b[i, j];
+          }
+          return res;
+      }
+      return null;
+  }
+  
+  static int[,] FillArray(int rows, int cols, int seed)
+  {
+      int[,] array = new int[rows, cols];
+      //Створює змінну класу Random для генерування значень
+      Random rand = new Random(seed);
+  
+      for (int i = 0; i &lt; rows; ++i)
+      {
+          for (int j = 0; j &lt; cols; ++j)
+          {
+              array[i, j] = rand.Next(0, 100);
+          }
+      }
+      return array;
+  }
+  
+  static void PrintArray(int[,] array)
+  {
+      for (int i = 0; i &lt; array.GetLength(0); ++i)
+      {
+          for (int j = 0; j &lt; array.GetLength(1); ++j)
+          {
+              //Виводимо значення на консоль
+              Console.Write(&quot; {0}\t&quot;, array[i, j]);
+          }
+          Console.WriteLine();
+      }
+  }
+</code></pre>
+<p>
+  <i class="fas fa-play text-muted  pr-1 fa-fw"></i> Результат виконання:</p>
+<pre><code>  Array1:
+   24      11      46      77      65
+   43      35      94      10      64
+   2       24      32      98      68
+  
+  Array2:
+   77      40      16      98      10
+   30      80      44      22      1
+   76      2       0       51      38
+  
+  ResultMatrix:
+   101     51      62      175     75
+   73      115     138     32      65
+   78      26      32      149     106
+</code></pre>
+<hr>
+<h2 id="chapter64">6.4. Масиви масивів</h2>
+<p>Ще одним видом масивів C# є масиви масивів, звані також різаними/рваними масивами (<strong>jagged
+arrays</strong>). Такий масив масивів можна розглядати як одновимірний масив, елементи якого є масивами,
+елементи яких, у свою чергу, знову можуть бути масивами, і так може тривати до деякого рівня
+вкладеності.</p>
+<p>У яких ситуаціях може виникати необхідність в таких структурах даних? Ці масиви можуть
+застосовуватися для представлення дерев, в яких вузли можуть мати довільне число нащадків. Таким
+може бути, наприклад, генеалогічне дерево. Вершини першого рівня - <code>Fathers</code>, що представляють
+батьків, можуть задаватися одновимірним масивом, так що <code>Fathers[i]</code> - це <code>i</code>-й батько. Вершини
+другого рівня представляються масивом масивів - <code>Children</code>, так що <code>Children[i]</code> - це масив дітей <code>i</code>-го батька, а <code>Children[i][j]</code> - це <code>j</code>-а дитина <code>i</code>-го батька. Для представлення внуків знадобиться третій рівень, так що <code>GrandChildren[i][j][k]</code> представлятиме <code>k</code>-го внука <code>j</code>-ї дитини <code>i</code>-го батька.</p>
+<p>Є деякі особливості в оголошенні і ініціалізації таких масивів. Якщо при оголошенні багатовимірних
+масивів для вказівки розмірності використовувалися коми, то для порізаних масивів застосовується
+зрозуміліша символіка - сукупності пар квадратних дужок; наприклад, <code>int[][]</code> задає масив, елементи якого - одновимірні масиви елементів типу <code>int</code>.</p>
+<p>Складніше зі створенням самих масивів і їх ініціалізацією. Тут не можна викликати конструктор <code>new int[3][5]</code>, оскільки він не задає порізаний масив. Фактично потрібно викликати конструктор для
+кожного масиву на нийнижчому рівні. У цьому і полягає складність оголошення таких масивів.</p>
+<p>Розпочнемо з формального прикладу:</p>
+<pre><code class="language-csharp">  int[][] jagger = new int[3][]
+  {
+    new int[] {5,7,9,11},
+    new int[] {2,8},
+    new int[] {6,12,4}
+  };
+</code></pre>
+<p>Масив <code>jagger</code> має всього два рівні. Можна вважати, що у нього три елементи, кожен з яких є
+масивом. Для кожного такого масиву необхідно викликати конструктор <code>new</code>, аби створити
+внутрішній масив. У даному прикладі елементи внутрішніх масивів набувають значення, будучи
+явно ініціалізовані константними масивами. Звичайно, допустимим є і таке оголошення:</p>
+<pre><code class="language-csharp">  int[][] jagger1 = new int[3][]
+  {
+    new int[4],
+    new int[2],
+    new int[3]
+  };
+</code></pre>
+<p>В цьому випадку елементи масиву набудуть при ініціалізації нульових значень. Реальну
+ініціалізацію потрібно буде виконувати програмним шляхом. Варто відмітити, що в конструкторі
+верхнього рівня константу <code>3</code> можна опустити і писати просто <code>new int[][]</code>. Також виклик
+цього конструктора можна взагалі опустити - він матиметься на увазі:</p>
+<pre><code class="language-csharp">  int[][] jagger2 =
+  {
+    new int[4],
+    new int[2],
+    new int[3]
+  };
+</code></pre>
+<p>Оголошувати вкладені масиви обов’язково.</p>
+<hr>
+<h3 id="chapter624">6.5. Цикл foreach та масиви</h3>
+<p>У лекції про цикли загдувалося, що у мові С# визначений цикл <code>foreach</code>, але детальний його розгляд
+був відкладений «на потім». Час для нього настав.</p>
+<p>Цикл <code>foreach</code> використовується для опису елементів колекції. <strong>Колекція</strong> – це група об&rsquo;єктів. С#
+визначає декілька типів колекцій, і одним з них є масив. Формат запису циклу <code>foreach</code> має такий
+вигляд:</p>
+<pre><code>  foreach (тип ім'я_змінної in колекція) 
+  {
+    інструкції;
+  }
+</code></pre>
+<p>Тут елементи тип та ім’я_змінної задають тип та ім&rsquo;я ітераційної змінної, яка при функціонуванні
+циклу <code>fоreach</code> набуватиме значень елементів з колекції. Елемент колекція служить для вказівки
+опитуваної колекції (в даному випадку як колекцію ми розглядаємо масив). Таким чином, елемент
+тип повинен збігатися (або бути сумісним) з базовим типом масиву. Тут важливо запам&rsquo;ятати, що
+ітераційну змінну стосовно масиву можна використовувати лише для читання. Отже, неможливо
+змінити вміст масиву, присвоївши ітераційній змінній нове значення.</p>
+<p>Розглянемо простий приклад використання циклу <code>foreach</code>. Приведена нижче програма створює
+масив для зберігання цілих чисел і присвоює його елементам початкові значення. Потім вона
+відображає елементи масиву, попутно обчислюючи їх суму.</p>
+<p>
+  <i class="fas fa-code text-muted  pr-1 fa-fw"></i> <em>Лістинг 6.5. Робота з циклом foreach</em></p>
+<pre><code class="language-csharp">  Console.OutputEncoding = Encoding.UTF8;
+  
+  int[] array = new int[10];
+  int suma = 0;
+  Random r = new Random(2021);
+  
+  //Заповнюмє масив випадковими числами
+  for (int i = 0; i &lt; array.Length; ++i)
+      array[i] = r.Next(10, 100);
+  
+  Console.Write(&quot;Array:\t&quot;);
+  foreach (int element in array)
+  {
+      Console.Write(&quot;{0} &quot;, element);
+      suma += element;
+  }
+  Console.WriteLine(&quot;\n\nСума елементів:\t{0}&quot;, suma);
+</code></pre>
+<p>
+  <i class="fas fa-play text-muted  pr-1 fa-fw"></i> Результат виконання:</p>
+<pre><code>  Array:  59 83 48 93 69 73 48 41 10 56
+
+  Сума елементів: 580
+</code></pre>
+<hr>
+<h3 id="chapter66">6.6. Сортування масивів [-]</h3>
+<div class="alert alert-note">
+  <div>
+    Розділ у процесі наповнення
+  </div>
+</div>
+<hr>
+<h3 id="chapter67">6.7. Робота з класом Array [-]</h3>
+<div class="alert alert-note">
+  <div>
+    Розділ у процесі наповнення
+  </div>
+</div>
+<hr>
+
+  <i class="fas fa-list-alt fa-2x text-success  pr-1 fa-fw"></i>
+<h2 id="chapter6tasks">Задачі</h2>
+<p><strong>Задача 1.</strong> Написати програму, яка знаходить суму парних і суму непарних елементів масиву.
+Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить користувач.</p>
+<hr>
+<p><strong>Задача 2.</strong> Написати програму, яка знаходить в масиві значення, що повторюються два і більше разів, і показує їх на екран. Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить користувач. Наприклад:</p>
+<pre><code>  45  12  12  63
+  15  12  45  78
+  75  56  89  1
+  
+  Результат: 12, 75
+</code></pre>
+<hr>
+<p><strong>Задача 3.</strong> Написати програму, яка знаходить в масиві найменше непарне число і показує його на
+екран. Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить
+користувач.</p>
+<hr>
+<p><strong>Задача 4.</strong> Задано масив із $n$ дійсних чисел. Обчислити різницю між максимальним та мінімальним
+за модулем елементами цього масиву. Елементи масиву генеруються випадковим чином. Кількість
+стовпців та рядків вводить користувач.</p>
+<hr>
+<p><strong>Задача 5.</strong> Дано одновимірний масив із дійсних чисел. Відсортувати його таким чином, щоб всі
+додатні елементи знаходилися на початку, а всі від&rsquo;ємні – в кінці, і при цьому зберігся початковий
+порядок елементів в обох групах.</p>
+<hr>
+<p><strong>Задача 6.</strong> Задано одновимірний масив. Знайти два серед його елементів, модуль різниці яких має
+найменше значення.</p>
+<hr>
+<p><strong>Задача 7.</strong> Сформувати цілочисельний масив, елементами якого є випадкові числа із діапазону.
+Знайти суму елементів масиву, значення яких кратні $8$.</p>
+<hr>
+<p><strong>Задача 8.</strong> Розробити функцію, що переставляє в зворотному порядку елементи головної діагоналі
+квадтаної матриці.</p>
+<hr>
+<p><strong>Задача 9.</strong> Переформатувати марицю (двовимірний масив) таким чином, щоб її рядки розміщувалися за зростанням їх поелементних сум.</p>
+<hr>
+<p><strong>Задача 10.</strong> Знайти мінімальний елемент серед тих елементів масиву $A$, які не є елементами масиву $B$.</p>
+<hr>
+<p><strong>Задача 11.</strong> Визначити, скільки різних чисел міститься в заданому цілочисельному масиві.</p>
+<p><strong>Задача 12.</strong> Відсортувати рядки двохвимірного масиву за зростанням. Кількість рядків і стовпців вводить користувач. Масив заповнюється випадковими числами із діапазону $[10; 100)$.</p>
+<p>Наприклад:</p>
+<pre><code>  45  12  12  63
+  15  12  45  78
+  75  56  89  1
+</code></pre>
+<p>Результат:</p>
+<pre><code>  12  12  45  63
+  12  15  45  78
+  1   56  75  89
+</code></pre>
+<hr>
+<p><strong>Задача 13.</strong> Згенерувати матрицю значень $n*n$ (квадратну). Знайти максимальний елемент у виділеному кольором діапазоні масиву:</p>
+<figure >
+<p><a data-fancybox="" href="/media/courses/csharp-basics/lecture6/lecture-6-task-13.svg" ></p>
+<p><img src="/media/courses/csharp-basics/lecture6/lecture-6-task-13.svg" alt=""  >
+</a></p>
+</figure>
+<p>Так, для підзавдання 13.3 і матриці поданої нижче</p>
+<pre><code>  45  12  12  63
+  15  12  45  78 
+  75  56  89  1
+  53  75  78  21
+</code></pre>
+<p>максимум становитиме <strong>89</strong>.</p>
+<hr>
+
+  <i class="fas fa-question-circle fa-2x text-warning  pr-1 fa-fw"></i>
+<h2 id="chapter6questions">Контрольні запитання</h2>
+<hr>
+
+  <i class="fas fa-book fa-2x text-primary  pr-1 fa-fw"></i>
+<h2 id="chapter6sourses">Список використаних джерел</h2>
+<ol>
+<li>Albahari, J., &amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.</li>
+<li>Cardelli, L., &amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з <a href="http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf">http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf</a></li>
+<li>Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.</li>
+<li>MSDN. (без дати). Отримано з Microsoft Developer Network: <a href="http://msdn.microsoft.com/">http://msdn.microsoft.com/</a></li>
+<li>Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.</li>
+<li>Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &ldquo;И.Д. Вильямс&rdquo;.</li>
+<li>Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.</li>
+</ol>
+<hr>
+
+  <i class="fas fa-download fa-2x  pr-1 fa-fw"></i>
+<h2 id="chapter6additional">Додаткові матеріали для завантаження</h2>
+<ol>
+<li><del>Лекція у форматі DOCX <a href="">
+  <i class="fas fa-file-word  pr-1 fa-fw"></i> Завантажити</a></del> (у розробці)</li>
+<li><del>Лекція у форматі PDF <a href="">
+  <i class="fas fa-file-pdf  pr-1 fa-fw"></i> Завантажити</a></del> (у розробці)</li>
+<li>Діаграми до лекції у форматі <code>
+  <i class="fas fa-project-diagram  pr-1 fa-fw"></i>draw.io</code> на <code>
+  <i class="fab fa-github  pr-1 fa-fw"></i>github</code> <a href="https://github.com/kleban/csharp-basics-public/tree/master/diagrams" target="_blank" rel="noopener"> Перейти</a></li>
+</ol>
+<hr>
+<div class="alert alert-note">
+  <div>
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  </div>
+</div>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/csharp/">csharp</a>
+  
+  <a class="badge badge-light" href="/tag/economic-cybernetics/">economic cybernetics</a>
+  
+  <a class="badge badge-light" href="/tag/ostroh-academy/">ostroh academy</a>
+  
+  <a class="badge badge-light" href="/tag/c/">C#</a>
+  
+  <a class="badge badge-light" href="/tag/visual-studio/">visual studio</a>
+  
+  <a class="badge badge-light" href="/tag/.net-framework/">.net framework</a>
+  
+  <a class="badge badge-light" href="/tag/console-application/">console application</a>
+  
+  <a class="badge badge-light" href="/tag/cts/">CTS</a>
+  
+  <a class="badge badge-light" href="/tag/value-type/">Value Type</a>
+  
+  <a class="badge badge-light" href="/tag/reference-type/">Reference Type</a>
+  
+  <a class="badge badge-light" href="/tag/array/">array</a>
+  
+  <a class="badge badge-light" href="/tag/collection/">collection</a>
+  
+  <a class="badge badge-light" href="/tag/jagged-array/">jagged array</a>
+  
+  <a class="badge badge-light" href="/tag/sorting/">sorting</a>
+  
+</div>
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/csharp-basics/lecture5/" rel="next">Лекція 5. Оператори розгалуження та цикли</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 17, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2021 Yurii Kleban
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/csharp.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.06e52bf0665167274d459a9300d0fab2.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>
