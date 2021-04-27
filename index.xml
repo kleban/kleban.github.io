@@ -18,6 +18,10 @@
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture1/</guid>
       <description>&lt;hr&gt;
+&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -41,6 +45,7 @@
     &lt;li&gt;&lt;a href=&#34;#chapter14&#34;&gt;1.4	.NET Framework: поняття та структура&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter1c&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter1s&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter1a&#34;&gt;Додаткові матеріали для завнатаження &lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/details&gt;
@@ -204,8 +209,10 @@ graph TD;
 &lt;li&gt;Вирішення проблем безпеки (в рамках безпеки, що існує в системі політики).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter1c&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -228,8 +235,10 @@ graph TD;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter1s&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;!--
 ---
@@ -238,6 +247,12 @@ graph TD;
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 ## Задачі
 --&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;chapter1a&#34;&gt;Додаткові матеріали для завнатаження &lt;/h2&gt;
 &lt;hr&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -1167,8 +1182,10 @@ graph TD;
 
 &lt;p&gt;&lt;em&gt;Джерело: &lt;a href=&#34;https://www.youtube.com/channel/UCiTtRN9b8P4CoSfpkfgEJHA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;youtube канал draw.io&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter2c&#34;&gt;Контрольні запитання &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Дати визначення поняття «алгоритм»?&lt;/li&gt;
@@ -1177,8 +1194,10 @@ graph TD;
 &lt;li&gt;Які типові блоки для формування блок-схем алгоритмів ви знаєте? Як вони зображуються графічно?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter2s&#34;&gt;Список використаних джерел &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1220,8 +1239,10 @@ graph TD;
 ## Задачі
 --&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter2a&#34;&gt;Додаткові матеріали для завнатаження &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -1300,12 +1321,16 @@ graph TD;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;контрольні-запитання&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;список-використаних-джерел&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1347,8 +1372,10 @@ graph TD;
 ## Задачі
 --&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;додаткові-матеріали-для-завнатаження&#34;&gt;Додаткові матеріали для завнатаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -1375,6 +1402,10 @@ graph TD;
       <pubDate>Fri, 09 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture4/</guid>
       <description>&lt;hr&gt;
+&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -2519,8 +2550,10 @@ point2.x = 777; point2.y = 777
 (для чисельного типу даних), &lt;code&gt;false&lt;/code&gt; (для логічного типу даних), &lt;code&gt;&#39;\0&#39;&lt;/code&gt; (для символьного типу даних), а в
 разі визначення за допомогою типу-посилання – значення порожнього посилання &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4t&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Виведіть на екран наступний текст:&lt;/p&gt;
 &lt;pre&gt;&#34;Саме знання нікому їсти не дасть.&#34;
@@ -2543,8 +2576,10 @@ point2.x = 777; point2.y = 777
 &lt;p&gt;&lt;strong&gt;Задача 8.&lt;/strong&gt; Дано катети прямокутного трикутника (вводяться з клавіатури користувачем). Визначити довжину гіпотенузи.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Задача 9.&lt;/strong&gt; У C# немає функції, яка обчислює квадрат числа. Написати програму, яка обчислює квадрат введеного числа.&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4c&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Що таке тип даних?&lt;/li&gt;
@@ -2563,8 +2598,10 @@ point2.x = 777; point2.y = 777
 12.Опишіть основні характеристики посилальних типів даних.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4s&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -2576,8 +2613,10 @@ point2.x = 777; point2.y = 777
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4a&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -2603,7 +2642,11 @@ point2.x = 777; point2.y = 777
       <link>/courses/csharp-basics/lecture5/</link>
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture5/</guid>
-      <description>&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+      <description>&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -2938,8 +2981,10 @@ point2.x = 777; point2.y = 777
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Робота з циклом &lt;code&gt;foreach&lt;/code&gt; буде розглянута у розділі 6 разом із вивченням масивів.&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
-  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+  &lt;i class=&#34;fas fa-code fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter5samples&#34;&gt;Приклади розв&amp;rsquo;язання задач&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Приклад 5.1.&lt;/strong&gt; Написати програму, яка генерує і виводить на консоль 10 випадкових чисел із діапазону від 10 до 50.&lt;/p&gt;
 &lt;p&gt;
@@ -3004,8 +3049,10 @@ point2.x = 777; point2.y = 777
   }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter5tasks&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.1.&lt;/strong&gt; Написати програму, що знаходить добуток чисел у вказаному
 користувачем діапазоні.&lt;/p&gt;
@@ -3051,6 +3098,23 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.10.&lt;/strong&gt; Написати програму, дозволяє вивести на консоль в порядку спадання непарні числа із діапазону $[5;90]$, кратні $3$ та не кратні $5$. одночасно.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.11.&lt;/strong&gt; Розробити програму, що працює як найпростіший калькулятор, який виконує арифметичні дії &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; (скористатися оператором &lt;code&gt;switch&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Пояснення. Програма повинна працювати у режимі постійного діалогу з користувачем.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--- МЕНЮ ---
+[+] - Додати
+[-] - Відняти
+[*] - Множити
+[/] - Ділити
+[0] - Вийти з програми
+
+Ваш вибір :&amp;gt; *
+
+Введіть число 1: 4
+Введіть число 2: 5
+
+Резльутат: 20
+
+// повторне виведення меню
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.12.&lt;/strong&gt; Знайти найбільший спільний дільник двох натуральних чисел, використавши алгоритм Евкліда. &lt;code&gt;Алгоритм Евкліда полягає в наступному: від більшого числа віднімається менше до тих пір, поки вони не стануть рівними; отримане в результаті число і буде найбільшим спільним дільником.&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -3077,8 +3141,20 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 *
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.14.&lt;/strong&gt; Обчислити значення виразу $y=\frac{cos(x^2 + 5)^3}{\sqrt{x - ln(x)}}$ для усіх $x$ з діапазону $[100; 200]$ кратних $10$-ти. На консоль вивести результат у вигляді, наприклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  x     y
+  100    0.8710
+  110   -0.0247
+  ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Примітка. Вивести на консоль не більше чотирьох знаків після розділювача дробової та цілої частини (крапки) для значень $y$. Також зверніть увагу на виведення чисел з від&amp;rsquo;ємним та додатними значеннями.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.15.&lt;/strong&gt; Написати програму, що генерує та виводить на консоль 5 випадкових чисел, кратних &lt;code&gt;7&lt;/code&gt;-ми та некратних &lt;code&gt;5&lt;/code&gt;-ти одночасно з діапазону $[50; 150]$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-play fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter5solutions&#34;&gt;Рішення до задач&lt;/h2&gt;
 &lt;p&gt;Рішення до задачі 5.1:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
@@ -3125,13 +3201,52 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
     if(i % 3 == 0 &amp;amp;&amp;amp; i % 5 != 0 &amp;amp;&amp;amp; i % 2 == 1)
       Console.WriteLine(i);
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Рішення до задачі 5.11 (часткове)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  while (true)
+  {
+      Console.OutputEncoding = Encoding.Unicode;
+      Console.Write(&amp;quot;\n--- МЕНЮ ---\n[+] - Додати\n[-] - Відняти\n[*] - Множити\n&amp;quot; +
+          &amp;quot;[/] - Ділити\n[0] - Вийти з програми\n\nВаш вибір :&amp;gt;\t&amp;quot;);
+  
+      string choise = Console.ReadLine();
+  
+      Console.Write(&amp;quot;\nВведіть число 1:\t&amp;quot;);
+      double num1 = double.Parse(Console.ReadLine());
+      Console.Write(&amp;quot;Введіть число 2:\t&amp;quot;);
+      double num2 = double.Parse(Console.ReadLine());
+  
+      switch (choise)
+      {
+          case &amp;quot;+&amp;quot;:
+              double sum = num1 + num2;
+              Console.WriteLine($&amp;quot;\nРезультат: {sum}&amp;quot;);
+              break;
+          default:
+              Console.WriteLine(&amp;quot;Помилка! Введіть операцію або 0.&amp;quot;);
+              break;
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;p&gt;Рішення до задачі 5.14.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.WriteLine(&amp;quot;x\ty&amp;quot;);
+  for(int x = 100; x &amp;lt;= 200; x+=10)
+  {
+      double y = Math.Pow(Math.Cos(Math.Pow(x, 2)), 3) / Math.Sqrt(x - Math.Log(x));
+      Console.WriteLine(&amp;quot;{0}\t{1:f4}&amp;quot;, x, y &amp;gt; 0 ? &amp;quot; &amp;quot; + Math.Round(y, 4): y);
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4qustions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4sourses&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -3143,8 +3258,10 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4a&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -3170,7 +3287,11 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
       <link>/courses/csharp-basics/lecture6/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture6/</guid>
-      <description>&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+      <description>&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -3522,8 +3643,10 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter6tasks&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Написати програму, яка знаходить суму парних і суму непарних елементів масиву.
 Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить користувач.&lt;/p&gt;
@@ -3562,6 +3685,7 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;p&gt;&lt;strong&gt;Задача 10.&lt;/strong&gt; Знайти мінімальний елемент серед тих елементів масиву $A$, які не є елементами масиву $B$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 11.&lt;/strong&gt; Визначити, скільки різних чисел міститься в заданому цілочисельному масиві.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 12.&lt;/strong&gt; Відсортувати рядки двохвимірного масиву за зростанням. Кількість рядків і стовпців вводить користувач. Масив заповнюється випадковими числами із діапазону $[10; 100)$.&lt;/p&gt;
 &lt;p&gt;Наприклад:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  45  12  12  63
@@ -3587,14 +3711,21 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
   53  75  78  21
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;максимум становитиме &lt;strong&gt;89&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 14.&lt;/strong&gt; Написати програму, що обчислює середнє значення серед парних елементів масиву. Елементи генеруються випадковим чином у діапазоні [10; 100). Кількість елементів визначає користувач.&lt;/p&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 15.&lt;/strong&gt; Написати програму, що генерує вектор випадкових елементів з діапазону $[100;200]$ та виводить його на консоль. Усі елементи вектора повинні бути кратними &lt;code&gt;7&lt;/code&gt;-ми. Генерацію випалкового числа винести в окремий метод.&lt;/p&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter6questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter6sourses&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -3606,8 +3737,10 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter6additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -3649,10 +3782,13 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;/details&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;chapter71&#34;&gt;7.1. Перелічувані типи&lt;/h2&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;chapter72&#34;&gt;7.2. Робота зі структурами&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter7task&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Написати програму, що передбачає вгадування користувачем числа, загадоного комп&amp;rsquo;ютером. Після кожної спроби вгадати число комп&amp;rsquo;ютер повідомляє чи загадане значення більше (&lt;code&gt;&amp;gt;&lt;/code&gt;) чи менше (&lt;code&gt;&amp;lt;&lt;/code&gt;) від запропонованого користувачем. Після вгадування на екран виводиться кількість спроб.&lt;/p&gt;
 &lt;p&gt;Припустимо, що компютер має право загадувати число у діапазоні $[1; 10000)]$.&lt;/p&gt;
@@ -3690,6 +3826,7 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
       }
   }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 2.&lt;/strong&gt; Написати програму, що дозволяє маніпулювати даними про товари у магазині. Товар описати як окрему структуру (struct) з полями:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва (&lt;code&gt;Title&lt;/code&gt;)&lt;/li&gt;
@@ -3712,6 +3849,7 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Вийти з програми&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Взаємодію з користувачем реалізувати через меню.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 3.&lt;/strong&gt; Описати структуру &lt;strong&gt;Книга&lt;/strong&gt; (&lt;code&gt;Book&lt;/code&gt;) з даними:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва&lt;/li&gt;
@@ -3731,15 +3869,21 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Дата народження&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Створити масив з 5-ти книг та вивети його на консоль методом &lt;code&gt;Print()&lt;/code&gt; з різними параметрами.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 4.&lt;/strong&gt; На основі структур, створених у &lt;strong&gt;завданні 3&lt;/strong&gt; написати програму для маніпулюванням інформації про книги у каталозі.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.&lt;/strong&gt; Написати програму&amp;hellip;&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter7questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter7sources&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -3751,8 +3895,10 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -3779,13 +3925,19 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture8/</guid>
       <description>&lt;hr&gt;
+&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#презентація&#34;&gt;Презентація&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8sources&#34;&gt;Де почитати?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8sources&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
@@ -3794,16 +3946,51 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;hr&gt;
 &lt;h2 id=&#34;chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
+
+  &lt;i class=&#34;fas fa-file-powerpoint fa-2x text-danger  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;презентація&#34;&gt;Презентація&lt;/h2&gt;
+&lt;br&gt;
+&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=0A1340BA71B3F0AA&amp;amp;resid=A1340BA71B3F0AA%213939&amp;amp;authkey=ALTJQw7LlW8LZMk&amp;amp;em=2&amp;amp;wdAr=1.7777777777777777&#34; width=&#34;100%&#34; height=&#34;400px&#34; frameborder=&#34;0&#34;&gt;Це вбудований документ &lt;a target=&#34;_blank&#34; href=&#34;https://office.com&#34;&gt;Microsoft Office&lt;/a&gt; на платформі &lt;a target=&#34;_blank&#34; href=&#34;https://office.com/webapps&#34;&gt;Office&lt;/a&gt;.&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8task&#34;&gt;Задачі&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
-  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+  &lt;i class=&#34;fas fa-question-circle text-warning fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
-  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+  &lt;i class=&#34;far fa-bookmark text-primary fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;chapter8sources&#34;&gt;Де почитати?&lt;/h2&gt;
+&lt;p&gt;Книги:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Назва книги&lt;/p&gt;
+&lt;p&gt;Сторінки: 1254-1284.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Блоги, статті:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://metanit.com/sharp/tutorial/3.29.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  &lt;i class=&#34;fas fa-link text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Metanit. Объектно-ориентированное программирование. Практика&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Відео-контент:&lt;/p&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
+
+  &lt;i class=&#34;fas fa-book text-primary fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8sources&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -3815,8 +4002,10 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
@@ -4107,7 +4296,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-629854713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-195286473&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -4117,7 +4306,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-629854713&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-195286473&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

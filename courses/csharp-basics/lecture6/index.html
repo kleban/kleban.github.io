@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів 6.5. Цикл foreach та масиви 6.6. Сортування масивів [-] 6.">
+  <meta name="description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів 6.5. Цикл foreach та масиви 6.">
 
   
   <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/lecture6/">
@@ -290,7 +290,7 @@
   <meta property="og:site_name" content="kleban.page">
   <meta property="og:url" content="/courses/csharp-basics/lecture6/">
   <meta property="og:title" content="Лекція 6. Основи роботи з масивами | kleban.page">
-  <meta property="og:description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів 6.5. Цикл foreach та масиви 6.6. Сортування масивів [-] 6."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Table of Contents  6.1. Поняття масиву даних 6.2. Одновимірні масиви  6.2.1. Оголошення 6.2.2. Ініціалізація   6.3. Багатовимірні масиви 6.4. Масиви масивів 6.5. Цикл foreach та масиви 6."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
   
     
@@ -837,7 +837,11 @@
           <h1>Лекція 6. Основи роботи з масивами</h1>
 
           <div class="article-style">
-            <details class="toc-inpage d-print-none  " open>
+            <span style="float:right; opacity:0.3">
+
+  <i class="fas fa-atlas fa-3x  pr-1 fa-fw"></i>
+</span>
+<details class="toc-inpage d-print-none  " open>
   <summary class="font-weight-bold">Table of Contents</summary>
   <nav id="TableOfContents">
   <ul>
@@ -1189,8 +1193,10 @@ arrays</strong>). Такий масив масивів можна розгляд
   </div>
 </div>
 <hr>
+<span style="float:right">
 
   <i class="fas fa-list-alt fa-2x text-success  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter6tasks">Задачі</h2>
 <p><strong>Задача 1.</strong> Написати програму, яка знаходить суму парних і суму непарних елементів масиву.
 Елементи масиву генеруються випадковим чином. Кількість стовпців та рядків вводить користувач.</p>
@@ -1229,6 +1235,7 @@ arrays</strong>). Такий масив масивів можна розгляд
 <p><strong>Задача 10.</strong> Знайти мінімальний елемент серед тих елементів масиву $A$, які не є елементами масиву $B$.</p>
 <hr>
 <p><strong>Задача 11.</strong> Визначити, скільки різних чисел міститься в заданому цілочисельному масиві.</p>
+<hr>
 <p><strong>Задача 12.</strong> Відсортувати рядки двохвимірного масиву за зростанням. Кількість рядків і стовпців вводить користувач. Масив заповнюється випадковими числами із діапазону $[10; 100)$.</p>
 <p>Наприклад:</p>
 <pre><code>  45  12  12  63
@@ -1254,14 +1261,21 @@ arrays</strong>). Такий масив масивів можна розгляд
   53  75  78  21
 </code></pre>
 <p>максимум становитиме <strong>89</strong>.</p>
+<hr>
 <p><strong>Задача 14.</strong> Написати програму, що обчислює середнє значення серед парних елементів масиву. Елементи генеруються випадковим чином у діапазоні [10; 100). Кількість елементів визначає користувач.</p>
 <hr>
+<p><strong>Задача 15.</strong> Написати програму, що генерує вектор випадкових елементів з діапазону $[100;200]$ та виводить його на консоль. Усі елементи вектора повинні бути кратними <code>7</code>-ми. Генерацію випалкового числа винести в окремий метод.</p>
+<hr>
+<span style="float:right">
 
   <i class="fas fa-question-circle fa-2x text-warning  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter6questions">Контрольні запитання</h2>
 <hr>
+<span style="float:right">
 
   <i class="fas fa-book fa-2x text-primary  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter6sourses">Список використаних джерел</h2>
 <ol>
 <li>Albahari, J., &amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.</li>
@@ -1273,8 +1287,10 @@ arrays</strong>). Такий масив масивів можна розгляд
 <li>Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.</li>
 </ol>
 <hr>
+<span style="float:right">
 
   <i class="fas fa-download fa-2x  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter6additional">Додаткові матеріали для завантаження</h2>
 <ol>
 <li><del>Лекція у форматі DOCX <a href="">

@@ -931,8 +931,10 @@
 
 &lt;p&gt;&lt;em&gt;Джерело: &lt;a href=&#34;https://www.youtube.com/channel/UCiTtRN9b8P4CoSfpkfgEJHA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;youtube канал draw.io&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter2c&#34;&gt;Контрольні запитання &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Дати визначення поняття «алгоритм»?&lt;/li&gt;
@@ -941,8 +943,10 @@
 &lt;li&gt;Які типові блоки для формування блок-схем алгоритмів ви знаєте? Як вони зображуються графічно?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter2s&#34;&gt;Список використаних джерел &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -984,8 +988,10 @@
 ## Задачі
 --&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter2a&#34;&gt;Додаткові матеріали для завнатаження &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;

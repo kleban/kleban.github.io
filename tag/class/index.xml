@@ -18,13 +18,19 @@
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture8/</guid>
       <description>&lt;hr&gt;
+&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#презентація&#34;&gt;Презентація&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8sources&#34;&gt;Де почитати?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8sources&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
@@ -33,16 +39,51 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
+
+  &lt;i class=&#34;fas fa-file-powerpoint fa-2x text-danger  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;презентація&#34;&gt;Презентація&lt;/h2&gt;
+&lt;br&gt;
+&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=0A1340BA71B3F0AA&amp;amp;resid=A1340BA71B3F0AA%213939&amp;amp;authkey=ALTJQw7LlW8LZMk&amp;amp;em=2&amp;amp;wdAr=1.7777777777777777&#34; width=&#34;100%&#34; height=&#34;400px&#34; frameborder=&#34;0&#34;&gt;Це вбудований документ &lt;a target=&#34;_blank&#34; href=&#34;https://office.com&#34;&gt;Microsoft Office&lt;/a&gt; на платформі &lt;a target=&#34;_blank&#34; href=&#34;https://office.com/webapps&#34;&gt;Office&lt;/a&gt;.&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8task&#34;&gt;Задачі&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
-  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+  &lt;i class=&#34;fas fa-question-circle text-warning fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
-  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+  &lt;i class=&#34;far fa-bookmark text-primary fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;chapter8sources&#34;&gt;Де почитати?&lt;/h2&gt;
+&lt;p&gt;Книги:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Назва книги&lt;/p&gt;
+&lt;p&gt;Сторінки: 1254-1284.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Блоги, статті:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://metanit.com/sharp/tutorial/3.29.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  &lt;i class=&#34;fas fa-link text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Metanit. Объектно-ориентированное программирование. Практика&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Відео-контент:&lt;/p&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
+
+  &lt;i class=&#34;fas fa-book text-primary fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8sources&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -54,8 +95,10 @@
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;

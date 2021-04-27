@@ -840,7 +840,11 @@
           <h1>Лекція 5. Оператори розгалуження та цикли</h1>
 
           <div class="article-style">
-            <details class="toc-inpage d-print-none  " open>
+            <span style="float:right; opacity:0.3">
+
+  <i class="fas fa-atlas fa-3x  pr-1 fa-fw"></i>
+</span>
+<details class="toc-inpage d-print-none  " open>
   <summary class="font-weight-bold">Table of Contents</summary>
   <nav id="TableOfContents">
   <ul>
@@ -1175,8 +1179,10 @@
 </code></pre>
 <p>Робота з циклом <code>foreach</code> буде розглянута у розділі 6 разом із вивченням масивів.</p>
 <hr>
+<span style="float:right">
 
-  <i class="fas fa-list-alt fa-2x text-success  pr-1 fa-fw"></i>
+  <i class="fas fa-code fa-2x text-success  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter5samples">Приклади розв&rsquo;язання задач</h2>
 <p><strong>Приклад 5.1.</strong> Написати програму, яка генерує і виводить на консоль 10 випадкових чисел із діапазону від 10 до 50.</p>
 <p>
@@ -1241,8 +1247,10 @@
   }
 </code></pre>
 <hr>
+<span style="float:right">
 
   <i class="fas fa-list-alt fa-2x text-success  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter5tasks">Задачі</h2>
 <p><strong>Задача 5.1.</strong> Написати програму, що знаходить добуток чисел у вказаному
 користувачем діапазоні.</p>
@@ -1288,6 +1296,23 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 <p><strong>Задача 5.10.</strong> Написати програму, дозволяє вивести на консоль в порядку спадання непарні числа із діапазону $[5;90]$, кратні $3$ та не кратні $5$. одночасно.</p>
 <hr>
 <p><strong>Задача 5.11.</strong> Розробити програму, що працює як найпростіший калькулятор, який виконує арифметичні дії <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> (скористатися оператором <code>switch</code>).</p>
+<p>Пояснення. Програма повинна працювати у режимі постійного діалогу з користувачем.</p>
+<pre><code>--- МЕНЮ ---
+[+] - Додати
+[-] - Відняти
+[*] - Множити
+[/] - Ділити
+[0] - Вийти з програми
+
+Ваш вибір :&gt; *
+
+Введіть число 1: 4
+Введіть число 2: 5
+
+Резльутат: 20
+
+// повторне виведення меню
+</code></pre>
 <hr>
 <p><strong>Задача 5.12.</strong> Знайти найбільший спільний дільник двох натуральних чисел, використавши алгоритм Евкліда. <code>Алгоритм Евкліда полягає в наступному: від більшого числа віднімається менше до тих пір, поки вони не стануть рівними; отримане в результаті число і буде найбільшим спільним дільником.</code></p>
 <hr>
@@ -1314,8 +1339,20 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 *
 </code></pre>
 <hr>
+<p><strong>Задача 5.14.</strong> Обчислити значення виразу $y=\frac{cos(x^2 + 5)^3}{\sqrt{x - ln(x)}}$ для усіх $x$ з діапазону $[100; 200]$ кратних $10$-ти. На консоль вивести результат у вигляді, наприклад:</p>
+<pre><code>  x     y
+  100    0.8710
+  110   -0.0247
+  ...
+</code></pre>
+<p><em>Примітка. Вивести на консоль не більше чотирьох знаків після розділювача дробової та цілої частини (крапки) для значень $y$. Також зверніть увагу на виведення чисел з від&rsquo;ємним та додатними значеннями.</em></p>
+<hr>
+<p><strong>Задача 5.15.</strong> Написати програму, що генерує та виводить на консоль 5 випадкових чисел, кратних <code>7</code>-ми та некратних <code>5</code>-ти одночасно з діапазону $[50; 150]$.</p>
+<hr>
+<span style="float:right">
 
   <i class="fas fa-play fa-2x text-success  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter5solutions">Рішення до задач</h2>
 <p>Рішення до задачі 5.1:</p>
 <pre><code>  Console.OutputEncoding = Encoding.Unicode;
@@ -1362,13 +1399,52 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
     if(i % 3 == 0 &amp;&amp; i % 5 != 0 &amp;&amp; i % 2 == 1)
       Console.WriteLine(i);
 </code></pre>
+<p>Рішення до задачі 5.11 (часткове)</p>
+<pre><code>  while (true)
+  {
+      Console.OutputEncoding = Encoding.Unicode;
+      Console.Write(&quot;\n--- МЕНЮ ---\n[+] - Додати\n[-] - Відняти\n[*] - Множити\n&quot; +
+          &quot;[/] - Ділити\n[0] - Вийти з програми\n\nВаш вибір :&gt;\t&quot;);
+  
+      string choise = Console.ReadLine();
+  
+      Console.Write(&quot;\nВведіть число 1:\t&quot;);
+      double num1 = double.Parse(Console.ReadLine());
+      Console.Write(&quot;Введіть число 2:\t&quot;);
+      double num2 = double.Parse(Console.ReadLine());
+  
+      switch (choise)
+      {
+          case &quot;+&quot;:
+              double sum = num1 + num2;
+              Console.WriteLine($&quot;\nРезультат: {sum}&quot;);
+              break;
+          default:
+              Console.WriteLine(&quot;Помилка! Введіть операцію або 0.&quot;);
+              break;
+      }
+  }
+</code></pre>
 <hr>
+<p>Рішення до задачі 5.14.</p>
+<pre><code>  Console.WriteLine(&quot;x\ty&quot;);
+  for(int x = 100; x &lt;= 200; x+=10)
+  {
+      double y = Math.Pow(Math.Cos(Math.Pow(x, 2)), 3) / Math.Sqrt(x - Math.Log(x));
+      Console.WriteLine(&quot;{0}\t{1:f4}&quot;, x, y &gt; 0 ? &quot; &quot; + Math.Round(y, 4): y);
+  }
+</code></pre>
+<hr>
+<span style="float:right">
 
   <i class="fas fa-question-circle fa-2x text-warning  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter4qustions">Контрольні запитання</h2>
 <hr>
+<span style="float:right">
 
   <i class="fas fa-book fa-2x text-primary  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter4sourses">Список використаних джерел</h2>
 <ol>
 <li>Albahari, J., &amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.</li>
@@ -1380,8 +1456,10 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 <li>Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.</li>
 </ol>
 <hr>
+<span style="float:right">
 
   <i class="fas fa-download fa-2x  pr-1 fa-fw"></i>
+</span>
 <h2 id="chapter4a">Додаткові матеріали для завантаження</h2>
 <ol>
 <li><del>Лекція у форматі DOCX <a href="">

@@ -17,7 +17,11 @@
       <link>/courses/csharp-basics/lecture5/</link>
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture5/</guid>
-      <description>&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+      <description>&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -352,8 +356,10 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Робота з циклом &lt;code&gt;foreach&lt;/code&gt; буде розглянута у розділі 6 разом із вивченням масивів.&lt;/p&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
-  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+  &lt;i class=&#34;fas fa-code fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter5samples&#34;&gt;Приклади розв&amp;rsquo;язання задач&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Приклад 5.1.&lt;/strong&gt; Написати програму, яка генерує і виводить на консоль 10 випадкових чисел із діапазону від 10 до 50.&lt;/p&gt;
 &lt;p&gt;
@@ -418,8 +424,10 @@
   }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter5tasks&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.1.&lt;/strong&gt; Написати програму, що знаходить добуток чисел у вказаному
 користувачем діапазоні.&lt;/p&gt;
@@ -465,6 +473,23 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.10.&lt;/strong&gt; Написати програму, дозволяє вивести на консоль в порядку спадання непарні числа із діапазону $[5;90]$, кратні $3$ та не кратні $5$. одночасно.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.11.&lt;/strong&gt; Розробити програму, що працює як найпростіший калькулятор, який виконує арифметичні дії &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; (скористатися оператором &lt;code&gt;switch&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Пояснення. Програма повинна працювати у режимі постійного діалогу з користувачем.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--- МЕНЮ ---
+[+] - Додати
+[-] - Відняти
+[*] - Множити
+[/] - Ділити
+[0] - Вийти з програми
+
+Ваш вибір :&amp;gt; *
+
+Введіть число 1: 4
+Введіть число 2: 5
+
+Резльутат: 20
+
+// повторне виведення меню
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.12.&lt;/strong&gt; Знайти найбільший спільний дільник двох натуральних чисел, використавши алгоритм Евкліда. &lt;code&gt;Алгоритм Евкліда полягає в наступному: від більшого числа віднімається менше до тих пір, поки вони не стануть рівними; отримане в результаті число і буде найбільшим спільним дільником.&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -491,8 +516,20 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 *
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.14.&lt;/strong&gt; Обчислити значення виразу $y=\frac{cos(x^2 + 5)^3}{\sqrt{x - ln(x)}}$ для усіх $x$ з діапазону $[100; 200]$ кратних $10$-ти. На консоль вивести результат у вигляді, наприклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  x     y
+  100    0.8710
+  110   -0.0247
+  ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Примітка. Вивести на консоль не більше чотирьох знаків після розділювача дробової та цілої частини (крапки) для значень $y$. Також зверніть увагу на виведення чисел з від&amp;rsquo;ємним та додатними значеннями.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.15.&lt;/strong&gt; Написати програму, що генерує та виводить на консоль 5 випадкових чисел, кратних &lt;code&gt;7&lt;/code&gt;-ми та некратних &lt;code&gt;5&lt;/code&gt;-ти одночасно з діапазону $[50; 150]$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-play fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter5solutions&#34;&gt;Рішення до задач&lt;/h2&gt;
 &lt;p&gt;Рішення до задачі 5.1:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
@@ -539,13 +576,52 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
     if(i % 3 == 0 &amp;amp;&amp;amp; i % 5 != 0 &amp;amp;&amp;amp; i % 2 == 1)
       Console.WriteLine(i);
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Рішення до задачі 5.11 (часткове)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  while (true)
+  {
+      Console.OutputEncoding = Encoding.Unicode;
+      Console.Write(&amp;quot;\n--- МЕНЮ ---\n[+] - Додати\n[-] - Відняти\n[*] - Множити\n&amp;quot; +
+          &amp;quot;[/] - Ділити\n[0] - Вийти з програми\n\nВаш вибір :&amp;gt;\t&amp;quot;);
+  
+      string choise = Console.ReadLine();
+  
+      Console.Write(&amp;quot;\nВведіть число 1:\t&amp;quot;);
+      double num1 = double.Parse(Console.ReadLine());
+      Console.Write(&amp;quot;Введіть число 2:\t&amp;quot;);
+      double num2 = double.Parse(Console.ReadLine());
+  
+      switch (choise)
+      {
+          case &amp;quot;+&amp;quot;:
+              double sum = num1 + num2;
+              Console.WriteLine($&amp;quot;\nРезультат: {sum}&amp;quot;);
+              break;
+          default:
+              Console.WriteLine(&amp;quot;Помилка! Введіть операцію або 0.&amp;quot;);
+              break;
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;p&gt;Рішення до задачі 5.14.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.WriteLine(&amp;quot;x\ty&amp;quot;);
+  for(int x = 100; x &amp;lt;= 200; x+=10)
+  {
+      double y = Math.Pow(Math.Cos(Math.Pow(x, 2)), 3) / Math.Sqrt(x - Math.Log(x));
+      Console.WriteLine(&amp;quot;{0}\t{1:f4}&amp;quot;, x, y &amp;gt; 0 ? &amp;quot; &amp;quot; + Math.Round(y, 4): y);
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4qustions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4sourses&#34;&gt;Список використаних джерел&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
@@ -557,8 +633,10 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 &lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;span style=&#34;float:right&#34;&gt;
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;h2 id=&#34;chapter4a&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
