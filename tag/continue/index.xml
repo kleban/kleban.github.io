@@ -423,12 +423,14 @@
 &lt;h2 id=&#34;chapter5tasks&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.1.&lt;/strong&gt; Написати програму, що знаходить добуток чисел у вказаному
 користувачем діапазоні.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.2.&lt;/strong&gt; Дано цілі додатні числа $i$ та $k$ . Реалізувати функцію, що обчислює значення виразу:&lt;/p&gt;
 &lt;p&gt;$$
 z = i - k, при i кратному k
 $$
 $$z = k - i, при k кратному i$$
 $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.3.&lt;/strong&gt; Обчислити значення виразу $y=\frac{(x + 5)^3}{\sqrt{x + 1}}$ для усіх $x$ з діапазону $[10; 100]$ кратних $7$-ми. На консоль вивести результат у вигляді, наприклад:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  x   y
   7   125.21
@@ -436,6 +438,7 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
   ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Примітка. Вивести на консоль не більше двох знаків після розділювача дробової та цілої частини (крапки) для значень $y$.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.4.&lt;/strong&gt; Написати програму, що виводить на консоль таблицю множення на вказане користувачем число. Наприклад, якщо користувач ввів число $5$, то результат виконання програми матиме вигляд:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  5 x 1 = 5
   5 x 2 = 10
@@ -444,18 +447,27 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
   ...
   5 x 10 = 50
 &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.5.&lt;/strong&gt; Відомо, що $1 дюйм$ рівний $2.54 см$. Розробити додаток, що
 переводить дюйми в сантиметри і навпаки. Діалог з користувачем
 реалізувати через систему меню.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.6.&lt;/strong&gt; Написати програму, яка виводить на екран лінію з символів.
 Число символів та сам символ, і яка буде лінія вертикальна, або
 горизонтальна - вказує користувач.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.7.&lt;/strong&gt; Написати програму, що знаходить суму усіх чисел кратних $7$ у діапазоні від $0$ до $100$.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.8.&lt;/strong&gt; Написати програму, що обчислює суму цифр введено числа.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.9.&lt;/strong&gt; Написати програму, що виводить на екран цифри введеного числа у зворотному порядку. Наприклад, $248641 &amp;gt; 146842$.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.10.&lt;/strong&gt; Написати програму, дозволяє вивести на консоль в порядку спадання непарні числа із діапазону $[5;90]$, кратні $3$ та не кратні $5$. одночасно.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.11.&lt;/strong&gt; Розробити програму, що працює як найпростіший калькулятор, який виконує арифметичні дії &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; (скористатися оператором &lt;code&gt;switch&lt;/code&gt;).&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.12.&lt;/strong&gt; Знайти найбільший спільний дільник двох натуральних чисел, використавши алгоритм Евкліда. &lt;code&gt;Алгоритм Евкліда полягає в наступному: від більшого числа віднімається менше до тих пір, поки вони не стануть рівними; отримане в результаті число і буде найбільшим спільним дільником.&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.13.&lt;/strong&gt; Написати програму, яка виводить на консоль фігури, зображені нижче. &lt;em&gt;Примітка. Розміри фігур вказує користувач.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Фігура 1.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;****************
@@ -482,6 +494,51 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 
   &lt;i class=&#34;fas fa-play fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 &lt;h2 id=&#34;chapter5solutions&#34;&gt;Рішення до задач&lt;/h2&gt;
+&lt;p&gt;Рішення до задачі 5.1:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&amp;quot;Введіть нижню межу:&amp;quot;);
+  int low = int.Parse(Console.ReadLine());
+  Console.Write(&amp;quot;Введіть верхню межу:&amp;quot;);
+  int high = int.Parse(Console.ReadLine());
+  
+  int mult = 1;
+  for (int i = low; i &amp;lt;= high; i++)
+  {
+    mult *= i;
+  }
+  
+  Console.WriteLine($&amp;quot;Mult: {mult}&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Також код алгоритму можна скоротити наступним чином:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  int mult = 1;
+  for (; low &amp;lt;= high; mult *= low++) ;
+  Console.WriteLine($&amp;quot;Mult: {mult}&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Рішення до задачі 5.3:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.WriteLine($&amp;quot;x\ty&amp;quot;);
+  for (int x = 10; x &amp;lt;= 100; x++)
+  {
+    if (x % 7 == 0)
+    {
+      double y = Math.Pow(x + 5, 3) / Math.Sqrt(x + 1);
+      Console.WriteLine($&amp;quot;{x}\t{y:f2}&amp;quot;);
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Рішення до задачі 5.4:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.Write(&amp;quot;Enter number:\t&amp;quot;);
+  int num = int.Parse(Console.ReadLine());
+  for (int i = 1; i &amp;lt; 10; i++)
+    Console.WriteLine($&amp;quot;{num} x {i} = {num*i}&amp;quot;);
+    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Рішення до задачі 5.10&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  for (int i = 90; i &amp;gt;= 5; i--)
+    if(i % 3 == 0 &amp;amp;&amp;amp; i % 5 != 0 &amp;amp;&amp;amp; i % 2 == 1)
+      Console.WriteLine(i);
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;

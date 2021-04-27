@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polimorphism | kleban.page</title>
+    <link>/tag/polimorphism/</link>
+      <atom:link href="/tag/polimorphism/index.xml" rel="self" type="application/rss+xml" />
+    <description>Polimorphism</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>uk</language><copyright>© 2021 Yurii Kleban</copyright><lastBuildDate>Sun, 18 Apr 2021 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Polimorphism</title>
+      <link>/tag/polimorphism/</link>
+    </image>
+    
+    <item>
+      <title>Лекція 8. Вступ до об&#39;єктно-орієнтовного програмування</title>
+      <link>/courses/csharp-basics/lecture8/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0100</pubDate>
+      <guid>/courses/csharp-basics/lecture8/</guid>
+      <description>&lt;hr&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8sources&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8task&#34;&gt;Задачі&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8sources&#34;&gt;Список використаних джерел&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;Cardelli, L., &amp;amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з &lt;a href=&#34;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&#34;&gt;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;MSDN. (без дати). Отримано з Microsoft Developer Network: &lt;a href=&#34;http://msdn.microsoft.com/&#34;&gt;http://msdn.microsoft.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.&lt;/li&gt;
+&lt;li&gt;Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &amp;ldquo;И.Д. Вильямс&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі PDF &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;Діаграми до лекції у форматі &lt;code&gt;
+  &lt;i class=&#34;fas fa-project-diagram  pr-1 fa-fw&#34;&gt;&lt;/i&gt;draw.io&lt;/code&gt; на &lt;code&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt;github&lt;/code&gt; &lt;a href=&#34;https://github.com/kleban/csharp-basics-public/tree/master/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Перейти&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

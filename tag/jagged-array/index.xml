@@ -434,6 +434,7 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
   53  75  78  21
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;максимум становитиме &lt;strong&gt;89&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 14.&lt;/strong&gt; Написати програму, що обчислює середнє значення серед парних елементів масиву. Елементи генеруються випадковим чином у діапазоні [10; 100). Кількість елементів визначає користувач.&lt;/p&gt;
 &lt;hr&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;

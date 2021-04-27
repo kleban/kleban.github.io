@@ -38,6 +38,16 @@
   </url>
   
   <url>
+    <loc>/courses/csharp-basics/lecture7/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/csharp-basics/lecture8/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
@@ -50,6 +60,126 @@
   <url>
     <loc>/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/.net-framework/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/c/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/class/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/console-application/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/csharp/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/cts/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/economic-cybernetics/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/encapsulation/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/enum/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/feild/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/method/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/object/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/object-oriented-programming/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/oop/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ostroh-academy/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/polimorphism/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/private/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/public/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/reference-type/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/struct/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/value-type/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/visual-studio/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -128,11 +258,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/tutorial/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
@@ -148,17 +273,7 @@
   </url>
   
   <url>
-    <loc>/tag/.net-framework/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/array/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/c/</loc>
     <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
@@ -168,57 +283,12 @@
   </url>
   
   <url>
-    <loc>/tag/console-application/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/csharp/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/cts/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/economic-cybernetics/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/jagged-array/</loc>
     <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ostroh-academy/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/reference-type/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/sorting/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/value-type/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/visual-studio/</loc>
-    <lastmod>2021-04-17T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
     <lastmod>2021-04-17T00:00:00+01:00</lastmod>
   </url>
   

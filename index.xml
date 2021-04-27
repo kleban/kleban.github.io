@@ -3009,12 +3009,14 @@ point2.x = 777; point2.y = 777
 &lt;h2 id=&#34;chapter5tasks&#34;&gt;Задачі&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.1.&lt;/strong&gt; Написати програму, що знаходить добуток чисел у вказаному
 користувачем діапазоні.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.2.&lt;/strong&gt; Дано цілі додатні числа $i$ та $k$ . Реалізувати функцію, що обчислює значення виразу:&lt;/p&gt;
 &lt;p&gt;$$
 z = i - k, при i кратному k
 $$
 $$z = k - i, при k кратному i$$
 $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.3.&lt;/strong&gt; Обчислити значення виразу $y=\frac{(x + 5)^3}{\sqrt{x + 1}}$ для усіх $x$ з діапазону $[10; 100]$ кратних $7$-ми. На консоль вивести результат у вигляді, наприклад:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  x   y
   7   125.21
@@ -3022,6 +3024,7 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
   ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Примітка. Вивести на консоль не більше двох знаків після розділювача дробової та цілої частини (крапки) для значень $y$.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.4.&lt;/strong&gt; Написати програму, що виводить на консоль таблицю множення на вказане користувачем число. Наприклад, якщо користувач ввів число $5$, то результат виконання програми матиме вигляд:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  5 x 1 = 5
   5 x 2 = 10
@@ -3030,18 +3033,27 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
   ...
   5 x 10 = 50
 &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.5.&lt;/strong&gt; Відомо, що $1 дюйм$ рівний $2.54 см$. Розробити додаток, що
 переводить дюйми в сантиметри і навпаки. Діалог з користувачем
 реалізувати через систему меню.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.6.&lt;/strong&gt; Написати програму, яка виводить на екран лінію з символів.
 Число символів та сам символ, і яка буде лінія вертикальна, або
 горизонтальна - вказує користувач.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.7.&lt;/strong&gt; Написати програму, що знаходить суму усіх чисел кратних $7$ у діапазоні від $0$ до $100$.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.8.&lt;/strong&gt; Написати програму, що обчислює суму цифр введено числа.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.9.&lt;/strong&gt; Написати програму, що виводить на екран цифри введеного числа у зворотному порядку. Наприклад, $248641 &amp;gt; 146842$.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.10.&lt;/strong&gt; Написати програму, дозволяє вивести на консоль в порядку спадання непарні числа із діапазону $[5;90]$, кратні $3$ та не кратні $5$. одночасно.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.11.&lt;/strong&gt; Розробити програму, що працює як найпростіший калькулятор, який виконує арифметичні дії &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; (скористатися оператором &lt;code&gt;switch&lt;/code&gt;).&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.12.&lt;/strong&gt; Знайти найбільший спільний дільник двох натуральних чисел, використавши алгоритм Евкліда. &lt;code&gt;Алгоритм Евкліда полягає в наступному: від більшого числа віднімається менше до тих пір, поки вони не стануть рівними; отримане в результаті число і буде найбільшим спільним дільником.&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.13.&lt;/strong&gt; Написати програму, яка виводить на консоль фігури, зображені нижче. &lt;em&gt;Примітка. Розміри фігур вказує користувач.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Фігура 1.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;****************
@@ -3068,6 +3080,51 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 
   &lt;i class=&#34;fas fa-play fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 &lt;h2 id=&#34;chapter5solutions&#34;&gt;Рішення до задач&lt;/h2&gt;
+&lt;p&gt;Рішення до задачі 5.1:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&amp;quot;Введіть нижню межу:&amp;quot;);
+  int low = int.Parse(Console.ReadLine());
+  Console.Write(&amp;quot;Введіть верхню межу:&amp;quot;);
+  int high = int.Parse(Console.ReadLine());
+  
+  int mult = 1;
+  for (int i = low; i &amp;lt;= high; i++)
+  {
+    mult *= i;
+  }
+  
+  Console.WriteLine($&amp;quot;Mult: {mult}&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Також код алгоритму можна скоротити наступним чином:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  int mult = 1;
+  for (; low &amp;lt;= high; mult *= low++) ;
+  Console.WriteLine($&amp;quot;Mult: {mult}&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Рішення до задачі 5.3:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.WriteLine($&amp;quot;x\ty&amp;quot;);
+  for (int x = 10; x &amp;lt;= 100; x++)
+  {
+    if (x % 7 == 0)
+    {
+      double y = Math.Pow(x + 5, 3) / Math.Sqrt(x + 1);
+      Console.WriteLine($&amp;quot;{x}\t{y:f2}&amp;quot;);
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Рішення до задачі 5.4:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.Write(&amp;quot;Enter number:\t&amp;quot;);
+  int num = int.Parse(Console.ReadLine());
+  for (int i = 1; i &amp;lt; 10; i++)
+    Console.WriteLine($&amp;quot;{num} x {i} = {num*i}&amp;quot;);
+    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Рішення до задачі 5.10&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  for (int i = 90; i &amp;gt;= 5; i--)
+    if(i % 3 == 0 &amp;amp;&amp;amp; i % 5 != 0 &amp;amp;&amp;amp; i % 2 == 1)
+      Console.WriteLine(i);
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
@@ -3530,6 +3587,7 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
   53  75  78  21
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;максимум становитиме &lt;strong&gt;89&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 14.&lt;/strong&gt; Написати програму, що обчислює середнє значення серед парних елементів масиву. Елементи генеруються випадковим чином у діапазоні [10; 100). Кількість елементів визначає користувач.&lt;/p&gt;
 &lt;hr&gt;
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
@@ -3551,6 +3609,215 @@ arrays&lt;/strong&gt;). Такий масив масивів можна розг
 
   &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 &lt;h2 id=&#34;chapter6additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі PDF &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;Діаграми до лекції у форматі &lt;code&gt;
+  &lt;i class=&#34;fas fa-project-diagram  pr-1 fa-fw&#34;&gt;&lt;/i&gt;draw.io&lt;/code&gt; на &lt;code&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt;github&lt;/code&gt; &lt;a href=&#34;https://github.com/kleban/csharp-basics-public/tree/master/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Перейти&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Лекція 7. Перелічувані типи та структури</title>
+      <link>/courses/csharp-basics/lecture7/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0100</pubDate>
+      <guid>/courses/csharp-basics/lecture7/</guid>
+      <description>&lt;hr&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter71&#34;&gt;7.1. Перелічувані типи&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter72&#34;&gt;7.2. Робота зі структурами&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter7task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter7questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter7sources&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter71&#34;&gt;7.1. Перелічувані типи&lt;/h2&gt;
+&lt;h2 id=&#34;chapter72&#34;&gt;7.2. Робота зі структурами&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter7task&#34;&gt;Задачі&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Написати програму, що передбачає вгадування користувачем числа, загадоного комп&amp;rsquo;ютером. Після кожної спроби вгадати число комп&amp;rsquo;ютер повідомляє чи загадане значення більше (&lt;code&gt;&amp;gt;&lt;/code&gt;) чи менше (&lt;code&gt;&amp;lt;&lt;/code&gt;) від запропонованого користувачем. Після вгадування на екран виводиться кількість спроб.&lt;/p&gt;
+&lt;p&gt;Припустимо, що компютер має право загадувати число у діапазоні $[1; 10000)]$.&lt;/p&gt;
+&lt;p&gt;Рішення до задачі 3.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  Console.OutputEncoding = Encoding.Unicode;
+  
+  Random r = new Random();
+  int number = r.Next(1, 10000);
+  Console.WriteLine(&amp;quot;Привіт! Я загадав число у діапазоні [1; 10000).&amp;quot;);
+  
+  // ставимо @ перед параметром, оскільки try є ключовим словом у C#
+  int @try = 0;
+  
+  while (true)
+  {
+      ++@try;
+      Console.Write(&amp;quot;\nЯке число я загадав?\t&amp;gt;&amp;quot;);
+      int userNumber = int.Parse(Console.ReadLine());
+  
+      if (userNumber &amp;gt; number)
+      {
+          Console.WriteLine(&amp;quot;PC &amp;gt; Неправильно. Моє число є меншим.&amp;quot;);
+          continue;
+      }
+  
+      if (userNumber &amp;lt; number)
+      {
+          Console.WriteLine(&amp;quot;PC &amp;gt; Неправильно. Моє число є більшим.&amp;quot;);
+          continue;
+      }
+  
+      if (userNumber == number)
+      {
+          Console.WriteLine(&amp;quot;PC &amp;gt; Вітаю! Ти вгадав за {0} спроб&amp;quot;, @try);
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Задача 2.&lt;/strong&gt; Написати програму, що дозволяє маніпулювати даними про товари у магазині. Товар описати як окрему структуру (struct) з полями:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва (&lt;code&gt;Title&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Категорія (&lt;code&gt;Category&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Ціна (&lt;code&gt;Price&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Кількість (&lt;code&gt;Quantity&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Категорії товарів визначені як перелічуваний тип (enum) і мають наперед визначені значення, наприклад:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Промислові товари (&lt;code&gt;Industrial products&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Побутова хімія (&lt;code&gt;Household  chemicals&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Продукти харчування (&lt;code&gt;Food&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Реалізувати функції:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Вивести список товарів&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Додавати товар&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Редагувати товар&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Видалити товар&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Вийти з програми&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Взаємодію з користувачем реалізувати через меню.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 3.&lt;/strong&gt; Описати структуру &lt;strong&gt;Книга&lt;/strong&gt; (&lt;code&gt;Book&lt;/code&gt;) з даними:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Автор&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Рік видання&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Місце видання&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Реалізувати метод для виведення інформації про книгу, наприклад &lt;code&gt;Print()&lt;/code&gt;, який приймає 1 параметр &lt;code&gt;showFullInfo&lt;/code&gt; типу &lt;code&gt;bool&lt;/code&gt; і в залежності від його значення виводить інформацію про книгу у форматі:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; якщо &lt;code&gt;showFullInfo == true&lt;/code&gt;, то виводиться стрічка з інформацією про усі поля книги;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; якщо &lt;code&gt;showFullInfo == false&lt;/code&gt;, то виводиться стрічка з інформацією тільки про поля &lt;strong&gt;Назва&lt;/strong&gt; та &lt;strong&gt;Автор&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Автора&lt;/strong&gt; реалізувати як окрему структуру з полями:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Імя&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Прізвище&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Дата народження&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Створити масив з 5-ти книг та вивети його на консоль методом &lt;code&gt;Print()&lt;/code&gt; з різними параметрами.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 4.&lt;/strong&gt; На основі структур, створених у &lt;strong&gt;завданні 3&lt;/strong&gt; написати програму для маніпулюванням інформації про книги у каталозі.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.&lt;/strong&gt; Написати програму&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter7questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter7sources&#34;&gt;Список використаних джерел&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;Cardelli, L., &amp;amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з &lt;a href=&#34;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&#34;&gt;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;MSDN. (без дати). Отримано з Microsoft Developer Network: &lt;a href=&#34;http://msdn.microsoft.com/&#34;&gt;http://msdn.microsoft.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.&lt;/li&gt;
+&lt;li&gt;Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &amp;ldquo;И.Д. Вильямс&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Лекція у форматі PDF &lt;a href=&#34;&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
+&lt;li&gt;Діаграми до лекції у форматі &lt;code&gt;
+  &lt;i class=&#34;fas fa-project-diagram  pr-1 fa-fw&#34;&gt;&lt;/i&gt;draw.io&lt;/code&gt; на &lt;code&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt;github&lt;/code&gt; &lt;a href=&#34;https://github.com/kleban/csharp-basics-public/tree/master/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Перейти&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту.
+Дякую.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Лекція 8. Вступ до об&#39;єктно-орієнтовного програмування</title>
+      <link>/courses/csharp-basics/lecture8/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0100</pubDate>
+      <guid>/courses/csharp-basics/lecture8/</guid>
+      <description>&lt;hr&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8sources&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8task&#34;&gt;Задачі&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-book fa-2x text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8sources&#34;&gt;Список використаних джерел&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Albahari, J., &amp;amp; Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;Cardelli, L., &amp;amp; Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з &lt;a href=&#34;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&#34;&gt;http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.&lt;/li&gt;
+&lt;li&gt;MSDN. (без дати). Отримано з Microsoft Developer Network: &lt;a href=&#34;http://msdn.microsoft.com/&#34;&gt;http://msdn.microsoft.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Биллиг, А. (2005). Основы программирования на C#. Москва, Россия: НОУ ИНТУИТ.&lt;/li&gt;
+&lt;li&gt;Нейгел, К. И. (2011). С# 4.0 и платформа .NET 4 для профессионалов. Москва, Россия: ООО &amp;ldquo;И.Д. Вильямс&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Павловская, Т. (2009). С#. Программирование на языке высокого уровня. Учебник для вузов. СПб, Россия: Питер.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+  &lt;i class=&#34;fas fa-download fa-2x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;h2 id=&#34;chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;del&gt;Лекція у форматі DOCX &lt;a href=&#34;&#34;&gt;
   &lt;i class=&#34;fas fa-file-word  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Завантажити&lt;/a&gt;&lt;/del&gt; (у розробці)&lt;/li&gt;
@@ -3840,7 +4107,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-859673412&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-629854713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -3850,7 +4117,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-859673412&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-629854713&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
