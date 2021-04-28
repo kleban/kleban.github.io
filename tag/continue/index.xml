@@ -502,6 +502,23 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 ****************
 ****************
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Перенести у розв&amp;rsquo;язки&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&amp;quot;Введіть кількість рядків: \t&amp;quot;);
+  int rows = int.Parse(Console.ReadLine());
+  
+  Console.Write(&amp;quot;Введіть кількість стовпців: \t&amp;quot;);
+  int cols = int.Parse(Console.ReadLine());
+  
+  for (int i = 0; i &amp;lt; rows; i++)
+  {
+      for (int j = 0; j &amp;lt; cols; j++)
+      {
+          Console.Write(&amp;quot;*&amp;quot;);
+      }
+      Console.WriteLine();
+  }
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Фігура 2.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;****************
 *              *
@@ -509,10 +526,30 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 *              *
 ****************
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Перенести у розв&amp;rsquo;язки&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&amp;quot;Введіть кількість рядків: \t&amp;quot;);
+  int rows = int.Parse(Console.ReadLine());
+  
+  Console.Write(&amp;quot;Введіть кількість стовпців: \t&amp;quot;);
+  int cols = int.Parse(Console.ReadLine());
+  
+  for (int i = 0; i &amp;lt; rows; i++)
+  {
+      for (int j = 0; j &amp;lt; cols; j++)
+      {
+          if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
+              Console.Write(&amp;quot;*&amp;quot;);
+          else
+              Console.Write(&amp;quot; &amp;quot;);
+      }
+      Console.WriteLine();
+  }
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Фігура 3.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;********
-******
+&lt;pre&gt;&lt;code&gt;*****
 ****
+***
 **
 *
 &lt;/code&gt;&lt;/pre&gt;

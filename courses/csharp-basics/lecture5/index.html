@@ -1325,6 +1325,23 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 ****************
 ****************
 </code></pre>
+<p>Перенести у розв&rsquo;язки</p>
+<pre><code>  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&quot;Введіть кількість рядків: \t&quot;);
+  int rows = int.Parse(Console.ReadLine());
+  
+  Console.Write(&quot;Введіть кількість стовпців: \t&quot;);
+  int cols = int.Parse(Console.ReadLine());
+  
+  for (int i = 0; i &lt; rows; i++)
+  {
+      for (int j = 0; j &lt; cols; j++)
+      {
+          Console.Write(&quot;*&quot;);
+      }
+      Console.WriteLine();
+  }
+</code></pre>
 <p>Фігура 2.</p>
 <pre><code>****************
 *              *
@@ -1332,10 +1349,30 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 *              *
 ****************
 </code></pre>
+<p>Перенести у розв&rsquo;язки</p>
+<pre><code>  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&quot;Введіть кількість рядків: \t&quot;);
+  int rows = int.Parse(Console.ReadLine());
+  
+  Console.Write(&quot;Введіть кількість стовпців: \t&quot;);
+  int cols = int.Parse(Console.ReadLine());
+  
+  for (int i = 0; i &lt; rows; i++)
+  {
+      for (int j = 0; j &lt; cols; j++)
+      {
+          if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
+              Console.Write(&quot;*&quot;);
+          else
+              Console.Write(&quot; &quot;);
+      }
+      Console.WriteLine();
+  }
+</code></pre>
 <p>Фігура 3.</p>
-<pre><code>********
-******
+<pre><code>*****
 ****
+***
 **
 *
 </code></pre>
