@@ -1325,23 +1325,27 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 ****************
 ****************
 </code></pre>
-<p>Перенести у розв&rsquo;язки</p>
-<pre><code>  Console.OutputEncoding = Encoding.Unicode;
-  Console.Write(&quot;Введіть кількість рядків: \t&quot;);
+<!--
+Перенести у розв'язки
+
+```
+  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write("Введіть кількість рядків: \t");
   int rows = int.Parse(Console.ReadLine());
   
-  Console.Write(&quot;Введіть кількість стовпців: \t&quot;);
+  Console.Write("Введіть кількість стовпців: \t");
   int cols = int.Parse(Console.ReadLine());
   
-  for (int i = 0; i &lt; rows; i++)
+  for (int i = 0; i < rows; i++)
   {
-      for (int j = 0; j &lt; cols; j++)
+      for (int j = 0; j < cols; j++)
       {
-          Console.Write(&quot;*&quot;);
+          Console.Write("*");
       }
       Console.WriteLine();
   }
-</code></pre>
+```
+-->
 <p>Фігура 2.</p>
 <pre><code>****************
 *              *
@@ -1349,26 +1353,30 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 *              *
 ****************
 </code></pre>
-<p>Перенести у розв&rsquo;язки</p>
-<pre><code>  Console.OutputEncoding = Encoding.Unicode;
-  Console.Write(&quot;Введіть кількість рядків: \t&quot;);
+<!--
+Перенести у розв'язки
+
+```
+  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write("Введіть кількість рядків: \t");
   int rows = int.Parse(Console.ReadLine());
   
-  Console.Write(&quot;Введіть кількість стовпців: \t&quot;);
+  Console.Write("Введіть кількість стовпців: \t");
   int cols = int.Parse(Console.ReadLine());
   
-  for (int i = 0; i &lt; rows; i++)
+  for (int i = 0; i < rows; i++)
   {
-      for (int j = 0; j &lt; cols; j++)
+      for (int j = 0; j < cols; j++)
       {
           if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
-              Console.Write(&quot;*&quot;);
+              Console.Write("*");
           else
-              Console.Write(&quot; &quot;);
+              Console.Write(" ");
       }
       Console.WriteLine();
   }
-</code></pre>
+```
+-->
 <p>Фігура 3.</p>
 <pre><code>*****
 ****
@@ -1376,6 +1384,22 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$</p>
 **
 *
 </code></pre>
+<!--
+```
+Console.OutputEncoding = Encoding.Unicode;
+Console.Write("Введіть кількість: \t");
+int count = int.Parse(Console.ReadLine());
+
+for (int i = count; i > 0; i--)
+{
+    for (int j = 0; j < i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+```
+-->
 <hr>
 <p><strong>Задача 5.14.</strong> Обчислити значення виразу $y=\frac{cos(x^2 + 5)^3}{\sqrt{x - ln(x)}}$ для усіх $x$ з діапазону $[100; 200]$ кратних $10$-ти. На консоль вивести результат у вигляді, наприклад:</p>
 <pre><code>  x     y

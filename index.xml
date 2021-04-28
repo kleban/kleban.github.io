@@ -3133,23 +3133,27 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 ****************
 ****************
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Перенести у розв&amp;rsquo;язки&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
-  Console.Write(&amp;quot;Введіть кількість рядків: \t&amp;quot;);
+&lt;!--
+Перенести у розв&#39;язки
+
+```
+  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&#34;Введіть кількість рядків: \t&#34;);
   int rows = int.Parse(Console.ReadLine());
   
-  Console.Write(&amp;quot;Введіть кількість стовпців: \t&amp;quot;);
+  Console.Write(&#34;Введіть кількість стовпців: \t&#34;);
   int cols = int.Parse(Console.ReadLine());
   
-  for (int i = 0; i &amp;lt; rows; i++)
+  for (int i = 0; i &lt; rows; i++)
   {
-      for (int j = 0; j &amp;lt; cols; j++)
+      for (int j = 0; j &lt; cols; j++)
       {
-          Console.Write(&amp;quot;*&amp;quot;);
+          Console.Write(&#34;*&#34;);
       }
       Console.WriteLine();
   }
-&lt;/code&gt;&lt;/pre&gt;
+```
+--&gt;
 &lt;p&gt;Фігура 2.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;****************
 *              *
@@ -3157,26 +3161,30 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 *              *
 ****************
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Перенести у розв&amp;rsquo;язки&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  Console.OutputEncoding = Encoding.Unicode;
-  Console.Write(&amp;quot;Введіть кількість рядків: \t&amp;quot;);
+&lt;!--
+Перенести у розв&#39;язки
+
+```
+  Console.OutputEncoding = Encoding.Unicode;
+  Console.Write(&#34;Введіть кількість рядків: \t&#34;);
   int rows = int.Parse(Console.ReadLine());
   
-  Console.Write(&amp;quot;Введіть кількість стовпців: \t&amp;quot;);
+  Console.Write(&#34;Введіть кількість стовпців: \t&#34;);
   int cols = int.Parse(Console.ReadLine());
   
-  for (int i = 0; i &amp;lt; rows; i++)
+  for (int i = 0; i &lt; rows; i++)
   {
-      for (int j = 0; j &amp;lt; cols; j++)
+      for (int j = 0; j &lt; cols; j++)
       {
           if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
-              Console.Write(&amp;quot;*&amp;quot;);
+              Console.Write(&#34;*&#34;);
           else
-              Console.Write(&amp;quot; &amp;quot;);
+              Console.Write(&#34; &#34;);
       }
       Console.WriteLine();
   }
-&lt;/code&gt;&lt;/pre&gt;
+```
+--&gt;
 &lt;p&gt;Фігура 3.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;*****
 ****
@@ -3184,6 +3192,22 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 **
 *
 &lt;/code&gt;&lt;/pre&gt;
+&lt;!--
+```
+Console.OutputEncoding = Encoding.Unicode;
+Console.Write(&#34;Введіть кількість: \t&#34;);
+int count = int.Parse(Console.ReadLine());
+
+for (int i = count; i &gt; 0; i--)
+{
+    for (int j = 0; j &lt; i; j++)
+    {
+        Console.Write(&#34;*&#34;);
+    }
+    Console.WriteLine();
+}
+```
+--&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.14.&lt;/strong&gt; Обчислити значення виразу $y=\frac{cos(x^2 + 5)^3}{\sqrt{x - ln(x)}}$ для усіх $x$ з діапазону $[100; 200]$ кратних $10$-ти. На консоль вивести результат у вигляді, наприклад:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  x     y
@@ -5011,7 +5035,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-637129845&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-748963152&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -5021,7 +5045,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-637129845&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-748963152&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
