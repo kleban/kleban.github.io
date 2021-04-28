@@ -17,7 +17,8 @@
       <link>/courses/csharp-basics/lecture5/</link>
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture5/</guid>
-      <description>&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+      <description>&lt;hr&gt;
+&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
 
   &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 &lt;/span&gt;
@@ -525,6 +526,9 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Примітка. Вивести на консоль не більше чотирьох знаків після розділювача дробової та цілої частини (крапки) для значень $y$. Також зверніть увагу на виведення чисел з від&amp;rsquo;ємним та додатними значеннями.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Задача 5.15.&lt;/strong&gt; Написати програму, що генерує та виводить на консоль 5 випадкових чисел, кратних &lt;code&gt;7&lt;/code&gt;-ми та некратних &lt;code&gt;5&lt;/code&gt;-ти одночасно з діапазону $[50; 150]$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Задача 5.16.&lt;/strong&gt; Написати програму, що передбачає вгадування користувачем числа, загадоного комп&amp;rsquo;ютером. Після кожної спроби вгадати число комп&amp;rsquo;ютер повідомляє чи загадане значення більше (&lt;code&gt;&amp;gt;&lt;/code&gt;) чи менше (&lt;code&gt;&amp;lt;&lt;/code&gt;) від запропонованого користувачем. Після вгадування на екран виводиться кількість спроб.&lt;/p&gt;
+&lt;p&gt;Припустимо, що компютер має право загадувати число у діапазоні $[1; 10000)$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;span style=&#34;float:right&#34;&gt;
 

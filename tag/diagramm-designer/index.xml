@@ -18,6 +18,10 @@
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0100</pubDate>
       <guid>/courses/csharp-basics/lecture2/</guid>
       <description>&lt;hr&gt;
+&lt;span style=&#34;float:right; opacity:0.3&#34;&gt;
+
+  &lt;i class=&#34;fas fa-atlas fa-3x  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;

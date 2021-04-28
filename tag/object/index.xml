@@ -26,7 +26,13 @@
   &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter81&#34;&gt;8.1. Поняття об&amp;rsquo;єкта та класу. Основні елементи класу&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter82&#34;&gt;8.2. Будова класу&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter821&#34;&gt;8.2.1. Поля класу&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#chapter822&#34;&gt;8.2.2. Методи класу&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#презентація&#34;&gt;Презентація&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
@@ -37,7 +43,162 @@
 &lt;/nav&gt;
 &lt;/details&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;chapter81&#34;&gt;8.1. Базові поняття ООП.&lt;/h2&gt;
+&lt;h2 id=&#34;chapter81&#34;&gt;8.1. Поняття об&amp;rsquo;єкта та класу. Основні елементи класу&lt;/h2&gt;
+&lt;p&gt;Об&amp;rsquo;єктно-орієнтоване програмування і проектування побудоване на класах. Будь-яку програмну систему, побудовану в об&amp;rsquo;єктному стилі, можна розглядати як сукупність класів, можливо, об&amp;rsquo;єднаних в проекти, простори імен, рішення, як це робиться при програмуванні у Visual Studio.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Клас&lt;/strong&gt; - це шаблон, який визначає форму об&amp;rsquo;єкту. Він задає як дані, так і код, який оперує цими даними.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Об&amp;rsquo;єкти&lt;/strong&gt; - це екземпляри класу.&lt;/p&gt;
+&lt;p&gt;Клас складається із:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; полів;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; властивостей;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; методів;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; подій;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; конструкторів;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; деструкторів;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; делегатів.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Елементи класу називаються членами класу.&lt;/p&gt;
+&lt;p&gt;Клас оголошується за допомогою ключового слова &lt;code&gt;class&lt;/code&gt;. Синтаксис має наступний вигляд:&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Лістинг 8.1. Синтаксис оголошення класу.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  class ім’я_класу
+  {
+    //Оголошення полів
+    доступ тип імя_змінної;
+    доступ тип імя_змінної;
+  
+    //Оголошення методів
+    доступ тип_повернення імя_метода(параметри)
+    {
+      тіло метода;
+    }
+  
+    доступ тип_повернення імя_метода(параметри)
+    {
+      тіло метода;
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Розглянемо приклад базового створення класу &amp;ldquo;Комплексне число&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Лістинг 8.2. Оголошення класу &lt;code&gt;ComplexNumber&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  public class ComplexNumber
+  {
+    //Поля
+    private double a;
+    private double b;
+  
+    //Конструктор
+    public ComplexNumber(double a, double b)
+    {
+      this.a = a;
+      this.b = b;
+    }
+  
+  //Метод
+    public override string ToString()
+    {
+      return a + &amp;quot; + &amp;quot; + b + &amp;quot;i&amp;quot;;
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Доступ до полів, методів та інших членів класу може здійснюватися з різним рівнем доступу:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;code&gt;private&lt;/code&gt; доступний лише всередині класу (типу);&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;code&gt;protected&lt;/code&gt; доступний лише всередині класу та класів-нащадків;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;code&gt;internal&lt;/code&gt; доступний лише в межах збірки;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;code&gt;protected internal&lt;/code&gt; доступний лише в межах збірки, лише всередині класу та класів-нащадків;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;code&gt;public&lt;/code&gt; доступний для усіх.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;chapter82&#34;&gt;8.2. Будова класу&lt;/h2&gt;
+&lt;h3 id=&#34;chapter821&#34;&gt;8.2.1. Поля класу&lt;/h3&gt;
+&lt;p&gt;Поля класу синтаксично є звичайними змінними (об&amp;rsquo;єктами) мови. Їх опис задовольняє звичайним правилам оголошення змінних, про що детально говорилося раніше. Змістовно поля задають представлення тій самій абстракції даних, яку реалізує клас.&lt;/p&gt;
+&lt;p&gt;Поля характеризують властивості об&amp;rsquo;єктів класу. Коли створюється новий об&amp;rsquo;єкт класу, то цей об&amp;rsquo;єкт є набором полів класу. Два об&amp;rsquo;єкти одного класу мають один і той же набір полів, але різняться значеннями, що зберігаються в цих полях.&lt;/p&gt;
+&lt;p&gt;Синтаксис оголошення полів:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  модифікатор_доступу тип назва;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Наприклад, оголосимо клас &lt;code&gt;Worker&lt;/code&gt;, який має 3 поля: розмір з/п, прізвище, вік.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Лістинг 8.3. Оголошення полів класу &lt;code&gt;Worker&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  class Worker
+  {
+    public int salary;         //Розмір з/п
+    public string firstname;   //Ім&#39;я
+    public string lastname;    //Прізвище
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Зараз клас працівник нагадує структуру! І це не дивно, адже клас є більш розвиненою структурую.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;chapter822&#34;&gt;8.2.2. Методи класу&lt;/h3&gt;
+&lt;p&gt;Змінні(поля) екземплярів і методи - дві основні складові класів. Поки наш клас &lt;code&gt;Worker&lt;/code&gt; містить лише дані. Хоча такі класи (без методів) допустимі, більшість класів мають методи.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Методи&lt;/strong&gt; - це процедури (підпрограми), які маніпулюють даними, визначеними в класі, і у багатьох випадках забезпечують доступ до цих даних. Зазвичай різні частини програми взаємодіють з класом за допомогою його методів. Будь-який метод містить одну або декілька інструкцій.&lt;/p&gt;
+&lt;p&gt;Кожен метод має ім&amp;rsquo;я, і саме це ім&amp;rsquo;я використовується для його виклику. У загальному випадку методу можна привласнити будь-яке ім&amp;rsquo;я. Але пам&amp;rsquo;ятаєте, що ім&amp;rsquo;я &lt;code&gt;Main()&lt;/code&gt; зарезервовано для методу, з якого починається виконання програми. Крім того, як імена методів не можна використовувати ключові слова С#.&lt;/p&gt;
+&lt;p&gt;Імена методів супроводжуються парою круглих дужок. Наприклад, якщо метод має ім&amp;rsquo;я &lt;code&gt;GetVal&lt;/code&gt;, то в тексті буде написано &lt;code&gt;GetVal()&lt;/code&gt;. Це допомагає відрізняти імена змінних від імен методів. Формат запису методу такий:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  доступ тип_повернення імя_метода(параметри)
+  {
+    тіло метода;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-code text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Лістинг 8.4. Оголошення класу &lt;code&gt;Worker&lt;/code&gt;. Метод.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  class Worker
+  {
+    public int salary;         //Розмір з/п
+    public string firstname;   //Ім&#39;я
+    public string lastname;    //Прізвище
+  
+    //Метод, виводить інформацію про працівника на консоль
+    public void DisplayInfo()
+    {
+      Console.WriteLine(&amp;quot;{0} {1}, - {2} грн.&amp;quot;, lastname, firstname, salary);
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Зверніть увагу ось на що. Змінні екземпляра &lt;code&gt;salary&lt;/code&gt;, &lt;code&gt;lastname&lt;/code&gt; і &lt;code&gt;firstname&lt;/code&gt; використовуються всередині методу &lt;code&gt;DisplayInfo()&lt;/code&gt; без будь-яких атрибутів, тобто їм не передує ні ім&amp;rsquo;я об&amp;rsquo;єкту, ні оператор &amp;ldquo;крапка&amp;rdquo;. Це дуже важливий момент: якщо метод задіює змінну екземпляра, яка визначена в його класі, він робить це безпосередньо, без явного посилання на об&amp;rsquo;єкт і без оператора &amp;ldquo;крапка&amp;rdquo;. І Це логічно. Адже метод завжди викликається для деякого об&amp;rsquo;єкту конкретного класу. Таким чином, немає необхідності вказувати усередині методу об&amp;rsquo;єкт удруге. Це означає, що значення &lt;code&gt;salalry&lt;/code&gt;, &lt;code&gt;lastname&lt;/code&gt; і &lt;code&gt;firstname&lt;/code&gt; всередині методу &lt;code&gt;DisplayInfo()&lt;/code&gt; неявно вказують на копії цих змінних, що належать об&amp;rsquo;єкту, який викликає метод &lt;code&gt;DisplayInfo()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Інші приклади методів:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  public int GetAge();
+  protected string GetByName(string name);
+  protected static bool IsEquals(Class obj1, Class obj2);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Повернення значення методом.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;У загальному випадку існує два варіанти умов для повернення з методу. Перший пов&amp;rsquo;язаний з виявленням закриваючої фігурної дужки, що позначає кінець тіла методу (як продемонстровано на прикладі методу &lt;code&gt;DisplayInfo()&lt;/code&gt;). Другий варіант полягає у виконанні інструкції return. Можливі дві форми використання інструкції &lt;code&gt;return&lt;/code&gt;: одна призначена для void-методів (які не повертають значень), а інша - для повернення значень.&lt;/p&gt;
+&lt;p&gt;Негайне завершення &lt;code&gt;void&lt;/code&gt;-методу можна організувати за допомогою наступної форми інструкції &lt;code&gt;return&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  public void DisplayInfo()
+  {
+    if(salary &amp;lt; 0)
+      return;
+    Console.WriteLine(&amp;quot;{0} {1}, {2}&amp;quot;, lastname, firstname, salary);
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Хоча &lt;code&gt;void&lt;/code&gt;-методи - не рідкість, більшість методів все ж повертають значення. І справді, здатність повертати значення - одна з найкорисніших якостей методу. Ми вже розглядали приклад повернення значення під час роботи з масивами. Значення, які повертаються методами, використовуються в програмуванні по різному. У одних випадках повернене значення є результатом обчислень, в інших - воно просто означає, успішно чи ні виконана певна операція, а в третіх - воно може бути кодом-стану. Методи повертають викликаючим їх процедурам, використовуючи наступну форму інструкції &lt;code&gt;return&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return значення;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Додамо до нашого класу Працівник ще кілька полів і методів.&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+classDiagram
+    Worker &lt;|-- Manager
+    Worker &lt;|-- SalesManager
+    Worker &lt;|-- Zebra
+    Worker : +int age
+    Worker : +String gender
+    Worker: +isMammal()
+    Worker: +mate()
+    class Manager{
+      +String beakColor
+      +swim()
+      +quack()
+    }
+    class SalesManager{
+      -int sizeInFeet
+      -canEat() 
+    }
+    class Zebra{
+      +bool is_wild
+      +run()
+    }
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;span style=&#34;float:right&#34;&gt;
 
@@ -74,11 +235,20 @@
 &lt;p&gt;Блоги, статті:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://metanit.com/sharp/tutorial/3.29.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  &lt;i class=&#34;fas fa-link text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Metanit. Объектно-ориентированное программирование. Практика&lt;/a&gt;&lt;/li&gt;
+  &lt;i class=&#34;fas fa-link text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Metanit. Объектно-ориентированное программирование. Практика&lt;/a&gt; (RU)&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Відео-контент:&lt;/p&gt;
-&lt;p&gt;1.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://metanit.com/sharp/tutorial/3.29.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  &lt;i class=&#34;fab fa-youtube text-danger  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Metanit. Объектно-ориентированное программирование. Практика&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://metanit.com/sharp/tutorial/3.29.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  &lt;i class=&#34;fab fa-microsoft text-primary  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Metanit. Объектно-ориентированное программирование. Практика&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;span style=&#34;float:right&#34;&gt;
 

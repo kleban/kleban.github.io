@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Table of Contents  8.1. Базові поняття ООП. Презентація Задачі Контрольні запитання Де почитати? Список використаних джерел Додаткові матеріали для завантаження     8.1. Базові поняття ООП.">
+  <meta name="description" content="Table of Contents  8.1. Поняття об&rsquo;єкта та класу. Основні елементи класу 8.2. Будова класу  8.2.1. Поля класу 8.2.2. Методи класу   Презентація Задачі Контрольні запитання Де почитати?">
 
   
   <link rel="alternate" hreflang="uk" href="/courses/csharp-basics/lecture8/">
@@ -290,7 +290,7 @@
   <meta property="og:site_name" content="kleban.page">
   <meta property="og:url" content="/courses/csharp-basics/lecture8/">
   <meta property="og:title" content="Лекція 8. Вступ до об&#39;єктно-орієнтовного програмування | kleban.page">
-  <meta property="og:description" content="Table of Contents  8.1. Базові поняття ООП. Презентація Задачі Контрольні запитання Де почитати? Список використаних джерел Додаткові матеріали для завантаження     8.1. Базові поняття ООП."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Table of Contents  8.1. Поняття об&rsquo;єкта та класу. Основні елементи класу 8.2. Будова класу  8.2.1. Поля класу 8.2.2. Методи класу   Презентація Задачі Контрольні запитання Де почитати?"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="uk">
   
     
@@ -806,7 +806,13 @@
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#chapter81">8.1. Базові поняття ООП.</a></li>
+    <li><a href="#chapter81">8.1. Поняття об&rsquo;єкта та класу. Основні елементи класу</a></li>
+    <li><a href="#chapter82">8.2. Будова класу</a>
+      <ul>
+        <li><a href="#chapter821">8.2.1. Поля класу</a></li>
+        <li><a href="#chapter822">8.2.2. Методи класу</a></li>
+      </ul>
+    </li>
     <li><a href="#презентація">Презентація</a></li>
     <li><a href="#chapter8task">Задачі</a></li>
     <li><a href="#chapter8questions">Контрольні запитання</a></li>
@@ -837,7 +843,13 @@
   <summary class="font-weight-bold">Table of Contents</summary>
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#chapter81">8.1. Базові поняття ООП.</a></li>
+    <li><a href="#chapter81">8.1. Поняття об&rsquo;єкта та класу. Основні елементи класу</a></li>
+    <li><a href="#chapter82">8.2. Будова класу</a>
+      <ul>
+        <li><a href="#chapter821">8.2.1. Поля класу</a></li>
+        <li><a href="#chapter822">8.2.2. Методи класу</a></li>
+      </ul>
+    </li>
     <li><a href="#презентація">Презентація</a></li>
     <li><a href="#chapter8task">Задачі</a></li>
     <li><a href="#chapter8questions">Контрольні запитання</a></li>
@@ -848,7 +860,162 @@
 </nav>
 </details>
 <hr>
-<h2 id="chapter81">8.1. Базові поняття ООП.</h2>
+<h2 id="chapter81">8.1. Поняття об&rsquo;єкта та класу. Основні елементи класу</h2>
+<p>Об&rsquo;єктно-орієнтоване програмування і проектування побудоване на класах. Будь-яку програмну систему, побудовану в об&rsquo;єктному стилі, можна розглядати як сукупність класів, можливо, об&rsquo;єднаних в проекти, простори імен, рішення, як це робиться при програмуванні у Visual Studio.</p>
+<p><strong>Клас</strong> - це шаблон, який визначає форму об&rsquo;єкту. Він задає як дані, так і код, який оперує цими даними.</p>
+<p><strong>Об&rsquo;єкти</strong> - це екземпляри класу.</p>
+<p>Клас складається із:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> полів;</li>
+<li><input checked="" disabled="" type="checkbox"> властивостей;</li>
+<li><input checked="" disabled="" type="checkbox"> методів;</li>
+<li><input checked="" disabled="" type="checkbox"> подій;</li>
+<li><input checked="" disabled="" type="checkbox"> конструкторів;</li>
+<li><input checked="" disabled="" type="checkbox"> деструкторів;</li>
+<li><input checked="" disabled="" type="checkbox"> делегатів.</li>
+<li><input checked="" disabled="" type="checkbox"> &hellip;</li>
+</ul>
+<p>Елементи класу називаються членами класу.</p>
+<p>Клас оголошується за допомогою ключового слова <code>class</code>. Синтаксис має наступний вигляд:</p>
+<p>
+  <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.1. Синтаксис оголошення класу.</p>
+<pre><code>  class ім’я_класу
+  {
+    //Оголошення полів
+    доступ тип імя_змінної;
+    доступ тип імя_змінної;
+  
+    //Оголошення методів
+    доступ тип_повернення імя_метода(параметри)
+    {
+      тіло метода;
+    }
+  
+    доступ тип_повернення імя_метода(параметри)
+    {
+      тіло метода;
+    }
+  }
+</code></pre>
+<p>Розглянемо приклад базового створення класу &ldquo;Комплексне число&rdquo;.</p>
+<p>
+  <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.2. Оголошення класу <code>ComplexNumber</code>.</p>
+<pre><code>  public class ComplexNumber
+  {
+    //Поля
+    private double a;
+    private double b;
+  
+    //Конструктор
+    public ComplexNumber(double a, double b)
+    {
+      this.a = a;
+      this.b = b;
+    }
+  
+  //Метод
+    public override string ToString()
+    {
+      return a + &quot; + &quot; + b + &quot;i&quot;;
+    }
+  }
+</code></pre>
+<p>Доступ до полів, методів та інших членів класу може здійснюватися з різним рівнем доступу:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <code>private</code> доступний лише всередині класу (типу);</li>
+<li><input checked="" disabled="" type="checkbox"> <code>protected</code> доступний лише всередині класу та класів-нащадків;</li>
+<li><input checked="" disabled="" type="checkbox"> <code>internal</code> доступний лише в межах збірки;</li>
+<li><input checked="" disabled="" type="checkbox"> <code>protected internal</code> доступний лише в межах збірки, лише всередині класу та класів-нащадків;</li>
+<li><input checked="" disabled="" type="checkbox"> <code>public</code> доступний для усіх.</li>
+</ul>
+<hr>
+<h2 id="chapter82">8.2. Будова класу</h2>
+<h3 id="chapter821">8.2.1. Поля класу</h3>
+<p>Поля класу синтаксично є звичайними змінними (об&rsquo;єктами) мови. Їх опис задовольняє звичайним правилам оголошення змінних, про що детально говорилося раніше. Змістовно поля задають представлення тій самій абстракції даних, яку реалізує клас.</p>
+<p>Поля характеризують властивості об&rsquo;єктів класу. Коли створюється новий об&rsquo;єкт класу, то цей об&rsquo;єкт є набором полів класу. Два об&rsquo;єкти одного класу мають один і той же набір полів, але різняться значеннями, що зберігаються в цих полях.</p>
+<p>Синтаксис оголошення полів:</p>
+<pre><code>  модифікатор_доступу тип назва;
+</code></pre>
+<p>Наприклад, оголосимо клас <code>Worker</code>, який має 3 поля: розмір з/п, прізвище, вік.</p>
+<p>
+  <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.3. Оголошення полів класу <code>Worker</code>.</p>
+<pre><code>  class Worker
+  {
+    public int salary;         //Розмір з/п
+    public string firstname;   //Ім'я
+    public string lastname;    //Прізвище
+  }
+</code></pre>
+<p>Зараз клас працівник нагадує структуру! І це не дивно, адже клас є більш розвиненою структурую.</p>
+<hr>
+<h3 id="chapter822">8.2.2. Методи класу</h3>
+<p>Змінні(поля) екземплярів і методи - дві основні складові класів. Поки наш клас <code>Worker</code> містить лише дані. Хоча такі класи (без методів) допустимі, більшість класів мають методи.</p>
+<p><strong>Методи</strong> - це процедури (підпрограми), які маніпулюють даними, визначеними в класі, і у багатьох випадках забезпечують доступ до цих даних. Зазвичай різні частини програми взаємодіють з класом за допомогою його методів. Будь-який метод містить одну або декілька інструкцій.</p>
+<p>Кожен метод має ім&rsquo;я, і саме це ім&rsquo;я використовується для його виклику. У загальному випадку методу можна привласнити будь-яке ім&rsquo;я. Але пам&rsquo;ятаєте, що ім&rsquo;я <code>Main()</code> зарезервовано для методу, з якого починається виконання програми. Крім того, як імена методів не можна використовувати ключові слова С#.</p>
+<p>Імена методів супроводжуються парою круглих дужок. Наприклад, якщо метод має ім&rsquo;я <code>GetVal</code>, то в тексті буде написано <code>GetVal()</code>. Це допомагає відрізняти імена змінних від імен методів. Формат запису методу такий:</p>
+<pre><code>  доступ тип_повернення імя_метода(параметри)
+  {
+    тіло метода;
+  }
+</code></pre>
+<p>
+  <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.4. Оголошення класу <code>Worker</code>. Метод.</p>
+<pre><code>  class Worker
+  {
+    public int salary;         //Розмір з/п
+    public string firstname;   //Ім'я
+    public string lastname;    //Прізвище
+  
+    //Метод, виводить інформацію про працівника на консоль
+    public void DisplayInfo()
+    {
+      Console.WriteLine(&quot;{0} {1}, - {2} грн.&quot;, lastname, firstname, salary);
+    }
+  }
+</code></pre>
+<p>Зверніть увагу ось на що. Змінні екземпляра <code>salary</code>, <code>lastname</code> і <code>firstname</code> використовуються всередині методу <code>DisplayInfo()</code> без будь-яких атрибутів, тобто їм не передує ні ім&rsquo;я об&rsquo;єкту, ні оператор &ldquo;крапка&rdquo;. Це дуже важливий момент: якщо метод задіює змінну екземпляра, яка визначена в його класі, він робить це безпосередньо, без явного посилання на об&rsquo;єкт і без оператора &ldquo;крапка&rdquo;. І Це логічно. Адже метод завжди викликається для деякого об&rsquo;єкту конкретного класу. Таким чином, немає необхідності вказувати усередині методу об&rsquo;єкт удруге. Це означає, що значення <code>salalry</code>, <code>lastname</code> і <code>firstname</code> всередині методу <code>DisplayInfo()</code> неявно вказують на копії цих змінних, що належать об&rsquo;єкту, який викликає метод <code>DisplayInfo()</code>.</p>
+<p>Інші приклади методів:</p>
+<pre><code>  public int GetAge();
+  protected string GetByName(string name);
+  protected static bool IsEquals(Class obj1, Class obj2);
+</code></pre>
+<p><strong>Повернення значення методом.</strong></p>
+<p>У загальному випадку існує два варіанти умов для повернення з методу. Перший пов&rsquo;язаний з виявленням закриваючої фігурної дужки, що позначає кінець тіла методу (як продемонстровано на прикладі методу <code>DisplayInfo()</code>). Другий варіант полягає у виконанні інструкції return. Можливі дві форми використання інструкції <code>return</code>: одна призначена для void-методів (які не повертають значень), а інша - для повернення значень.</p>
+<p>Негайне завершення <code>void</code>-методу можна організувати за допомогою наступної форми інструкції <code>return</code>:</p>
+<pre><code>  public void DisplayInfo()
+  {
+    if(salary &lt; 0)
+      return;
+    Console.WriteLine(&quot;{0} {1}, {2}&quot;, lastname, firstname, salary);
+  }
+</code></pre>
+<p>Хоча <code>void</code>-методи - не рідкість, більшість методів все ж повертають значення. І справді, здатність повертати значення - одна з найкорисніших якостей методу. Ми вже розглядали приклад повернення значення під час роботи з масивами. Значення, які повертаються методами, використовуються в програмуванні по різному. У одних випадках повернене значення є результатом обчислень, в інших - воно просто означає, успішно чи ні виконана певна операція, а в третіх - воно може бути кодом-стану. Методи повертають викликаючим їх процедурам, використовуючи наступну форму інструкції <code>return</code>:</p>
+<pre><code>return значення;
+</code></pre>
+<p>Додамо до нашого класу Працівник ще кілька полів і методів.</p>
+<div class="mermaid">
+classDiagram
+    Worker <|-- Manager
+    Worker <|-- SalesManager
+    Worker <|-- Zebra
+    Worker : +int age
+    Worker : +String gender
+    Worker: +isMammal()
+    Worker: +mate()
+    class Manager{
+      +String beakColor
+      +swim()
+      +quack()
+    }
+    class SalesManager{
+      -int sizeInFeet
+      -canEat() 
+    }
+    class Zebra{
+      +bool is_wild
+      +run()
+    }
+</div>
 <hr>
 <span style="float:right">
 
@@ -885,11 +1052,20 @@
 <p>Блоги, статті:</p>
 <ol>
 <li><a href="https://metanit.com/sharp/tutorial/3.29.php" target="_blank" rel="noopener">
-  <i class="fas fa-link text-primary  pr-1 fa-fw"></i> Metanit. Объектно-ориентированное программирование. Практика</a></li>
+  <i class="fas fa-link text-primary  pr-1 fa-fw"></i> Metanit. Объектно-ориентированное программирование. Практика</a> (RU)</li>
 <li></li>
 </ol>
 <p>Відео-контент:</p>
-<p>1.</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> <a href="https://metanit.com/sharp/tutorial/3.29.php" target="_blank" rel="noopener">
+  <i class="fab fa-youtube text-danger  pr-1 fa-fw"></i> Metanit. Объектно-ориентированное программирование. Практика</a></p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> <a href="https://metanit.com/sharp/tutorial/3.29.php" target="_blank" rel="noopener">
+  <i class="fab fa-microsoft text-primary  pr-1 fa-fw"></i> Metanit. Объектно-ориентированное программирование. Практика</a></p>
+</li>
+</ul>
 <hr>
 <span style="float:right">
 
