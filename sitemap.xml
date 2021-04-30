@@ -48,6 +48,16 @@
   </url>
   
   <url>
+    <loc>/courses/csharp-basics/lecturex/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/csharp-basics/lecturey/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
@@ -158,12 +168,22 @@
   </url>
   
   <url>
+    <loc>/tag/solutions/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tag/struct/</loc>
     <lastmod>2021-04-18T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2021-04-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/tasks/</loc>
     <lastmod>2021-04-18T00:00:00+01:00</lastmod>
   </url>
   

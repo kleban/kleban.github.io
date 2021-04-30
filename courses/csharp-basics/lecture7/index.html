@@ -793,6 +793,16 @@
 
   </div>
   
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecturex/">X. Інші теми</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecturey/">Y. Рішення до задач</a>
+
+  </div>
+  
   
 </nav>
 
@@ -822,7 +832,11 @@
         <li><a href="#chapter726">7.2.6. Масив об&rsquo;єктів </a></li>
       </ul>
     </li>
-    <li><a href="#chapter7task">Задачі</a></li>
+    <li><a href="#chapter7task">Задачі</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#chapter7questions">Контрольні запитання</a></li>
     <li><a href="#chapter7sources">Список використаних джерел</a></li>
     <li><a href="#chapter8additional">Додаткові матеріали для завантаження</a></li>
@@ -866,7 +880,11 @@
         <li><a href="#chapter726">7.2.6. Масив об&rsquo;єктів </a></li>
       </ul>
     </li>
-    <li><a href="#chapter7task">Задачі</a></li>
+    <li><a href="#chapter7task">Задачі</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#chapter7questions">Контрольні запитання</a></li>
     <li><a href="#chapter7sources">Список використаних джерел</a></li>
     <li><a href="#chapter8additional">Додаткові матеріали для завантаження</a></li>
@@ -1362,44 +1380,8 @@ switch (a)
   <i class="fas fa-list-alt fa-2x text-success  pr-1 fa-fw"></i>
 </span>
 <h2 id="chapter7task">Задачі</h2>
-<p><strong>Задача 1.</strong> Написати програму, що передбачає вгадування користувачем числа, загадоного комп&rsquo;ютером. Після кожної спроби вгадати число комп&rsquo;ютер повідомляє чи загадане значення більше (<code>&gt;</code>) чи менше (<code>&lt;</code>) від запропонованого користувачем. Після вгадування на екран виводиться кількість спроб.</p>
-<p>Припустимо, що компютер має право загадувати число у діапазоні $[1; 10000)$.</p>
-<p>Рішення до задачі 3.</p>
-<pre><code class="language-csharp">  Console.OutputEncoding = Encoding.Unicode;
-  
-  Random r = new Random();
-  int number = r.Next(1, 10000);
-  Console.WriteLine(&quot;Привіт! Я загадав число у діапазоні [1; 10000).&quot;);
-  
-  // ставимо @ перед параметром, оскільки try є ключовим словом у C#
-  int @try = 0;
-  
-  while (true)
-  {
-      ++@try;
-      Console.Write(&quot;\nЯке число я загадав?\t&gt;&quot;);
-      int userNumber = int.Parse(Console.ReadLine());
-  
-      if (userNumber &gt; number)
-      {
-          Console.WriteLine(&quot;PC &gt; Неправильно. Моє число є меншим.&quot;);
-          continue;
-      }
-  
-      if (userNumber &lt; number)
-      {
-          Console.WriteLine(&quot;PC &gt; Неправильно. Моє число є більшим.&quot;);
-          continue;
-      }
-  
-      if (userNumber == number)
-      {
-          Console.WriteLine(&quot;PC &gt; Вітаю! Ти вгадав за {0} спроб&quot;, @try);
-      }
-  }
-</code></pre>
-<hr>
-<p><strong>Задача 2.</strong> Написати програму, що дозволяє маніпулювати даними про товари у магазині. Товар описати як окрему структуру (struct) з полями:</p>
+<h4 id="chapter7task1">Задача 7.1</h4>
+<p>Написати програму, що дозволяє маніпулювати даними про товари у магазині. Товар описати як окрему структуру (struct) з полями:</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> Назва (<code>Title</code>)</li>
 <li><input checked="" disabled="" type="checkbox"> Категорія (<code>Category</code>)</li>
@@ -1422,7 +1404,8 @@ switch (a)
 </ul>
 <p>Взаємодію з користувачем реалізувати через меню.</p>
 <hr>
-<p><strong>Задача 3.</strong> Описати структуру <strong>Книга</strong> (<code>Book</code>) з даними:</p>
+<h4 id="chapter7task2">Задача 7.2</h4>
+<p>Описати структуру <strong>Книга</strong> (<code>Book</code>) з даними:</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> Назва</li>
 <li><input checked="" disabled="" type="checkbox"> Автор</li>
@@ -1442,9 +1425,8 @@ switch (a)
 </ul>
 <p>Створити масив з 5-ти книг та вивети його на консоль методом <code>Print()</code> з різними параметрами.</p>
 <hr>
-<p><strong>Задача 4.</strong> На основі структур, створених у <strong>завданні 3</strong> написати програму для маніпулюванням інформації про книги у каталозі.</p>
-<hr>
-<p><strong>Задача 5.</strong> Написати програму&hellip;</p>
+<h4 id="chapter7task1">Задача 7.3</h4>
+<p>На основі структур, створених у <a href="#chapter7task2"><strong>завданні 7.2</strong></a> написати програму для маніпулюванням інформації про книги у каталозі.</p>
 <hr>
 <span style="float:right">
 

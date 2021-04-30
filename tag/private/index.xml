@@ -42,7 +42,11 @@
         &lt;li&gt;&lt;a href=&#34;#chapter726&#34;&gt;7.2.6. Масив об&amp;rsquo;єктів &lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#chapter7task&#34;&gt;Задачі&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#chapter7task&#34;&gt;Задачі&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter7questions&#34;&gt;Контрольні запитання&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter7sources&#34;&gt;Список використаних джерел&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#chapter8additional&#34;&gt;Додаткові матеріали для завантаження&lt;/a&gt;&lt;/li&gt;
@@ -538,44 +542,8 @@ switch (a)
   &lt;i class=&#34;fas fa-list-alt fa-2x text-success  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 &lt;/span&gt;
 &lt;h2 id=&#34;chapter7task&#34;&gt;Задачі&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Задача 1.&lt;/strong&gt; Написати програму, що передбачає вгадування користувачем числа, загадоного комп&amp;rsquo;ютером. Після кожної спроби вгадати число комп&amp;rsquo;ютер повідомляє чи загадане значення більше (&lt;code&gt;&amp;gt;&lt;/code&gt;) чи менше (&lt;code&gt;&amp;lt;&lt;/code&gt;) від запропонованого користувачем. Після вгадування на екран виводиться кількість спроб.&lt;/p&gt;
-&lt;p&gt;Припустимо, що компютер має право загадувати число у діапазоні $[1; 10000)$.&lt;/p&gt;
-&lt;p&gt;Рішення до задачі 3.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;  Console.OutputEncoding = Encoding.Unicode;
-  
-  Random r = new Random();
-  int number = r.Next(1, 10000);
-  Console.WriteLine(&amp;quot;Привіт! Я загадав число у діапазоні [1; 10000).&amp;quot;);
-  
-  // ставимо @ перед параметром, оскільки try є ключовим словом у C#
-  int @try = 0;
-  
-  while (true)
-  {
-      ++@try;
-      Console.Write(&amp;quot;\nЯке число я загадав?\t&amp;gt;&amp;quot;);
-      int userNumber = int.Parse(Console.ReadLine());
-  
-      if (userNumber &amp;gt; number)
-      {
-          Console.WriteLine(&amp;quot;PC &amp;gt; Неправильно. Моє число є меншим.&amp;quot;);
-          continue;
-      }
-  
-      if (userNumber &amp;lt; number)
-      {
-          Console.WriteLine(&amp;quot;PC &amp;gt; Неправильно. Моє число є більшим.&amp;quot;);
-          continue;
-      }
-  
-      if (userNumber == number)
-      {
-          Console.WriteLine(&amp;quot;PC &amp;gt; Вітаю! Ти вгадав за {0} спроб&amp;quot;, @try);
-      }
-  }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Задача 2.&lt;/strong&gt; Написати програму, що дозволяє маніпулювати даними про товари у магазині. Товар описати як окрему структуру (struct) з полями:&lt;/p&gt;
+&lt;h4 id=&#34;chapter7task1&#34;&gt;Задача 7.1&lt;/h4&gt;
+&lt;p&gt;Написати програму, що дозволяє маніпулювати даними про товари у магазині. Товар описати як окрему структуру (struct) з полями:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва (&lt;code&gt;Title&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Категорія (&lt;code&gt;Category&lt;/code&gt;)&lt;/li&gt;
@@ -598,7 +566,8 @@ switch (a)
 &lt;/ul&gt;
 &lt;p&gt;Взаємодію з користувачем реалізувати через меню.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Задача 3.&lt;/strong&gt; Описати структуру &lt;strong&gt;Книга&lt;/strong&gt; (&lt;code&gt;Book&lt;/code&gt;) з даними:&lt;/p&gt;
+&lt;h4 id=&#34;chapter7task2&#34;&gt;Задача 7.2&lt;/h4&gt;
+&lt;p&gt;Описати структуру &lt;strong&gt;Книга&lt;/strong&gt; (&lt;code&gt;Book&lt;/code&gt;) з даними:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Автор&lt;/li&gt;
@@ -618,9 +587,8 @@ switch (a)
 &lt;/ul&gt;
 &lt;p&gt;Створити масив з 5-ти книг та вивети його на консоль методом &lt;code&gt;Print()&lt;/code&gt; з різними параметрами.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Задача 4.&lt;/strong&gt; На основі структур, створених у &lt;strong&gt;завданні 3&lt;/strong&gt; написати програму для маніпулюванням інформації про книги у каталозі.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Задача 5.&lt;/strong&gt; Написати програму&amp;hellip;&lt;/p&gt;
+&lt;h4 id=&#34;chapter7task1&#34;&gt;Задача 7.3&lt;/h4&gt;
+&lt;p&gt;На основі структур, створених у &lt;a href=&#34;#chapter7task2&#34;&gt;&lt;strong&gt;завданні 7.2&lt;/strong&gt;&lt;/a&gt; написати програму для маніпулюванням інформації про книги у каталозі.&lt;/p&gt;
 &lt;hr&gt;
 &lt;span style=&#34;float:right&#34;&gt;
 

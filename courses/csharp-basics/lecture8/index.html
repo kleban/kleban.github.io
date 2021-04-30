@@ -793,6 +793,16 @@
 
   </div>
   
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecturex/">X. Інші теми</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/csharp-basics/lecturey/">Y. Рішення до задач</a>
+
+  </div>
+  
   
 </nav>
 
@@ -879,7 +889,7 @@
 <p>Клас оголошується за допомогою ключового слова <code>class</code>. Синтаксис має наступний вигляд:</p>
 <p>
   <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.1. Синтаксис оголошення класу.</p>
-<pre><code>  class ім’я_класу
+<pre><code class="language-{csharp}">  class ім’я_класу
   {
     //Оголошення полів
     доступ тип імя_змінної;
@@ -900,7 +910,7 @@
 <p>Розглянемо приклад базового створення класу &ldquo;Комплексне число&rdquo;.</p>
 <p>
   <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.2. Оголошення класу <code>ComplexNumber</code>.</p>
-<pre><code>  public class ComplexNumber
+<pre><code class="language-{csharp}">  public class ComplexNumber
   {
     //Поля
     private double a;
@@ -934,12 +944,12 @@
 <p>Поля класу синтаксично є звичайними змінними (об&rsquo;єктами) мови. Їх опис задовольняє звичайним правилам оголошення змінних, про що детально говорилося раніше. Змістовно поля задають представлення тій самій абстракції даних, яку реалізує клас.</p>
 <p>Поля характеризують властивості об&rsquo;єктів класу. Коли створюється новий об&rsquo;єкт класу, то цей об&rsquo;єкт є набором полів класу. Два об&rsquo;єкти одного класу мають один і той же набір полів, але різняться значеннями, що зберігаються в цих полях.</p>
 <p>Синтаксис оголошення полів:</p>
-<pre><code>  модифікатор_доступу тип назва;
+<pre><code class="language-{csharp}">  модифікатор_доступу тип назва;
 </code></pre>
 <p>Наприклад, оголосимо клас <code>Worker</code>, який має 3 поля: розмір з/п, прізвище, вік.</p>
 <p>
   <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.3. Оголошення полів класу <code>Worker</code>.</p>
-<pre><code>  class Worker
+<pre><code class="language-{csharp}">  class Worker
   {
     public int salary;         //Розмір з/п
     public string firstname;   //Ім'я
@@ -953,14 +963,14 @@
 <p><strong>Методи</strong> - це процедури (підпрограми), які маніпулюють даними, визначеними в класі, і у багатьох випадках забезпечують доступ до цих даних. Зазвичай різні частини програми взаємодіють з класом за допомогою його методів. Будь-який метод містить одну або декілька інструкцій.</p>
 <p>Кожен метод має ім&rsquo;я, і саме це ім&rsquo;я використовується для його виклику. У загальному випадку методу можна привласнити будь-яке ім&rsquo;я. Але пам&rsquo;ятаєте, що ім&rsquo;я <code>Main()</code> зарезервовано для методу, з якого починається виконання програми. Крім того, як імена методів не можна використовувати ключові слова С#.</p>
 <p>Імена методів супроводжуються парою круглих дужок. Наприклад, якщо метод має ім&rsquo;я <code>GetVal</code>, то в тексті буде написано <code>GetVal()</code>. Це допомагає відрізняти імена змінних від імен методів. Формат запису методу такий:</p>
-<pre><code>  доступ тип_повернення імя_метода(параметри)
+<pre><code class="language-{csharp}">  доступ тип_повернення імя_метода(параметри)
   {
     тіло метода;
   }
 </code></pre>
 <p>
   <i class="fas fa-code text-success  pr-1 fa-fw"></i> Лістинг 8.4. Оголошення класу <code>Worker</code>. Метод.</p>
-<pre><code>  class Worker
+<pre><code class="language-{csharp}">  class Worker
   {
     public int salary;         //Розмір з/п
     public string firstname;   //Ім'я
@@ -1158,6 +1168,12 @@ classDiagram
     <a href="/courses/csharp-basics/lecture7/" rel="next">Лекція 7. Перелічувані типи та структури</a>
   </div>
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/csharp-basics/lecturex/" rel="prev">Лекція X. Додаткові матеріали</a>
+  </div>
   
 </div>
 
