@@ -594,6 +594,25 @@ switch (a)
 
   &lt;i class=&#34;fas fa-question-circle fa-2x text-warning  pr-1 fa-fw&#34;&gt;&lt;/i&gt;
 &lt;/span&gt;
+&lt;h4 id=&#34;chapter7task5&#34;&gt;Задача 7.4&lt;/h4&gt;
+&lt;p&gt;Написати програму для маніпулювання даними про товари у магазині.
+Кожен товар повинен обов&amp;rsquo;язково описуватися полями:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Артикул (ідентифікатор товару)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Назва&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Бренд&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Ціна&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Залишок на складі (кількість)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Бренди товарів реаліузвати як перелічуваний тип.&lt;/p&gt;
+&lt;p&gt;Реалізувати меню:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Список товарів&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Продати товар&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Вивести товари по бренду&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Додати товар у каталог&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Вийти&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;chapter7questions&#34;&gt;Контрольні запитання&lt;/h2&gt;
 &lt;hr&gt;
 &lt;span style=&#34;float:right&#34;&gt;
