@@ -5,7 +5,7 @@
     <link>/tag/continue/</link>
       <atom:link href="/tag/continue/index.xml" rel="self" type="application/rss+xml" />
     <description>continue</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>uk</language><copyright>© 2021 Yurii Kleban</copyright><lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>uk</language><copyright>© 2022 Yurii Kleban</copyright><lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0100</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>continue</title>
@@ -452,6 +452,12 @@ $$z = k + i, при{ }всіх{ }інших{ }умовах$$&lt;/p&gt;
   ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Примітка. Вивести на консоль не більше двох знаків після розділювача дробової та цілої частини (крапки) для значень $y$.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;задача-53x1&#34;&gt;Задача 5.3X1&lt;/h4&gt;
+&lt;p&gt;Написати програму, яка генерує і виводить на консоль $8$ випадкових чисел із діапазону від $1 до 10$. Якщо згенероване число є непарним, то його значення замінюється на $0$ і виводиться у фигляді $0(непарне число)$.&lt;/p&gt;
+&lt;p&gt;Наприклад, виведення може мати вигляд:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2 4 0(7) 0(1) 8 4 2 6 0(9) 0(1) 6
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;chapter5task4&#34;&gt;Задача 5.4.&lt;/h4&gt;
 &lt;p&gt;Обчислити значення виразу $y=\frac{cos(x^2 + 5)^3}{\sqrt{x - ln(x)}}$ для усіх $x$ з діапазону $[100; 200]$ кратних $10$-ти. На консоль вивести результат у вигляді, наприклад:&lt;/p&gt;
