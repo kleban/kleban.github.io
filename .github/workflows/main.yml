@@ -12,6 +12,6 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.SMARTERASP_SERVER_FTP_SERVER }}
-          username: ${{ secrets.SMARTERASP_FTP_USERNAME }}
-          password: ${{ secrets.SMARTERASP_FTP_PASSWORD }}
+          server: win6055.site4now.net
+          username: kleban-001
+          password: HG*7t65rf5r
