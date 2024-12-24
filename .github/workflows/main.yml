@@ -13,5 +13,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: win6055.site4now.net
-          username: kleban-001
-          password: HG*7t65rf5r
+          username: kleban-page
+          password: 79AMYJDm2
