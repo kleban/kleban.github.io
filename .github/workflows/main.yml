@@ -12,6 +12,6 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: win6055.site4now.net
-          username: kleban-page
-          password: 79AMYJDm2
+          server: ${{ secrets.SHARK_SERVER_FTP_SERVER }}
+          username: ${{ secrets.SHARK_FTP_USERNAME }}
+          password: ${{ secrets.SHARK_FTP_PASSWORD }}
